@@ -1,0 +1,208 @@
+/**
+ * Trạm Dừng Mlem — Universal Theme · CSS variables
+ * Use in: web (Next.js, plain HTML), email (inline transformed), Remotion CSS-in-JS.
+ * Auto dark mode via prefers-color-scheme.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Be+Vietnam+Pro:wght@400;500;700&family=JetBrains+Mono:wght@500;600&display=swap');
+
+:root {
+  /* ── BRAND CORE ── */
+  --color-brand-yellow: #F8B147;
+  --color-brand-orange: #F39820;
+  --color-brand-coral:  #E85D2F;
+  --color-brand-red:    #C8302D;
+  --color-brand-teal:   #4FC3D1;
+  --color-brand-cream:  #FFF4E0;
+
+  /* ── PILLARS (light/base/dark) ── */
+  --color-pillar-a-light: #FFE0A8; --color-pillar-a-base: #F8B147; --color-pillar-a-dark: #B87808;
+  --color-pillar-b-light: #F4B0AE; --color-pillar-b-base: #C8302D; --color-pillar-b-dark: #7A1614;
+  --color-pillar-c-light: #F9C5AE; --color-pillar-c-base: #E85D2F; --color-pillar-c-dark: #8E2F0F;
+  --color-pillar-d-light: #BEE7ED; --color-pillar-d-base: #4FC3D1; --color-pillar-d-dark: #1F6E79;
+
+  /* ── NEUTRAL (warm-shifted) ── */
+  --color-neutral-0:   #FFFFFF;
+  --color-neutral-50:  #FFFAF0;
+  --color-neutral-200: #EFE6D2;
+  --color-neutral-400: #A89C84;
+  --color-neutral-600: #5C5443;
+  --color-neutral-800: #2B2620;
+  --color-neutral-900: #1A1A1A;
+
+  /* ── SEMANTIC ── */
+  --color-fg-primary:   var(--color-neutral-900);
+  --color-fg-secondary: var(--color-neutral-600);
+  --color-fg-muted:     var(--color-neutral-400);
+  --color-fg-inverted:  var(--color-neutral-0);
+  --color-fg-brand:     var(--color-brand-yellow);
+  --color-fg-link:      var(--color-brand-teal);
+
+  --color-bg-page:      var(--color-neutral-50);
+  --color-bg-surface:   var(--color-neutral-0);
+  --color-bg-subtle:    var(--color-brand-cream);
+  --color-bg-inverted:  var(--color-neutral-900);
+
+  --color-border-subtle: var(--color-neutral-200);
+  --color-border-strong: var(--color-neutral-900);
+
+  --color-state-success: #3FB28E;
+  --color-state-warning: var(--color-brand-coral);
+  --color-state-danger:  var(--color-brand-red);
+  --color-state-info:    var(--color-brand-teal);
+
+  --color-outline: var(--color-neutral-900);
+
+  /* ── FONT FAMILY ── */
+  --font-display: 'Baloo 2', system-ui, sans-serif;
+  --font-heading: 'Be Vietnam Pro', system-ui, sans-serif;
+  --font-body:    'Be Vietnam Pro', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+  /* ── FONT WEIGHT ── */
+  --fw-regular:   400;
+  --fw-medium:    500;
+  --fw-semibold:  600;
+  --fw-bold:      700;
+  --fw-extrabold: 800;
+
+  /* ── FONT SIZE — WEB (rem) ── */
+  --fs-5xl: 4.5rem;     --lh-5xl: 1.0;
+  --fs-4xl: 3rem;       --lh-4xl: 1.05;
+  --fs-3xl: 2.25rem;    --lh-3xl: 1.1;
+  --fs-2xl: 1.75rem;    --lh-2xl: 1.2;
+  --fs-xl:  1.375rem;   --lh-xl:  1.3;
+  --fs-lg:  1.125rem;   --lh-lg:  1.5;
+  --fs-md:  1rem;       --lh-md:  1.5;
+  --fs-sm:  0.875rem;   --lh-sm:  1.45;
+  --fs-xs:  0.75rem;    --lh-xs:  1.4;
+
+  /* ── FONT SIZE — VIDEO (px, for Remotion) ── */
+  --fs-video-hook-xl:   140px;
+  --fs-video-hook-l:    96px;
+  --fs-video-title:     72px;
+  --fs-video-subtitle:  48px;
+  --fs-video-body:      40px;
+  --fs-video-mono-stat: 120px;
+  --fs-video-tag:       28px;
+
+  /* ── SPACING (4-base, px) ── */
+  --space-0:  0;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* ── RADIUS ── */
+  --radius-xs:   4px;
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-2xl:  32px;
+  --radius-pill: 999px;
+
+  /* ── SHADOW (sticker chunky) ── */
+  --shadow-none:        none;
+  --shadow-sticker-sm:  3px 3px 0 0 #1A1A1A;
+  --shadow-sticker-md:  6px 6px 0 0 #1A1A1A;
+  --shadow-sticker-lg:  10px 10px 0 0 #1A1A1A;
+  --shadow-soft-sm:     0 2px 4px rgba(26,26,26,0.08);
+  --shadow-soft-md:     0 8px 24px rgba(26,26,26,0.10);
+  --shadow-inner-inset: inset 0 -3px 0 0 #1A1A1A;
+
+  /* ── BORDER ── */
+  --border-thin:   2px;
+  --border-base:   3px;
+  --border-thick:  4px;
+  --border-xthick: 6px;
+
+  /* ── MOTION ── */
+  --duration-instant: 100ms;
+  --duration-fast:    180ms;
+  --duration-base:    280ms;
+  --duration-slow:    430ms;
+  --duration-slower:  700ms;
+
+  --ease-standard:   cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-accelerate: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-decelerate: cubic-bezier(0, 0, 0.2, 1);
+  --ease-bounce:     cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Z-INDEX ── */
+  --z-base: 0; --z-raised: 10; --z-sticky: 100;
+  --z-overlay: 1000; --z-modal: 2000; --z-toast: 3000;
+
+  /* ── CONTAINER ── */
+  --container-sm:  640px;
+  --container-md:  768px;
+  --container-lg:  1024px;
+  --container-xl:  1280px;
+  --container-2xl: 1536px;
+}
+
+/* ─── DARK MODE (auto by system) ─── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fg-primary:   var(--color-neutral-50);
+    --color-fg-secondary: var(--color-neutral-200);
+    --color-fg-muted:     var(--color-neutral-400);
+    --color-fg-inverted:  var(--color-neutral-900);
+
+    --color-bg-page:     #16130E;
+    --color-bg-surface:  #221E16;
+    --color-bg-subtle:   #2E2820;
+    --color-bg-inverted: var(--color-neutral-50);
+
+    --color-border-subtle: #2E2820;
+  }
+}
+
+/* Force-light / force-dark overrides */
+:root[data-theme='light'] { color-scheme: light; }
+:root[data-theme='dark']  { color-scheme: dark; }
+
+/* ─── BASE RESET ─── */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-md);
+  line-height: var(--lh-md);
+  color: var(--color-fg-primary);
+  background: var(--color-bg-page);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── UTILITY: outline text (video) ─── */
+.tdm-outline-text {
+  -webkit-text-stroke: 4px var(--color-outline);
+  paint-order: stroke fill;
+}
+.tdm-outline-text--hook {
+  -webkit-text-stroke: 6px var(--color-outline);
+  paint-order: stroke fill;
+  text-shadow: 0 6px 0 var(--color-outline);
+}
+
+/* ─── UTILITY: sticker hover ─── */
+.tdm-sticker-hover {
+  transition: transform var(--duration-fast) var(--ease-bounce),
+              box-shadow var(--duration-fast) var(--ease-bounce);
+}
+.tdm-sticker-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-sticker-lg);
+}
+.tdm-sticker-hover:active {
+  transform: translate(3px, 3px);
+  box-shadow: var(--shadow-none);
+}

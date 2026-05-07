@@ -1,17 +1,19 @@
-import "./index.css";
-import { Composition } from "remotion";
-import { MyComposition } from "./Composition";
+import './shared/RootShared';
+import React from 'react';
+import { Composition } from 'remotion';
+import { Chuotdong } from './compositions/Chuotdong';
+import metaChuotdong from '../assets/chuotdong/clip-meta.json';
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
       <Composition
-        id="MyComp"
-        component={MyComposition}
-        durationInFrames={60}
-        fps={30}
-        width={1280}
-        height={720}
+        id={metaChuotdong.slug}
+        component={Chuotdong}
+        durationInFrames={metaChuotdong.totalFrames}
+        fps={metaChuotdong.fps}
+        width={metaChuotdong.width}
+        height={metaChuotdong.height}
       />
     </>
   );

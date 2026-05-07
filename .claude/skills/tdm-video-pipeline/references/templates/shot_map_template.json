@@ -1,0 +1,6 @@
+{
+  "S01": { "out": "01_hook.jpg", "kind": "image" },
+  "S02": { "out": "02_setup.jpg", "kind": "image" },
+  "S03": { "out": "videos/03_process.mp4", "kind": "video", "maxDurationSec": 5 },
+  "S04": { "out": "videos/04_bite.mp4", "kind": "video", "maxDurationSec": 4 }
+}

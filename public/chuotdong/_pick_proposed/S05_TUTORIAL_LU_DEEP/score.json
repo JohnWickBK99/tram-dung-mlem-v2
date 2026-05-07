@@ -1,0 +1,33 @@
+{
+  "shot": "S05_TUTORIAL_LU_DEEP",
+  "outname": "videos/04_lu_dat.mp4",
+  "kind": "video",
+  "best_score": 100.0,
+  "best_path": "public/chuotdong/raw_pool/S05_TUTORIAL_LU_DEEP/pexels_00.mp4",
+  "all_candidates": [
+    {
+      "score": 100.0,
+      "path": "public/chuotdong/raw_pool/S05_TUTORIAL_LU_DEEP/pexels_00.mp4"
+    },
+    {
+      "score": 73.33333333333333,
+      "path": "public/chuotdong/raw_pool/S05_TUTORIAL_LU_DEEP/pexels_01.mp4"
+    },
+    {
+      "score": 58.142361111111114,
+      "path": "public/chuotdong/raw_pool/S05_TUTORIAL_LU_DEEP/pixabay_01.mp4"
+    },
+    {
+      "score": 58.142361111111114,
+      "path": "public/chuotdong/raw_pool/S05_TUTORIAL_LU_DEEP/pixabay_00.mp4"
+    },
+    {
+      "score": 58.142361111111114,
+      "path": "public/chuotdong/raw_pool/S05_TUTORIAL_LU_DEEP/mixkit_00.mp4"
+    },
+    {
+      "score": 56.941780514187286,
+      "path": "public/chuotdong/raw_pool/S05_TUTORIAL_LU_DEEP/mixkit_01.mp4"
+    }
+  ]
+}

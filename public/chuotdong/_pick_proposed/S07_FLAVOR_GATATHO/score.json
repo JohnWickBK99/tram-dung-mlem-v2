@@ -1,0 +1,17 @@
+{
+  "shot": "S07_FLAVOR_GATATHO",
+  "outname": "06_ga_ta.jpg",
+  "kind": "image",
+  "best_score": 77.7950895756807,
+  "best_path": "public/chuotdong/raw_pool/S07_FLAVOR_GATATHO/wiki_01.png",
+  "all_candidates": [
+    {
+      "score": 77.7950895756807,
+      "path": "public/chuotdong/raw_pool/S07_FLAVOR_GATATHO/wiki_01.png"
+    },
+    {
+      "score": 29.571173611755384,
+      "path": "public/chuotdong/raw_pool/S07_FLAVOR_GATATHO/wiki_00.png"
+    }
+  ]
+}

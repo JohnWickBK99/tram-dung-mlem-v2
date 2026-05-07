@@ -1,0 +1,29 @@
+{
+  "shot": "S07_THO",
+  "outname": "07_thit_tho.jpg",
+  "kind": "image",
+  "best_score": 86.9301653482885,
+  "best_path": "public/chuotdong/raw_pool/S07_THO/wiki_00.png",
+  "all_candidates": [
+    {
+      "score": 86.9301653482885,
+      "path": "public/chuotdong/raw_pool/S07_THO/wiki_00.png"
+    },
+    {
+      "score": 84.06048838880953,
+      "path": "public/chuotdong/raw_pool/S07_THO/wiki_01.png"
+    },
+    {
+      "score": 63.265571034306575,
+      "path": "public/chuotdong/raw_pool/S07_THO/pexels_02.jpg"
+    },
+    {
+      "score": 63.265571034306575,
+      "path": "public/chuotdong/raw_pool/S07_THO/pexels_01.jpg"
+    },
+    {
+      "score": 35.8829568677293,
+      "path": "public/chuotdong/raw_pool/S07_THO/pexels_00.jpg"
+    }
+  ]
+}

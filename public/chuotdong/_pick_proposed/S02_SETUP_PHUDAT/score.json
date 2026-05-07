@@ -1,0 +1,25 @@
+{
+  "shot": "S02_SETUP_PHUDAT",
+  "outname": "03_phu_dat_market.jpg",
+  "kind": "image",
+  "best_score": 71.3960405741107,
+  "best_path": "public/chuotdong/raw_pool/S02_SETUP_PHUDAT/pexels_00.jpg",
+  "all_candidates": [
+    {
+      "score": 71.3960405741107,
+      "path": "public/chuotdong/raw_pool/S02_SETUP_PHUDAT/pexels_00.jpg"
+    },
+    {
+      "score": 61.09181122254422,
+      "path": "public/chuotdong/raw_pool/S02_SETUP_PHUDAT/pexels_03.jpg"
+    },
+    {
+      "score": 61.09181122254422,
+      "path": "public/chuotdong/raw_pool/S02_SETUP_PHUDAT/pexels_02.jpg"
+    },
+    {
+      "score": 61.09181122254422,
+      "path": "public/chuotdong/raw_pool/S02_SETUP_PHUDAT/pexels_01.jpg"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "shot": "S10_GLOBAL_RAT_DISHES_GHANA",
+  "outname": "12_grasscutter_ghana.jpg",
+  "kind": "image",
+  "best_score": 74.66506306717034,
+  "best_path": "public/chuotdong/raw_pool/S10_GLOBAL_RAT_DISHES_GHANA/pixabay_02.jpg",
+  "all_candidates": [
+    {
+      "score": 74.66506306717034,
+      "path": "public/chuotdong/raw_pool/S10_GLOBAL_RAT_DISHES_GHANA/pixabay_02.jpg"
+    },
+    {
+      "score": 72.9000922828159,
+      "path": "public/chuotdong/raw_pool/S10_GLOBAL_RAT_DISHES_GHANA/pixabay_00.jpg"
+    },
+    {
+      "score": 56.83881305176755,
+      "path": "public/chuotdong/raw_pool/S10_GLOBAL_RAT_DISHES_GHANA/pixabay_01.jpg"
+    }
+  ]
+}

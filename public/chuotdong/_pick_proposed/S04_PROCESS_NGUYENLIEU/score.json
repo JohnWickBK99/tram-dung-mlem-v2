@@ -1,0 +1,33 @@
+{
+  "shot": "S04_PROCESS_NGUYENLIEU",
+  "outname": "10_chuot_clean_meat.jpg",
+  "kind": "image",
+  "best_score": 70.01420483702672,
+  "best_path": "public/chuotdong/raw_pool/S04_PROCESS_NGUYENLIEU/pixabay_00.jpg",
+  "all_candidates": [
+    {
+      "score": 70.01420483702672,
+      "path": "public/chuotdong/raw_pool/S04_PROCESS_NGUYENLIEU/pixabay_00.jpg"
+    },
+    {
+      "score": 68.973350270748,
+      "path": "public/chuotdong/raw_pool/S04_PROCESS_NGUYENLIEU/pexels_02.jpg"
+    },
+    {
+      "score": 68.973350270748,
+      "path": "public/chuotdong/raw_pool/S04_PROCESS_NGUYENLIEU/pexels_01.jpg"
+    },
+    {
+      "score": 68.92192850991867,
+      "path": "public/chuotdong/raw_pool/S04_PROCESS_NGUYENLIEU/pixabay_02.jpg"
+    },
+    {
+      "score": 62.256849008655394,
+      "path": "public/chuotdong/raw_pool/S04_PROCESS_NGUYENLIEU/pexels_00.jpg"
+    },
+    {
+      "score": 52.39535849408862,
+      "path": "public/chuotdong/raw_pool/S04_PROCESS_NGUYENLIEU/pixabay_01.jpg"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "shot": "S04_CONG",
+  "outname": "08_chuot_texture_cong.jpg",
+  "kind": "image",
+  "best_score": 52.41253263133153,
+  "best_path": "public/chuotdong/raw_pool/S04_CONG/pexels_02.jpg",
+  "all_candidates": [
+    {
+      "score": 52.41253263133153,
+      "path": "public/chuotdong/raw_pool/S04_CONG/pexels_02.jpg"
+    },
+    {
+      "score": 52.41253263133153,
+      "path": "public/chuotdong/raw_pool/S04_CONG/pexels_01.jpg"
+    },
+    {
+      "score": 41.68860623358427,
+      "path": "public/chuotdong/raw_pool/S04_CONG/pexels_00.jpg"
+    }
+  ]
+}

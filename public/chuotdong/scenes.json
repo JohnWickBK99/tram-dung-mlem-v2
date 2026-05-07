@@ -1,0 +1,352 @@
+{
+  "slug": "chuotdong",
+  "title": "Chuột đồng nướng lu An Giang — đặc sản $80K thay vì $50 diệt",
+  "totalFrames": 2724,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "pillar": "B",
+  "scenes": [
+    {
+      "id": "S01_HOOK_USA_VN",
+      "shot": "S01_HOOK_USA_VN",
+      "start": 0,
+      "end": 120,
+      "text": "Mỹ trả tiền diệt nó còn miền Tây ăn cả dĩa",
+      "visual": "split-screen",
+      "highlightColor": null,
+      "sfx": [
+        {
+          "name": "impact-hook.mp3",
+          "frame": 0,
+          "volume": 0.6
+        },
+        {
+          "name": "whoosh-transition.mp3",
+          "frame": 60,
+          "volume": 0.55
+        }
+      ],
+      "emphasis": [
+        "Mỹ",
+        "miền Tây",
+        "diệt",
+        "ăn"
+      ]
+    },
+    {
+      "id": "S02_SETUP_PHUDAT",
+      "shot": "S02_SETUP_PHUDAT",
+      "start": 120,
+      "end": 232,
+      "text": "đây là chuột đồng nướng lu đặc sản chợ Phù Dật An Giang",
+      "visual": "static-photo",
+      "highlightColor": null,
+      "sfx": [
+        {
+          "name": "chime-fact.mp3",
+          "frame": 100,
+          "volume": 0.5
+        }
+      ],
+      "emphasis": [
+        "chuột đồng",
+        "nướng lu",
+        "Phù Dật",
+        "An Giang"
+      ]
+    },
+    {
+      "id": "S03_HISTORY_NUOCNOI",
+      "shot": "S03_HISTORY_NUOCNOI",
+      "start": 232,
+      "end": 511,
+      "text": "30 năm nay cứ tới mùa nước nổi tháng 8 âm lịch dân miền Tây lại ra đồng bắt chuột béo nhất ngon nhất chỉ có vài tháng trong năm hết mùa là hết",
+      "visual": "static-photo",
+      "highlightColor": null,
+      "sfx": [
+        {
+          "name": "chime-fact.mp3",
+          "frame": 250,
+          "volume": 0.5
+        },
+        {
+          "name": "whoosh-transition.mp3",
+          "frame": 470,
+          "volume": 0.55
+        }
+      ],
+      "emphasis": [
+        "ba mươi năm",
+        "mùa nước nổi",
+        "tháng tám",
+        "miền Tây"
+      ]
+    },
+    {
+      "id": "S04_PROCESS_NGUYENLIEU",
+      "shot": "S04_PROCESS_NGUYENLIEU",
+      "start": 511,
+      "end": 679,
+      "text": "Đừng nhầm với chuột cống nha chuột đồng ăn lúa ngủ trên đồng sạch hơn con bạn đang nghĩ nhiều",
+      "visual": "split-screen",
+      "highlightColor": null,
+      "sfx": [
+        {
+          "name": "pop-sticker.mp3",
+          "frame": 500,
+          "volume": 0.5
+        },
+        {
+          "name": "pop-sticker.mp3",
+          "frame": 600,
+          "volume": 0.5
+        }
+      ],
+      "emphasis": [
+        "chuột cống",
+        "chuột đồng",
+        "lúa",
+        "sạch"
+      ]
+    },
+    {
+      "id": "S05_TUTORIAL_LU_DEEP",
+      "shot": "S05_TUTORIAL_LU_DEEP",
+      "start": 679,
+      "end": 1024,
+      "text": "Cách làm gồm 4 bước 1 là làm sạch rồi ướp sả ớt nguyên đêm 2 là treo trong lu đất sét 3 nướng than hoa 30 đến 40 phút da vàng giòn rụm mỡ chảy xuống thơm điếng người",
+      "visual": "tutorial-4panel",
+      "highlightColor": null,
+      "sfx": [
+        {
+          "name": "pop-sticker.mp3",
+          "frame": 700,
+          "volume": 0.5
+        },
+        {
+          "name": "pop-sticker.mp3",
+          "frame": 790,
+          "volume": 0.5
+        },
+        {
+          "name": "pop-sticker.mp3",
+          "frame": 880,
+          "volume": 0.5
+        },
+        {
+          "name": "pop-sticker.mp3",
+          "frame": 970,
+          "volume": 0.5
+        },
+        {
+          "name": "chime-fact.mp3",
+          "frame": 1020,
+          "volume": 0.5
+        }
+      ],
+      "emphasis": [
+        "bốn bước",
+        "sả ớt",
+        "lu đất sét",
+        "than hoa",
+        "ba mươi",
+        "bốn mươi phút"
+      ]
+    },
+    {
+      "id": "S06_BITE_REACTION",
+      "shot": "S06_BITE_REACTION",
+      "start": 1024,
+      "end": 1282,
+      "text": "Cắn miếng đầu tiên da giòn tan thịt ngọt mềm không tanh chút nào béo mà không ngấy người miền Tây gọi là quên trời quên đất",
+      "visual": "video-zoompunch",
+      "highlightColor": null,
+      "sfx": [
+        {
+          "name": "mlem-sting.mp3",
+          "frame": 1080,
+          "volume": 0.7
+        }
+      ],
+      "emphasis": [
+        "da giòn tan",
+        "thịt ngọt mềm",
+        "quên trời",
+        "quên đất"
+      ]
+    },
+    {
+      "id": "S07_FLAVOR_GATATHO",
+      "shot": "S07_FLAVOR_GATATHO",
+      "start": 1282,
+      "end": 1422,
+      "text": "Vị giống gà ta béo mềm như thịt thỏ nhưng đậm đà hơn nhiều",
+      "visual": "triple-split",
+      "highlightColor": null,
+      "sfx": [
+        {
+          "name": "pop-sticker.mp3",
+          "frame": 1280,
+          "volume": 0.5
+        },
+        {
+          "name": "pop-sticker.mp3",
+          "frame": 1320,
+          "volume": 0.5
+        },
+        {
+          "name": "pop-sticker.mp3",
+          "frame": 1360,
+          "volume": 0.5
+        }
+      ],
+      "emphasis": [
+        "gà ta",
+        "thịt thỏ"
+      ]
+    },
+    {
+      "id": "S08_PHUDAT_MARKET",
+      "shot": "S08_PHUDAT_MARKET",
+      "start": 1422,
+      "end": 1687,
+      "text": "Chợ Phù Dật chợ chuột số 1 Việt Nam mỗi ngày tiêu thụ 5000 ki-lô-gam nguyên cung đường 3km bán chuột không bán gì khác có cả khu sỉ và lẻ",
+      "visual": "video-broll",
+      "highlightColor": null,
+      "sfx": [
+        {
+          "name": "chime-fact.mp3",
+          "frame": 1400,
+          "volume": 0.5
+        },
+        {
+          "name": "pop-sticker.mp3",
+          "frame": 1500,
+          "volume": 0.5
+        },
+        {
+          "name": "pop-sticker.mp3",
+          "frame": 1600,
+          "volume": 0.5
+        }
+      ],
+      "emphasis": [
+        "Phù Dật",
+        "số một",
+        "Việt Nam",
+        "năm nghìn",
+        "ba ki-lô-mét"
+      ]
+    },
+    {
+      "id": "S09_PRICE_KFC",
+      "shot": "S09_PRICE_KFC",
+      "start": 1687,
+      "end": 1857,
+      "text": "Giá 150 nghìn một dĩa đắt hơn KFC nhưng dân miền Tây ăn không cần suy nghĩ",
+      "visual": "stat-pillar-bg",
+      "highlightColor": "#F8B147",
+      "sfx": [
+        {
+          "name": "impact-hook.mp3",
+          "frame": 1690,
+          "volume": 0.6
+        }
+      ],
+      "emphasis": [
+        "một trăm năm mươi nghìn",
+        "KFC",
+        "miền Tây"
+      ]
+    },
+    {
+      "id": "S10_GLOBAL_RAT_DISHES",
+      "shot": "S10_GLOBAL_RAT_DISHES",
+      "start": 1857,
+      "end": 2295,
+      "text": "Mà không chỉ Việt Nam đâu Pháp năm 1870 Paris bị vây hãm người ta ăn chuột để sống qua mùa đói Ghana ngày hôm nay thịt chuột bụi rậm là đặc sản đắt tiền còn miền Tây mình nướng lu đất 30 năm rồi cùng 1 con vật 3 câu chuyện khác nhau",
+      "visual": "carousel-3panel",
+      "highlightColor": null,
+      "sfx": [
+        {
+          "name": "whoosh-transition.mp3",
+          "frame": 1860,
+          "volume": 0.55
+        },
+        {
+          "name": "chime-fact.mp3",
+          "frame": 2000,
+          "volume": 0.5
+        },
+        {
+          "name": "chime-fact.mp3",
+          "frame": 2140,
+          "volume": 0.5
+        }
+      ],
+      "emphasis": [
+        "Pháp",
+        "một tám bảy mươi",
+        "Paris",
+        "Ghana",
+        "đặc sản",
+        "miền Tây",
+        "nướng lu"
+      ]
+    },
+    {
+      "id": "S11_FAO_HEALTH",
+      "shot": "S11_FAO_HEALTH",
+      "start": 2295,
+      "end": 2570,
+      "text": "Tổ chức Lương thực Liên Hợp Quốc xác nhận thịt chuột đồng giàu đạm ít mỡ an toàn nếu chế biến đúng cách không phải món lạ đâu là món bị hiểu nhầm suốt nhiều năm thôi",
+      "visual": "credibility-stamp",
+      "highlightColor": "#C8302D",
+      "sfx": [
+        {
+          "name": "chime-fact.mp3",
+          "frame": 2300,
+          "volume": 0.5
+        },
+        {
+          "name": "pop-sticker.mp3",
+          "frame": 2480,
+          "volume": 0.5
+        }
+      ],
+      "emphasis": [
+        "FAO",
+        "Liên Hợp Quốc",
+        "đạm",
+        "an toàn",
+        "hiểu nhầm"
+      ]
+    },
+    {
+      "id": "S12_CTA",
+      "shot": "S12_CTA",
+      "start": 2570,
+      "end": 2724,
+      "text": "Bạn dám thử món này không Bình luận món bạn muốn xem tiếp theo dõi kênh Trạm Dừng Mlem nha",
+      "visual": "logo-cta",
+      "highlightColor": "#E85D2F",
+      "sfx": [
+        {
+          "name": "mlem-sting.mp3",
+          "frame": 2680,
+          "volume": 0.7
+        }
+      ],
+      "emphasis": [
+        "dám thử",
+        "Trạm Dừng Mlem"
+      ]
+    }
+  ],
+  "audio": {
+    "voiceover": "chuotdong/chuot-dong-voiceover.mp3",
+    "bgm": "audio/bgm-pillarB.mp3",
+    "bgmVolume": 0.18
+  }
+}

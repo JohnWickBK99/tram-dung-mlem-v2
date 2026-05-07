@@ -1,0 +1,111 @@
+// Refactored BunChaHaNoi composition — applies Universal Theme v1.0 (Pillar A)
+// Structure: per-scene <Sequence> renders matching component from SHOT_MAP
+// + audio lanes + karaoke subtitle + pillar badge + channel watermark.
+import React from 'react';
+import {
+  AbsoluteFill,
+  Audio,
+  Sequence,
+  staticFile,
+  useVideoConfig,
+} from 'remotion';
+import { SHOT_MAP, SubtitleKaraoke, PillarBadge, ChannelMark, COLOR } from '../scenes/bun-cha';
+
+export type BunChaScene = {
+  index: number;
+  start: number;
+  end: number;
+  text: string;
+  shot: string;
+};
+
+type Props = { scenes: BunChaScene[] };
+
+export const BunChaHaNoi: React.FC<Props> = ({ scenes }) => {
+  const { fps, durationInFrames } = useVideoConfig();
+
+  // ─── audio lanes (kept identical to original) ───
+  const sceneStart = (shotKey: string) => {
+    const s = scenes.find((sc) => sc.shot === shotKey);
+    return s ? Math.round(s.start * fps) : 0;
+  };
+  const sfxFireFrom = sceneStart('S08_GRILL_FLAME');
+  const sfxWaterFrom = sceneStart('S09_SAUCE_RATIO');
+  const sfxSwooshFrom = Math.max(0, sceneStart('S14_CTA') - 12);
+
+  const fadeInEnd = fps * 1;
+  const fadeOutStart = durationInFrames - fps * 1.5;
+  const bgmTarget = 0.16;
+  const bgmVolume = (f: number) => {
+    if (f < fadeInEnd) return (f / fadeInEnd) * bgmTarget;
+    if (f > fadeOutStart) return Math.max(0, ((durationInFrames - f) / (fps * 1.5))) * bgmTarget;
+    return bgmTarget;
+  };
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: COLOR.bgPage }}>
+      {/* Voiceover */}
+      <Audio src={staticFile('bun-cha-voiceover.MP3')} volume={1.0} />
+
+      {/* BGM */}
+      <Audio src={staticFile('audio/bun-cha/bgm.mp3')} volume={bgmVolume} />
+
+      {/* SFX cues */}
+      <Sequence durationInFrames={fps * 3} layout="none">
+        <Audio src={staticFile('audio/bun-cha/sfx_grill_sizzle.mp3')} volume={0.45} />
+      </Sequence>
+      <Sequence from={sfxFireFrom} durationInFrames={fps * 3} layout="none">
+        <Audio src={staticFile('audio/bun-cha/sfx_fire_burst.mp3')} volume={0.40} />
+      </Sequence>
+      <Sequence from={sfxWaterFrom} durationInFrames={fps * 2} layout="none">
+        <Audio src={staticFile('audio/bun-cha/sfx_water_drop.mp3')} volume={0.55} />
+      </Sequence>
+      <Sequence
+        from={sfxSwooshFrom}
+        durationInFrames={Math.max(1, durationInFrames - sfxSwooshFrom)}
+        layout="none"
+      >
+        <Audio src={staticFile('audio/bun-cha/sfx_logo_swoosh.mp3')} volume={0.65} />
+      </Sequence>
+
+      {/* Visual scenes */}
+      {scenes.map((scene) => {
+        const fromFrame = Math.round(scene.start * fps);
+        const durFrames = Math.max(1, Math.round((scene.end - scene.start) * fps));
+        const ShotComponent = SHOT_MAP[scene.shot];
+        return (
+          <Sequence
+            key={`vis-${scene.index}`}
+            from={fromFrame}
+            durationInFrames={durFrames}
+            layout="none"
+            name={`#${scene.index + 1} ${scene.shot}`}
+          >
+            {ShotComponent ? <ShotComponent /> : <AbsoluteFill style={{ background: COLOR.bgPage }} />}
+          </Sequence>
+        );
+      })}
+
+      {/* Karaoke subtitle layer (per scene) */}
+      {scenes.map((scene) => {
+        const fromFrame = Math.round(scene.start * fps);
+        const durFrames = Math.max(1, Math.round((scene.end - scene.start) * fps));
+        return (
+          <Sequence
+            key={`sub-${scene.index}`}
+            from={fromFrame}
+            durationInFrames={durFrames}
+            layout="none"
+            name={`sub#${scene.index + 1}`}
+          >
+            <SubtitleKaraoke text={scene.text} />
+          </Sequence>
+        );
+      })}
+
+      {/* Persistent chrome */}
+      <PillarBadge />
+      <ChannelMark />
+    </AbsoluteFill>
+  );
+};

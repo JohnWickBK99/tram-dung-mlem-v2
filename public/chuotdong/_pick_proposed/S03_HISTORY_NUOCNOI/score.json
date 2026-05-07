@@ -1,0 +1,25 @@
+{
+  "shot": "S03_HISTORY_NUOCNOI",
+  "outname": "09_history_nuocnoi.jpg",
+  "kind": "image",
+  "best_score": 60.20181113530001,
+  "best_path": "public/chuotdong/raw_pool/S03_HISTORY_NUOCNOI/pixabay_00.jpg",
+  "all_candidates": [
+    {
+      "score": 60.20181113530001,
+      "path": "public/chuotdong/raw_pool/S03_HISTORY_NUOCNOI/pixabay_00.jpg"
+    },
+    {
+      "score": 56.162427430792725,
+      "path": "public/chuotdong/raw_pool/S03_HISTORY_NUOCNOI/pixabay_03.jpg"
+    },
+    {
+      "score": 55.40499707319714,
+      "path": "public/chuotdong/raw_pool/S03_HISTORY_NUOCNOI/pixabay_02.jpg"
+    },
+    {
+      "score": 44.42846983462565,
+      "path": "public/chuotdong/raw_pool/S03_HISTORY_NUOCNOI/pixabay_01.jpg"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "shot": "S06_BITE_REACTION",
+  "outname": "videos/05_bite.mp4",
+  "kind": "video",
+  "best_score": 58.142361111111114,
+  "best_path": "public/chuotdong/raw_pool/S06_BITE_REACTION/mixkit_00.mp4",
+  "all_candidates": [
+    {
+      "score": 58.142361111111114,
+      "path": "public/chuotdong/raw_pool/S06_BITE_REACTION/mixkit_00.mp4"
+    },
+    {
+      "score": 56.941780514187286,
+      "path": "public/chuotdong/raw_pool/S06_BITE_REACTION/mixkit_01.mp4"
+    }
+  ]
+}

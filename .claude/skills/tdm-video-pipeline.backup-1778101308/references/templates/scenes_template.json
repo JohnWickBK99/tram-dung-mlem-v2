@@ -1,0 +1,28 @@
+{
+  "slug": "{{SLUG}}",
+  "title": "{{TITLE}}",
+  "totalFrames": 0,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "pillar": "{{PILLAR}}",
+  "scenes": [
+    {
+      "id": "S01_HOOK",
+      "shot": "S01_HOOK",
+      "start": 0,
+      "end": 90,
+      "text": "TODO hook text 0-3s",
+      "visual": "static-photo",
+      "highlightColor": null,
+      "sfx": [
+        { "name": "impact-hook.mp3", "frame": 0, "volume": 0.6 }
+      ]
+    }
+  ],
+  "audio": {
+    "voiceover": "{{SLUG}}/{{SLUG_DASH}}-voiceover.mp3",
+    "bgm": "audio/bgm-pillar{{PILLAR}}.mp3",
+    "bgmVolume": 0.18
+  }
+}

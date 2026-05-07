@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bún Chả Hà Nội — 14 màn riêng (Pillar A)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" />
+<style>
+  :root {
+    --yellow:#F8B147; --orange:#F39820; --coral:#E85D2F; --red:#C8302D;
+    --teal:#4FC3D1; --cream:#FFF4E0; --white:#FFF; --off:#FFFAF0;
+    --ink:#1A1A1A; --body:#5C5443; --pillarA-light:#FFE0A8; --pillarA-dark:#B87808;
+    --display:'Baloo 2', system-ui, sans-serif;
+    --heading:'Be Vietnam Pro', system-ui, sans-serif;
+    --body-f:'Be Vietnam Pro', system-ui, sans-serif;
+    --mono:'JetBrains Mono', ui-monospace, monospace;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--off);color:var(--ink);font-family:var(--body-f)}
+  .page{padding:48px;max-width:1600px;margin:0 auto}
+
+  /* Header */
+  .head-card{
+    background:var(--yellow); color:var(--ink);
+    border:6px solid var(--ink); border-radius:32px;
+    box-shadow:14px 14px 0 0 var(--ink);
+    padding:48px; margin-bottom:64px;
+  }
+  .head-eyebrow{
+    display:inline-flex; gap:10px; align-items:center;
+    background:var(--ink); color:var(--yellow);
+    padding:8px 20px; border-radius:999px;
+    font-family:var(--heading); font-weight:800; font-size:14px; letter-spacing:2px; text-transform:uppercase;
+    margin-bottom:20px;
+  }
+  .head-title{font-family:var(--display); font-weight:800; font-size:88px; line-height:0.95; margin:0 0 16px;}
+  .head-sub{font-family:var(--heading); font-weight:600; font-size:22px; max-width:780px; margin:0;}
+
+  /* Grid */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+    gap:48px;
+  }
+  .card{
+    display:flex; flex-direction:column; gap:14px;
+  }
+  .card-meta{
+    background:var(--white); border:4px solid var(--ink); border-radius:16px;
+    box-shadow:6px 6px 0 0 var(--ink);
+    padding:14px 18px;
+    display:flex; align-items:center; gap:12px;
+  }
+  .badge{
+    width:42px; height:42px; border-radius:50%;
+    background:var(--ink); color:var(--yellow);
+    display:inline-flex; align-items:center; justify-content:center;
+    font-family:var(--display); font-weight:800; font-size:22px;
+  }
+  .card-meta .info{display:flex; flex-direction:column; gap:2px;}
+  .card-meta .key{font-family:var(--mono); font-weight:600; font-size:11px; color:var(--body); letter-spacing:1px;}
+  .card-meta .name{font-family:var(--display); font-weight:800; font-size:18px;}
+
+  /* Phone frame 9:16 */
+  .frame{
+    width:100%; aspect-ratio:9/16;
+    background:var(--ink);
+    border:6px solid var(--ink); border-radius:32px;
+    box-shadow:14px 14px 0 0 var(--ink);
+    overflow:hidden; position:relative;
+  }
+  .scene{
+    position:absolute; inset:0;
+    width:1080px; height:1920px;
+    transform-origin:top left;
+    /* JS sets transform: scale */
+  }
+
+  /* ─── Scene generic positioning ─── */
+  .abs{position:absolute; inset:0;}
+  /* centered content column — reserves top 200px (badge) + bottom 480px (sub band) */
+  .center{
+    display:flex; align-items:center; justify-content:center; flex-direction:column;
+    padding:200px 60px 480px;
+  }
+  .pillar-badge{
+    position:absolute; top:60px; left:60px; z-index:10;
+    display:flex; align-items:center; gap:14px;
+    background:var(--yellow); color:var(--ink);
+    border:4px solid var(--ink); border-radius:999px;
+    padding:12px 22px 12px 14px;
+    box-shadow:8px 8px 0 0 var(--ink);
+    font-family:var(--heading); font-weight:800;
+    letter-spacing:1.5px; font-size:28px;
+  }
+  .pillar-badge .dot{
+    width:44px; height:44px; border-radius:50%;
+    background:var(--ink); color:var(--yellow);
+    display:inline-flex; align-items:center; justify-content:center;
+    font-family:var(--display); font-weight:800; font-size:30px;
+  }
+  .channel-mark{
+    position:absolute; top:60px; right:60px; z-index:10;
+    background:var(--ink); color:var(--yellow);
+    border:3px solid var(--ink); border-radius:999px;
+    padding:10px 22px;
+    box-shadow:4px 4px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800;
+    font-size:26px; letter-spacing:2px; text-transform:uppercase;
+  }
+
+  /* karaoke subtitle — reserved bottom band */
+  .sub{
+    position:absolute; bottom:140px; left:60px; right:60px; z-index:9;
+    display:flex; flex-wrap:wrap; justify-content:center; gap:10px 14px;
+    max-height:340px; overflow:hidden;
+  }
+  .sub span{
+    font-family:var(--body-f); font-weight:700; font-size:42px;
+    color:var(--white); -webkit-text-stroke:4px var(--ink); paint-order:stroke fill;
+    line-height:1.3; padding:4px 0;
+  }
+  .sub span.hl{
+    color:var(--ink); background:var(--yellow);
+    border:3px solid var(--ink);
+    box-shadow:4px 4px 0 0 var(--ink);
+    padding:4px 14px; border-radius:8px; -webkit-text-stroke:0;
+  }
+
+  /* photo backdrop fallback (no real photo → use gradient placeholder) */
+  .photo{
+    position:absolute; inset:0;
+    background:
+      radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.5) 100%),
+      var(--placeholder, var(--pillarA-dark));
+  }
+  .photo.with-tint::after{
+    content:''; position:absolute; inset:0;
+    background:var(--tint, transparent); mix-blend-mode:multiply;
+  }
+
+  /* Outline text */
+  .outline-h{
+    font-family:var(--display); font-weight:800;
+    -webkit-text-stroke:6px var(--ink); paint-order:stroke fill;
+    text-shadow:0 8px 0 var(--ink);
+    line-height:0.95;
+    white-space:nowrap;
+  }
+  .outline-b{
+    font-family:var(--display); font-weight:800;
+    -webkit-text-stroke:4px var(--ink); paint-order:stroke fill;
+    text-shadow:0 4px 0 var(--ink);
+  }
+
+  /* Sticker chips */
+  .chip{
+    background:var(--cream); color:var(--ink);
+    border:4px solid var(--ink); border-radius:999px;
+    padding:14px 32px;
+    box-shadow:8px 8px 0 0 var(--ink);
+    font-family:var(--heading); font-weight:800;
+    font-size:36px;
+  }
+  .chip.yellow{background:var(--yellow);}
+  .chip.coral{background:var(--coral); color:var(--white);}
+  .chip.teal{background:var(--teal);}
+  .chip.ink{background:var(--ink); color:var(--yellow);}
+  .chip.lg{font-size:52px; padding:16px 38px; box-shadow:14px 14px 0 0 var(--ink); border-width:6px;}
+
+  /* Big monospace stat */
+  .stat{
+    font-family:var(--mono); font-weight:700;
+    font-size:280px; color:var(--ink); line-height:0.9;
+  }
+
+  /* Scene-specific styles ─────────────────────── */
+
+  /* S01 hook */
+  #s01 .photo{--placeholder:linear-gradient(135deg,#8E2F0F 0%,#B87808 100%); --tint:rgba(184,120,8,0.35);}
+  #s01 .title-yellow{color:var(--yellow); font-size:220px; letter-spacing:-6px;}
+  #s01 .khoi-than{
+    background:var(--ink); color:var(--yellow);
+    border:6px solid var(--ink); border-radius:16px;
+    padding:20px 44px; box-shadow:14px 14px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800; font-size:84px; letter-spacing:8px;
+    transform:rotate(-2deg);
+    white-space:nowrap;
+  }
+
+  /* S02 sidewalk */
+  #s02 .photo{--placeholder:linear-gradient(135deg,#FFE0A8 0%,#F8B147 100%); --tint:rgba(255,224,168,0.45);}
+  #s02 .price-block{
+    background:var(--yellow); border:8px solid var(--ink); border-radius:32px;
+    padding:40px 80px; box-shadow:20px 20px 0 0 var(--ink);
+    font-family:var(--mono); font-weight:700; font-size:280px;
+    color:var(--ink); line-height:0.9;
+  }
+  #s02 .suat{font-family:var(--display); font-weight:800; font-size:56px; color:var(--white); -webkit-text-stroke:4px var(--ink); paint-order:stroke fill; white-space:nowrap;}
+
+  /* S03 stat overlay */
+  #s03{background:var(--ink);}
+  #s03 .glow{background:radial-gradient(ellipse at center,var(--pillarA-dark) 0%,var(--ink) 70%);}
+  #s03 .big-stat{
+    font-family:var(--mono); font-weight:700; font-size:300px;
+    color:var(--yellow); line-height:0.9; letter-spacing:-10px;
+    text-shadow:0 12px 0 var(--ink); -webkit-text-stroke:8px var(--ink); paint-order:stroke fill;
+    white-space:nowrap;
+  }
+  #s03 .km-pill{background:var(--coral); color:var(--white); border:6px solid var(--ink); border-radius:16px; padding:14px 42px; box-shadow:14px 14px 0 0 var(--ink); font-family:var(--display); font-weight:800; font-size:88px; letter-spacing:6px;}
+  #s03 .grow-line{width:600px; height:8px; background:var(--yellow); margin-top:20px;}
+  #s03 .tail{font-family:var(--heading); font-weight:700; font-size:56px; color:var(--cream); letter-spacing:2px;}
+  #s03 .tail .hl{background:var(--yellow); color:var(--ink); padding:4px 12px; border-radius:6px;}
+
+  /* S04 old hanoi */
+  #s04 .photo{--placeholder:linear-gradient(135deg,#5C5443 0%,#B87808 100%); --tint:rgba(184,120,8,0.40);}
+  #s04 .ha-noi{color:var(--yellow); font-size:240px; letter-spacing:-6px;}
+  #s04 .bp-pill{background:var(--ink); color:var(--yellow); border:6px solid var(--ink); border-radius:16px; padding:20px 44px; box-shadow:14px 14px 0 0 var(--ink); font-family:var(--heading); font-weight:800; font-size:42px; letter-spacing:4px; text-align:center;}
+
+  /* S06 800 năm */
+  #s06{background:var(--yellow);}
+  #s06 .glow{background:radial-gradient(circle at 50% 50%,var(--pillarA-light) 0%,var(--yellow) 70%);}
+  #s06 .num-800{font-family:var(--display); font-weight:800; font-size:480px; color:var(--ink); line-height:0.9; letter-spacing:-16px; text-shadow:12px 12px 0 var(--coral); white-space:nowrap;}
+  #s06 .nam-tuoi{background:var(--coral); color:var(--white); border:6px solid var(--ink); border-radius:16px; padding:20px 50px; box-shadow:14px 14px 0 0 var(--ink); font-family:var(--display); font-weight:800; font-size:96px; letter-spacing:12px;}
+  #s06 .vu-bang{font-family:var(--heading); font-weight:700; font-size:42px; color:var(--ink); letter-spacing:2px; margin-top:30px;}
+  /* on yellow bg, default karaoke .hl (yellow box) disappears — switch to ink box w/ yellow text */
+  #s06 .sub span.hl{
+    background:var(--ink); color:var(--yellow);
+    -webkit-text-stroke:0;
+    border:3px solid var(--ink);
+    box-shadow:4px 4px 0 0 var(--coral);
+    padding:4px 14px; border-radius:8px;
+  }
+
+  /* S07 meat */
+  #s07 .photo{--placeholder:linear-gradient(135deg,#7A1614 0%,#B87808 100%); --tint:rgba(40,8,8,0.55);}
+  #s07 .col{justify-content:flex-start; gap:22px;}
+  #s07 .item{
+    background:var(--cream); color:var(--ink);
+    border:6px solid var(--ink); border-radius:16px;
+    padding:14px 36px; box-shadow:8px 8px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800; font-size:60px;
+    white-space:nowrap;
+  }
+  #s07 .item.emp{background:var(--yellow); padding:18px 44px; box-shadow:14px 14px 0 0 var(--ink); font-size:84px;}
+  #s07 .item.sm{font-size:42px; padding:12px 24px; box-shadow:6px 6px 0 0 var(--ink);}
+
+  /* S08 grill */
+  #s08{background:var(--coral);}
+  #s08 .photo{--placeholder:linear-gradient(135deg,#C8302D 0%,#E85D2F 100%); --tint:rgba(232,93,47,0.50);}
+  #s08 .chay-canh{color:var(--yellow); font-size:220px; letter-spacing:-4px;}
+  #s08 .vang-rom{background:var(--yellow); color:var(--ink); border:6px solid var(--ink); border-radius:16px; padding:18px 46px; box-shadow:14px 14px 0 0 var(--ink); font-family:var(--display); font-weight:800; font-size:84px; letter-spacing:6px;}
+  #s08 .hot-fact{background:var(--white); color:var(--coral); border:4px solid var(--ink); border-radius:999px; padding:12px 28px; box-shadow:8px 8px 0 0 var(--ink); font-family:var(--heading); font-weight:800; font-size:38px; letter-spacing:4px; transform:rotate(-6deg);}
+
+  /* S09 sauce ratio */
+  #s09{background:var(--cream);}
+  #s09 .photo{--placeholder:linear-gradient(135deg,#FFE0A8 0%,#FFF4E0 100%); --tint:rgba(255,244,224,0.55);}
+  #s09 .ratio-row{display:flex; gap:24px; margin-top:20px;}
+  #s09 .col-cell{
+    width:200px; padding:32px 0;
+    border:8px solid var(--ink); border-radius:24px;
+    box-shadow:20px 20px 0 0 var(--ink); text-align:center;
+  }
+  #s09 .col-cell .num{font-family:var(--mono); font-weight:700; font-size:180px; line-height:0.9;}
+  #s09 .col-cell .lab{font-family:var(--heading); font-weight:800; font-size:36px; letter-spacing:4px; margin-top:14px;}
+  #s09 .col-cell.y{background:var(--yellow); color:var(--ink);}
+  #s09 .col-cell.c{background:var(--cream); color:var(--ink);}
+  #s09 .col-cell.coral{background:var(--coral); color:var(--white);}
+  #s09 .extras{font-family:var(--heading); font-weight:700; font-size:48px; color:var(--ink); margin-top:20px; letter-spacing:2px;}
+  #s09 .extras .hl{background:var(--yellow); padding:4px 14px; border-radius:6px; border:3px solid var(--ink);}
+
+  /* S10 noodles */
+  #s10{background:var(--pillarA-light);}
+  #s10 .photo{--placeholder:linear-gradient(135deg,#BEE7ED 0%,#FFE0A8 100%); --tint:rgba(78,195,209,0.20);}
+  #s10 .bun-roi{color:var(--white); font-size:200px; letter-spacing:-2px;}
+  #s10 .rau{font-family:var(--heading); font-weight:700; font-size:48px; color:var(--ink);}
+  #s10 .herbs{display:flex; flex-wrap:wrap; gap:16px; justify-content:center; max-width:920px; margin-top:14px;}
+  #s10 .herb{background:var(--cream); color:var(--ink); border:4px solid var(--ink); border-radius:999px; padding:16px 36px; box-shadow:8px 8px 0 0 var(--ink); font-family:var(--heading); font-weight:800; font-size:44px;}
+
+  /* Shop cards (S11/S12/S13) */
+  .shop .photo{--placeholder:linear-gradient(135deg,#5C5443 0%,#B87808 100%); --tint:rgba(0,0,0,0.45);}
+  .shop-card{
+    width:880px; padding:60px 50px 50px;
+    background:var(--cream); color:var(--ink);
+    border:8px solid var(--ink); border-radius:32px;
+    box-shadow:20px 20px 0 0 var(--ink);
+    text-align:center; position:relative;
+  }
+  .shop-card .num-circle{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:120px; height:120px; border-radius:50%;
+    border:6px solid var(--ink); box-shadow:8px 8px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800; font-size:80px;
+    color:var(--white); margin-bottom:30px;
+  }
+  .shop-card .name{font-family:var(--display); font-weight:800; font-size:130px; line-height:1.0; letter-spacing:-2px;}
+  .shop-card .addr{
+    margin-top:24px; display:inline-flex; gap:8px; align-items:center;
+    background:var(--yellow); color:var(--ink);
+    border:4px solid var(--ink); border-radius:999px;
+    padding:12px 28px; box-shadow:4px 4px 0 0 var(--ink);
+    font-family:var(--heading); font-weight:700; font-size:40px;
+  }
+  .shop-card .tag{margin-top:22px; font-family:var(--heading); font-weight:700; font-size:38px; color:var(--body);}
+  .shop-card .stamp{
+    position:absolute; top:-30px; right:-40px;
+    background:var(--coral); color:var(--white);
+    border:6px solid var(--ink); border-radius:999px;
+    padding:14px 28px; box-shadow:8px 8px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800; font-size:40px; letter-spacing:2px;
+    transform:rotate(12deg);
+  }
+
+  /* S14 CTA */
+  #s14{background:var(--yellow);}
+  #s14 .pat{background:repeating-linear-gradient(45deg,var(--yellow) 0 60px,var(--pillarA-light) 60px 120px); opacity:0.5;}
+  #s14 .nbs{background:var(--ink); color:var(--yellow); border:4px solid var(--ink); border-radius:999px; padding:14px 40px; box-shadow:8px 8px 0 0 var(--ink); font-family:var(--heading); font-weight:800; font-size:44px; letter-spacing:6px; text-transform:uppercase;}
+  #s14 .follow{color:var(--coral); font-size:240px; letter-spacing:-6px;}
+  #s14 .cta-pill{background:var(--coral); color:var(--white); border:8px solid var(--ink); border-radius:999px; padding:28px 64px; box-shadow:20px 20px 0 0 var(--ink); font-family:var(--display); font-weight:800; font-size:72px; letter-spacing:4px; text-transform:uppercase; white-space:nowrap;}
+  #s14 .mn{font-family:var(--heading); font-weight:700; font-size:46px; color:var(--ink); letter-spacing:2px;}
+  #s14 .mn .hl{background:var(--ink); color:var(--yellow); padding:4px 14px; border-radius:6px;}
+  /* on yellow + striped bg, default karaoke .hl (yellow) disappears — switch to coral box w/ white text */
+  #s14 .sub{bottom:220px;}
+  #s14 .sub span.hl{
+    background:var(--coral); color:var(--white);
+    -webkit-text-stroke:2px var(--ink);
+    border:3px solid var(--ink);
+    box-shadow:5px 5px 0 0 var(--ink);
+    padding:6px 16px; border-radius:10px;
+    transform:rotate(-1deg);
+  }
+
+  /* foot */
+  .foot{margin-top:80px; padding-top:24px; border-top:2px dashed var(--ink); font-family:var(--mono); font-size:13px; color:var(--body); display:flex; justify-content:space-between;}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="head-card">
+    <span class="head-eyebrow">● Bún Chả Hà Nội · Pillar A · 14 màn riêng</span>
+    <h1 class="head-title">Apply Universal Theme<br/>vào BunChaHaNoi.tsx</h1>
+    <p class="head-sub">14 scene component riêng, mỗi cái 1 file trong <code>src/scenes/bun-cha/</code>. Pillar A (vàng dominant), Baloo 2 + Be VN Pro, sticker chunky outline 4-6px, shadow offset solid. Không Smoke, không Ken Burns, không Playfair.</p>
+  </header>
+
+  <div class="grid" id="grid"></div>
+
+  <div class="foot">
+    <span>Trạm Dừng Mlem · BunChaHaNoi v2 · Pillar A theme</span>
+    <span>1080×1920 · scaled 1:N to fit cards</span>
+  </div>
+</div>
+
+<template id="t-pillar">
+  <div class="pillar-badge"><span class="dot">A</span><span>KHẨU PHẦN ĐẶC THÙ</span></div>
+  <div class="channel-mark">Trạm Dừng Mlem</div>
+</template>
+
+<template id="t-sub">
+  <div class="sub" data-words="">
+  </div>
+</template>
+
+<script>
+  // 14 scenes definition (matches code in src/scenes/bun-cha/)
+  const scenes = [
+    { id:'s01', key:'S01_HOOK_GRILL',    name:'Hook Grill',          sub:'Bún chả Hà Nội món quốc dân khói than vỉa hè', hl:[0,1] },
+    { id:'s02', key:'S02_SIDEWALK',      name:'Sidewalk',            sub:'Sáu mươi nghìn một suất no căng bụng giữa phố cổ', hl:[0,1,2] },
+    { id:'s03', key:'S03_STAT_OVERLAY',  name:'Stat 13.000 KM',      sub:'Bay mười ba ngàn kilomet vẫn đến ăn cho được', hl:[1,2,3] },
+    { id:'s04', key:'S04_OLD_HANOI',     name:'Old Hà Nội',          sub:'Phố cổ Hà Nội nơi bếp than hoa cháy suốt đêm', hl:[2,3] },
+    { id:'s06', key:'S06_800_YEARS',     name:'800 năm tuổi',        sub:'Gần tám trăm năm tuổi từ thời Lý Trần đến nay', hl:[1,2,3] },
+    { id:'s07', key:'S07_MEAT_MARINADE', name:'Yếu tố ① Thịt',       sub:'Yếu tố một thịt vai bảy nạc ba mỡ ướp mật mía', hl:[3,4,5,6,7,8] },
+    { id:'s08', key:'S08_GRILL_FLAME',   name:'Cháy cạnh',           sub:'Nướng trên than hoa cháy cạnh vàng rộm thơm phức', hl:[4,5,6,7] },
+    { id:'s09', key:'S09_SAUCE_RATIO',   name:'Yếu tố ② Tỉ lệ',      sub:'Yếu tố hai tỉ lệ vàng một mắm một đường một giấm bốn nước', hl:[3,4,5] },
+    { id:'s10', key:'S10_NOODLES_HERBS', name:'Yếu tố ③ Bún rau',    sub:'Yếu tố ba bún rối tươi cùng rau sống xà lách kinh giới tía tô', hl:[3,4,5] },
+    { id:'s11', key:'S11_HUONG_LIEN',    name:'Hương Liên',          sub:'Hương Liên hai bốn Lê Văn Hưu nơi Obama từng ghé năm hai ngàn mười sáu', hl:[0,1] },
+    { id:'s12', key:'S12_DAC_KIM',       name:'Đắc Kim',             sub:'Đắc Kim một Hàng Mành gia truyền từ năm sáu mươi lăm', hl:[0,1] },
+    { id:'s13', key:'S13_TUONG_BEO',     name:'Tưởng Béo',           sub:'Tưởng Béo ngõ Đặng Văn Ngữ vỉa hè giá sinh viên ngon bổ rẻ', hl:[0,1] },
+    { id:'s14', key:'S14_CTA',           name:'CTA Follow',          sub:'Nếu bạn thấy ngon hãy follow Trạm Dừng Mlem', hl:[5,6,7,8] },
+  ];
+
+  // Render the visual content for a given scene id
+  function content(id){
+    if(id==='s01') return `
+      <div class="abs photo with-tint"></div>
+      <div class="abs center">
+        <div class="chip yellow lg" style="transform:rotate(-1deg)">⚡ Hà Nội · 800 năm</div>
+        <div style="height:30px"></div>
+        <div class="outline-h title-yellow">BÚN CHẢ</div>
+        <div style="height:30px"></div>
+        <div class="khoi-than">KHÓI THAN</div>
+      </div>`;
+    if(id==='s02') return `
+      <div class="abs photo with-tint"></div>
+      <div class="abs center" style="gap:24px">
+        <div style="display:flex;gap:16px">
+          <div class="chip" style="transform:rotate(-3deg)">ghế nhựa</div>
+          <div class="chip" style="transform:rotate(0deg)">vỉa hè</div>
+          <div class="chip" style="transform:rotate(3deg)">khói than</div>
+        </div>
+        <div class="price-block">60K</div>
+        <div class="suat">MỘT SUẤT BÚN CHẢ</div>
+        <div style="font-family:var(--body-f); font-weight:500; font-size:36px; color:var(--cream); letter-spacing:4px; -webkit-text-stroke:2px var(--ink); paint-order:stroke fill;">≈ 2.5 USD</div>
+      </div>`;
+    if(id==='s03') return `
+      <div class="abs glow"></div>
+      <div class="abs center" style="gap:28px">
+        <div class="chip yellow" style="font-size:36px">BAY ✈</div>
+        <div class="big-stat">13.000</div>
+        <div class="km-pill">KILOMET</div>
+        <div class="grow-line"></div>
+        <div class="tail">800 năm <span class="hl">khói than</span></div>
+      </div>`;
+    if(id==='s04') return `
+      <div class="abs photo with-tint"></div>
+      <div class="abs center" style="gap:30px">
+        <div class="chip" style="background:var(--cream)">📜 Phố cổ</div>
+        <div class="outline-h ha-noi">HÀ NỘI</div>
+        <div class="bp-pill">BẾP THAN HOA · GÁNH HÀNG RONG</div>
+      </div>`;
+    if(id==='s06') return `
+      <div class="abs glow"></div>
+      <div class="abs center" style="gap:24px">
+        <div class="chip ink">GẦN</div>
+        <div class="num-800">800</div>
+        <div class="nam-tuoi">NĂM TUỔI</div>
+        <div class="vu-bang">— Vũ Bằng</div>
+      </div>`;
+    if(id==='s07') return `
+      <div class="abs photo with-tint"></div>
+      <div class="abs center col">
+        <div class="chip yellow lg" style="transform:rotate(-2deg)">YẾU TỐ ① · THỊT</div>
+        <div style="height:30px"></div>
+        <div class="item" style="transform:rotate(-1.5deg)">thịt vai</div>
+        <div class="item emp">7 nạc · 3 mỡ</div>
+        <div style="display:flex; gap:18px; justify-content:center; flex-wrap:nowrap;">
+          <div class="item sm" style="transform:rotate(-1.5deg)">mắm cốt</div>
+          <div class="item sm" style="transform:rotate(1.5deg)">hành tím</div>
+          <div class="item sm" style="transform:rotate(-1.5deg)">mật mía</div>
+        </div>
+      </div>`;
+    if(id==='s08') return `
+      <div class="abs photo with-tint"></div>
+      <div class="abs center" style="gap:28px">
+        <div class="outline-h chay-canh">CHÁY CẠNH</div>
+        <div class="vang-rom">VÀNG RỘM</div>
+        <div class="hot-fact">🔥 HOT FACT</div>
+      </div>`;
+    if(id==='s09') return `
+      <div class="abs photo with-tint"></div>
+      <div class="abs center" style="gap:36px">
+        <div class="chip yellow lg" style="transform:rotate(-2deg)">YẾU TỐ ② · TỈ LỆ VÀNG</div>
+        <div class="ratio-row">
+          <div class="col-cell y"><div class="num">1</div><div class="lab">MẮM</div></div>
+          <div class="col-cell c"><div class="num">1</div><div class="lab">ĐƯỜNG</div></div>
+          <div class="col-cell c"><div class="num">1</div><div class="lab">GIẤM</div></div>
+          <div class="col-cell coral"><div class="num">4</div><div class="lab">NƯỚC</div></div>
+        </div>
+        <div class="extras">+ tỏi · ớt · <span class="hl">đu đủ xanh</span></div>
+      </div>`;
+    if(id==='s10') return `
+      <div class="abs photo with-tint"></div>
+      <div class="abs center" style="gap:26px">
+        <div class="chip teal lg" style="transform:rotate(-2deg); margin-bottom:40px">YẾU TỐ ③ · BÚN & RAU</div>
+        <div class="outline-h bun-roi">BÚN RỐI</div>
+        <div class="rau">+ rau sống tươi rói 🌿</div>
+        <div class="herbs">
+          <div class="herb" style="transform:rotate(-2deg)">xà lách</div>
+          <div class="herb" style="transform:rotate(2deg)">kinh giới</div>
+          <div class="herb" style="transform:rotate(-2deg)">tía tô</div>
+          <div class="herb" style="transform:rotate(2deg)">húng láng</div>
+        </div>
+      </div>`;
+    if(id==='s11' || id==='s12' || id==='s13'){
+      const data = {
+        s11:{n:'1', name:'Hương Liên', addr:'24 Lê Văn Hưu', tag:'Obama & Bourdain · 2016', tone:'var(--red)'},
+        s12:{n:'2', name:'Đắc Kim', addr:'1 Hàng Mành', tag:'Gia truyền từ 1965', tone:'var(--yellow)'},
+        s13:{n:'3', name:'Tưởng Béo', addr:'Ngõ Đặng Văn Ngữ', tag:'Vỉa hè · giá sinh viên', tone:'var(--coral)'},
+      }[id];
+      return `
+        <div class="abs photo with-tint"></div>
+        <div class="abs center">
+          <div class="shop-card">
+            <div class="num-circle" style="background:${data.tone}">${data.n}</div>
+            <div class="name">${data.name}</div>
+            <div class="addr">📍 ${data.addr}</div>
+            <div class="tag">${data.tag}</div>
+            <div class="stamp">MLEM!</div>
+          </div>
+        </div>`;
+    }
+    if(id==='s14') return `
+      <div class="abs pat"></div>
+      <div class="abs center" style="gap:26px">
+        <div class="nbs">NẾU BẠN THẤY NGON 😋</div>
+        <div class="outline-h follow">FOLLOW</div>
+        <div class="cta-pill">Trạm Dừng Mlem</div>
+        <div class="mn">một <span class="hl">món ngon</span> mỗi ngày</div>
+      </div>`;
+    return '';
+  }
+
+  // build subtitle html with karaoke highlight
+  function buildSub(text, hlIdx){
+    const words = text.split(/\s+/);
+    return `<div class="sub">${words.map((w,i)=>`<span class="${hlIdx.includes(i)?'hl':''}">${w}</span>`).join('')}</div>`;
+  }
+
+  // class for shop scenes
+  function isShop(id){return ['s11','s12','s13'].includes(id);}
+
+  const grid = document.getElementById('grid');
+  scenes.forEach((s, idx) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="card-meta">
+        <span class="badge">${idx+1}</span>
+        <div class="info">
+          <span class="key">${s.key}</span>
+          <span class="name">${s.name}</span>
+        </div>
+      </div>
+      <div class="frame">
+        <div class="scene${isShop(s.id)?' shop':''}" id="${s.id}">
+          ${content(s.id)}
+          <div class="pillar-badge"><span class="dot">A</span><span>KHẨU PHẦN ĐẶC THÙ</span></div>
+          <div class="channel-mark">Trạm Dừng Mlem</div>
+          ${buildSub(s.sub, s.hl)}
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  // scale 1080×1920 scenes to fit each .frame
+  function rescale(){
+    document.querySelectorAll('.frame').forEach(frame => {
+      const scene = frame.querySelector('.scene');
+      if (!scene) return;
+      const w = frame.clientWidth;
+      const scale = w / 1080;
+      scene.style.transform = `scale(${scale})`;
+    });
+  }
+  window.addEventListener('resize', rescale);
+  // wait one frame then rescale
+  requestAnimationFrame(rescale);
+  setTimeout(rescale, 50);
+</script>
+</body>
+</html>

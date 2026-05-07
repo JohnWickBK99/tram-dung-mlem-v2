@@ -1,0 +1,25 @@
+{
+  "shot": "S08_PHUDAT_MARKET",
+  "outname": "videos/13_phu_dat_broll.mp4",
+  "kind": "video",
+  "best_score": 84.80902777777777,
+  "best_path": "public/chuotdong/raw_pool/S08_PHUDAT_MARKET/pexels_00.mp4",
+  "all_candidates": [
+    {
+      "score": 84.80902777777777,
+      "path": "public/chuotdong/raw_pool/S08_PHUDAT_MARKET/pexels_00.mp4"
+    },
+    {
+      "score": 58.142361111111114,
+      "path": "public/chuotdong/raw_pool/S08_PHUDAT_MARKET/mixkit_00.mp4"
+    },
+    {
+      "score": 56.941780514187286,
+      "path": "public/chuotdong/raw_pool/S08_PHUDAT_MARKET/mixkit_01.mp4"
+    },
+    {
+      "score": 56.29919796557121,
+      "path": "public/chuotdong/raw_pool/S08_PHUDAT_MARKET/pexels_01.mp4"
+    }
+  ]
+}

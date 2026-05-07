@@ -1,0 +1,21 @@
+{
+  "shot": "S10_GLOBAL_RAT_DISHES_PARIS",
+  "outname": "11_paris_siege_1870.jpg",
+  "kind": "image",
+  "best_score": 69.50685243055555,
+  "best_path": "public/chuotdong/raw_pool/S10_GLOBAL_RAT_DISHES_PARIS/pixabay_00.jpg",
+  "all_candidates": [
+    {
+      "score": 69.50685243055555,
+      "path": "public/chuotdong/raw_pool/S10_GLOBAL_RAT_DISHES_PARIS/pixabay_00.jpg"
+    },
+    {
+      "score": 59.68258101851852,
+      "path": "public/chuotdong/raw_pool/S10_GLOBAL_RAT_DISHES_PARIS/pixabay_02.jpg"
+    },
+    {
+      "score": 42.72665834780092,
+      "path": "public/chuotdong/raw_pool/S10_GLOBAL_RAT_DISHES_PARIS/pixabay_01.jpg"
+    }
+  ]
+}

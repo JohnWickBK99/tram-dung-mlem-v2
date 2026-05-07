@@ -1,0 +1,37 @@
+{
+  "shot": "S01_USA",
+  "outname": "02_usa_exterminator.jpg",
+  "kind": "image",
+  "best_score": 64.80569229697267,
+  "best_path": "public/chuotdong/raw_pool/S01_USA/wiki_01.png",
+  "all_candidates": [
+    {
+      "score": 64.80569229697267,
+      "path": "public/chuotdong/raw_pool/S01_USA/wiki_01.png"
+    },
+    {
+      "score": 59.67131010272573,
+      "path": "public/chuotdong/raw_pool/S01_USA/pexels_03.jpg"
+    },
+    {
+      "score": 59.67131010272573,
+      "path": "public/chuotdong/raw_pool/S01_USA/pexels_02.jpg"
+    },
+    {
+      "score": 59.67131010272573,
+      "path": "public/chuotdong/raw_pool/S01_USA/pexels_01.jpg"
+    },
+    {
+      "score": 59.30996636284722,
+      "path": "public/chuotdong/raw_pool/S01_USA/wiki_00.png"
+    },
+    {
+      "score": 57.828537159118085,
+      "path": "public/chuotdong/raw_pool/S01_USA/pexels_00.jpg"
+    },
+    {
+      "score": 35.22389482060784,
+      "path": "public/chuotdong/raw_pool/S01_USA/wiki_02.png"
+    }
+  ]
+}

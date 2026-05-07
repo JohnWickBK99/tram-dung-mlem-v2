@@ -1,0 +1,100 @@
+/**
+ * Bun Cha Hà Nội — Pillar A theme adapter for Remotion
+ * Source of truth: theme/tokens.json (universal theme v1.0)
+ * Pillar A — Khẩu phần đặc thù (yellow dominant)
+ */
+
+export const PILLAR_A = {
+  light: '#FFE0A8',
+  base:  '#F8B147',
+  dark:  '#B87808',
+  name:  'Khẩu phần đặc thù',
+} as const;
+
+export const COLOR = {
+  // brand
+  yellow: '#F8B147',
+  orange: '#F39820',
+  coral:  '#E85D2F',
+  red:    '#C8302D',
+  teal:   '#4FC3D1',
+  cream:  '#FFF4E0',
+  // neutral
+  white:    '#FFFFFF',
+  off:      '#FFFAF0',
+  outline:  '#1A1A1A',
+  ink:      '#1A1A1A',
+  body:     '#5C5443',
+  // pillar A specific bg shades for scenes
+  bgPage:   '#FFFAF0',
+  bgPillar: '#FFE0A8',  // soft pillar light
+  bgAccent: '#F8B147',  // pillar base
+  bgInk:    '#1A1A1A',  // when invert needed
+} as const;
+
+export const FONT = {
+  display: '"Baloo 2", system-ui, sans-serif',
+  heading: '"Be Vietnam Pro", system-ui, sans-serif',
+  body:    '"Be Vietnam Pro", system-ui, sans-serif',
+  mono:    '"JetBrains Mono", ui-monospace, monospace',
+} as const;
+
+export const FW = {
+  regular: 400, medium: 500, semibold: 600, bold: 700, extrabold: 800,
+} as const;
+
+// Video px scale — for Remotion 1080×1920
+export const TYPE = {
+  hookXL:   { size: 200, weight: 800, family: FONT.display, lh: 1.0 },
+  hookL:    { size: 140, weight: 800, family: FONT.display, lh: 1.05 },
+  title:    { size: 96,  weight: 800, family: FONT.display, lh: 1.1 },
+  subtitle: { size: 56,  weight: 700, family: FONT.heading, lh: 1.2 },
+  body:     { size: 44,  weight: 500, family: FONT.body,    lh: 1.35 },
+  monoStat: { size: 280, weight: 700, family: FONT.mono,    lh: 1.0 },
+  tag:      { size: 32,  weight: 700, family: FONT.heading, lh: 1.2 },
+  caption:  { size: 48,  weight: 600, family: FONT.body,    lh: 1.3 },
+} as const;
+
+export const RADIUS = {
+  xs: 4, sm: 6, md: 12, lg: 16, xl: 24, '2xl': 32, '3xl': 48, pill: 999,
+} as const;
+
+export const SHADOW = {
+  stickerSm: '4px 4px 0 0 #1A1A1A',
+  stickerMd: '8px 8px 0 0 #1A1A1A',
+  stickerLg: '14px 14px 0 0 #1A1A1A',
+  stickerXL: '20px 20px 0 0 #1A1A1A',
+} as const;
+
+export const BORDER = {
+  thin: 3, base: 4, thick: 6, xthick: 8,
+} as const;
+
+export const SPACE = {
+  1: 4, 2: 8, 3: 12, 4: 16, 5: 20, 6: 24, 8: 32, 10: 40, 12: 48,
+  16: 64, 20: 80, 24: 96, 32: 128,
+} as const;
+
+// Outline text helpers (for text on photo/colored bg)
+export const outlineText = (variant: 'hook' | 'body' | 'thin' = 'body') => {
+  const w = variant === 'hook' ? 6 : variant === 'thin' ? 2 : 4;
+  return {
+    WebkitTextStroke: `${w}px ${COLOR.outline}`,
+    paintOrder: 'stroke fill' as const,
+  };
+};
+
+// Sticker chip preset
+export const stickerChip = (bg: string = COLOR.yellow, color: string = COLOR.ink) => ({
+  background: bg,
+  color,
+  border: `${BORDER.base}px solid ${COLOR.outline}`,
+  borderRadius: RADIUS.pill,
+  boxShadow: SHADOW.stickerMd,
+  padding: '12px 28px',
+  fontFamily: FONT.heading,
+  fontWeight: FW.bold,
+  fontSize: TYPE.tag.size,
+  letterSpacing: 1,
+  display: 'inline-block',
+});

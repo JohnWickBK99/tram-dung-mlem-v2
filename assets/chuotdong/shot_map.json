@@ -1,0 +1,84 @@
+{
+  "S01_HOOK_USA_VN": {
+    "out": "01_hook_split.jpg",
+    "kind": "image",
+    "components": ["02_usa_exterminator.jpg", "01_hook_chuotdong.jpg"]
+  },
+  "S01_USA": {
+    "out": "02_usa_exterminator.jpg",
+    "kind": "image"
+  },
+  "S01_VN": {
+    "out": "01_hook_chuotdong.jpg",
+    "kind": "image"
+  },
+  "S02_SETUP_PHUDAT": {
+    "out": "03_phu_dat_market.jpg",
+    "kind": "image"
+  },
+  "S03_HISTORY_NUOCNOI": {
+    "out": "09_history_nuocnoi.jpg",
+    "kind": "image"
+  },
+  "S04_PROCESS_NGUYENLIEU": {
+    "out": "10_chuot_clean_meat.jpg",
+    "kind": "image"
+  },
+  "S04_CONG": {
+    "out": "08_chuot_texture_cong.jpg",
+    "kind": "image"
+  },
+  "S05_TUTORIAL_LU_DEEP": {
+    "out": "videos/04_lu_dat.mp4",
+    "kind": "video",
+    "maxDurationSec": 12
+  },
+  "S06_BITE_REACTION": {
+    "out": "videos/05_bite.mp4",
+    "kind": "video",
+    "maxDurationSec": 7
+  },
+  "S07_FLAVOR_GATATHO": {
+    "out": "06_ga_ta.jpg",
+    "kind": "image"
+  },
+  "S07_THO": {
+    "out": "07_thit_tho.jpg",
+    "kind": "image"
+  },
+  "S08_PHUDAT_MARKET": {
+    "out": "videos/13_phu_dat_broll.mp4",
+    "kind": "video",
+    "maxDurationSec": 10
+  },
+  "S09_PRICE_KFC": {
+    "out": null,
+    "kind": "synth",
+    "note": "BG đỏ pillar full + StatOverlay 240px — không cần asset"
+  },
+  "S10_GLOBAL_RAT_DISHES_PARIS": {
+    "out": "11_paris_siege_1870.jpg",
+    "kind": "image",
+    "source": "wikimedia"
+  },
+  "S10_GLOBAL_RAT_DISHES_GHANA": {
+    "out": "12_grasscutter_ghana.jpg",
+    "kind": "image",
+    "source": "wikimedia"
+  },
+  "S10_GLOBAL_RAT_DISHES_VN": {
+    "out": "01_hook_chuotdong.jpg",
+    "kind": "image",
+    "note": "reuse S01_VN"
+  },
+  "S11_FAO_HEALTH": {
+    "out": null,
+    "kind": "synth",
+    "note": "BG cream + FAO logo SVG + quote box outline — không cần asset"
+  },
+  "S12_CTA": {
+    "out": null,
+    "kind": "synth",
+    "note": "BG đen text vàng + logo Mèo Mlem (assets/mascot/mlem-happy.png)"
+  }
+}

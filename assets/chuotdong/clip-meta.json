@@ -1,0 +1,17 @@
+{
+  "slug": "chuotdong",
+  "slugDash": "chuotdong",
+  "title": "Chuột đồng nướng lu An Giang",
+  "pillar": "B",
+  "pillarName": "Món lạ quốc gia",
+  "pillarColor": "#C8302D",
+  "durationSec": 90.8,
+  "fps": 30,
+  "totalFrames": 2724,
+  "width": 1080,
+  "height": 1920,
+  "format": "tiktok-9x16",
+  "voiceoverFile": "chuotdong/chuot-dong-voiceover.mp3",
+  "scenesJson": "chuotdong/scenes-with-perword.json",
+  "createdAt": "2026-05-06T13:35:05Z"
+}

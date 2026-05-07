@@ -1,0 +1,25 @@
+{
+  "shot": "S01_HOOK_USA_VN",
+  "outname": "01_hook_split.jpg",
+  "kind": "image",
+  "best_score": 67.02474969288181,
+  "best_path": "public/chuotdong/raw_pool/S01_HOOK_USA_VN/pexels_03.jpg",
+  "all_candidates": [
+    {
+      "score": 67.02474969288181,
+      "path": "public/chuotdong/raw_pool/S01_HOOK_USA_VN/pexels_03.jpg"
+    },
+    {
+      "score": 67.02474969288181,
+      "path": "public/chuotdong/raw_pool/S01_HOOK_USA_VN/pexels_02.jpg"
+    },
+    {
+      "score": 67.02474969288181,
+      "path": "public/chuotdong/raw_pool/S01_HOOK_USA_VN/pexels_01.jpg"
+    },
+    {
+      "score": 66.30649422745225,
+      "path": "public/chuotdong/raw_pool/S01_HOOK_USA_VN/pexels_00.jpg"
+    }
+  ]
+}
