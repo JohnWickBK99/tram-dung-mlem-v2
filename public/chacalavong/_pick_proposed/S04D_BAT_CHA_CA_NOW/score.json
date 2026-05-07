@@ -1,0 +1,25 @@
+{
+  "shot": "S04D_BAT_CHA_CA_NOW",
+  "outname": "S04D_BAT_CHA_CA_NOW.jpg",
+  "kind": "image",
+  "best_score": 63.60564346446813,
+  "best_path": "public/chacalavong/raw_pool/S04D_BAT_CHA_CA_NOW/pexels_03.jpg",
+  "all_candidates": [
+    {
+      "score": 63.60564346446813,
+      "path": "public/chacalavong/raw_pool/S04D_BAT_CHA_CA_NOW/pexels_03.jpg"
+    },
+    {
+      "score": 63.60564346446813,
+      "path": "public/chacalavong/raw_pool/S04D_BAT_CHA_CA_NOW/pexels_02.jpg"
+    },
+    {
+      "score": 63.60564346446813,
+      "path": "public/chacalavong/raw_pool/S04D_BAT_CHA_CA_NOW/pexels_01.jpg"
+    },
+    {
+      "score": 50.76195137158489,
+      "path": "public/chacalavong/raw_pool/S04D_BAT_CHA_CA_NOW/pexels_00.jpg"
+    }
+  ]
+}

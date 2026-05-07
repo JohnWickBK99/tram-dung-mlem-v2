@@ -1,0 +1,41 @@
+{
+  "shot": "S06_10_DAO_CA_TABLE",
+  "outname": "S06_10_DAO_CA_TABLE.mp4",
+  "kind": "video",
+  "best_score": 84.80902777777777,
+  "best_path": "public/chacalavong/raw_pool/S06_10_DAO_CA_TABLE/pexels_00.mp4",
+  "all_candidates": [
+    {
+      "score": 84.80902777777777,
+      "path": "public/chacalavong/raw_pool/S06_10_DAO_CA_TABLE/pexels_00.mp4"
+    },
+    {
+      "score": 68.14236111111111,
+      "path": "public/chacalavong/raw_pool/S06_10_DAO_CA_TABLE/pexels_03.mp4"
+    },
+    {
+      "score": 62.30902777777778,
+      "path": "public/chacalavong/raw_pool/S06_10_DAO_CA_TABLE/pexels_02.mp4"
+    },
+    {
+      "score": 58.142361111111114,
+      "path": "public/chacalavong/raw_pool/S06_10_DAO_CA_TABLE/pexels_01.mp4"
+    },
+    {
+      "score": 58.142361111111114,
+      "path": "public/chacalavong/raw_pool/S06_10_DAO_CA_TABLE/mixkit_03.mp4"
+    },
+    {
+      "score": 58.142361111111114,
+      "path": "public/chacalavong/raw_pool/S06_10_DAO_CA_TABLE/mixkit_02.mp4"
+    },
+    {
+      "score": 58.142361111111114,
+      "path": "public/chacalavong/raw_pool/S06_10_DAO_CA_TABLE/mixkit_00.mp4"
+    },
+    {
+      "score": 56.941780514187286,
+      "path": "public/chacalavong/raw_pool/S06_10_DAO_CA_TABLE/mixkit_01.mp4"
+    }
+  ]
+}

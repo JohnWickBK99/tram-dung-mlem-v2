@@ -1,0 +1,25 @@
+{
+  "shot": "S04C_DE_THAM_PORTRAIT",
+  "outname": "S04C_DE_THAM_PORTRAIT.jpg",
+  "kind": "image",
+  "best_score": 70.61237609307263,
+  "best_path": "public/chacalavong/raw_pool/S04C_DE_THAM_PORTRAIT/pexels_03.jpg",
+  "all_candidates": [
+    {
+      "score": 70.61237609307263,
+      "path": "public/chacalavong/raw_pool/S04C_DE_THAM_PORTRAIT/pexels_03.jpg"
+    },
+    {
+      "score": 70.61237609307263,
+      "path": "public/chacalavong/raw_pool/S04C_DE_THAM_PORTRAIT/pexels_02.jpg"
+    },
+    {
+      "score": 70.61237609307263,
+      "path": "public/chacalavong/raw_pool/S04C_DE_THAM_PORTRAIT/pexels_01.jpg"
+    },
+    {
+      "score": 49.30732641435054,
+      "path": "public/chacalavong/raw_pool/S04C_DE_THAM_PORTRAIT/pexels_00.jpg"
+    }
+  ]
+}

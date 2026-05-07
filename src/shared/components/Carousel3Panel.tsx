@@ -1,71 +1,70 @@
 /**
- * Carousel3Panel — vertical 3-panel carousel.
- * Used in clip 04 S06b (3 cuộc so sánh quốc tế). Active panel scales 1.05 + colored border.
+ * Carousel3Panel — 3-row stacked panel carousel (handoff S10 style).
+ * Big 140px outlined label centered per panel, ink divider between rows.
  */
 import React from 'react';
 import { AbsoluteFill, Img, useCurrentFrame } from 'remotion';
 import theme from '../theme';
 
-const { color, font, border, radius } = theme;
-const weight = font.weight;
+const { color, font } = theme;
 
 export interface CarouselPanel {
-  src: string;                            // staticFile() URL
+  src: string;
   label: string;
-  color: string;
+  color: string;                         // label text color
   /** [startFrame, endFrame] when this panel is active */
   activeFrame: [number, number];
 }
 
 export const Carousel3Panel: React.FC<{
   panels: CarouselPanel[];
-  gap?: number;
-  panelHeight?: number;
-}> = ({ panels, gap = 30, panelHeight = 480 }) => {
+}> = ({ panels }) => {
   const f = useCurrentFrame();
   return (
-    <AbsoluteFill
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        gap,
-        padding: 80,
-      }}
-    >
+    <AbsoluteFill style={{ flexDirection: 'column', background: color.outline }}>
       {panels.map((p, i) => {
         const active = f >= p.activeFrame[0] && f < p.activeFrame[1];
         return (
           <div
             key={i}
             style={{
-              opacity: active ? 1.0 : 0.35,
-              transform: active ? 'scale(1.05)' : 'scale(0.95)',
-              transition: 'all 0.2s ease',
-              borderRadius: radius.lg,
-              border: `${border.base}px solid ${active ? p.color : '#444'}`,
-              overflow: 'hidden',
+              flex: 1,
               position: 'relative',
-              height: panelHeight,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              overflow: 'hidden',
+              borderTop: i > 0 ? `8px solid ${color.outline}` : undefined,
+              opacity: active ? 1.0 : 0.55,
+              transform: active ? 'scale(1.0)' : 'scale(0.97)',
+              transition: 'all 0.25s ease',
             }}
           >
             <Img
               src={p.src}
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              style={{
+                position: 'absolute',
+                inset: 0,
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                opacity: 0.55,
+              }}
             />
             <div
               style={{
-                position: 'absolute',
-                top: 16,
-                left: 16,
-                background: p.color,
-                color: color.neutral[0],
-                padding: '8px 18px',
-                borderRadius: radius.sm,
-                border: `${border.thin}px solid ${color.outline}`,
-                fontFamily: font.family.heading,
-                fontWeight: weight.bold,
-                fontSize: 38,
+                position: 'relative',
+                zIndex: 2,
+                fontFamily: font.family.display,
+                fontWeight: 800,
+                fontSize: 140,
+                color: p.color,
+                letterSpacing: -4,
+                WebkitTextStroke: `6px ${color.outline}`,
+                paintOrder: 'stroke fill' as const,
+                textShadow: `0 8px 0 ${color.outline}`,
+                padding: '20px 40px',
+                whiteSpace: 'nowrap',
               }}
             >
               {p.label}

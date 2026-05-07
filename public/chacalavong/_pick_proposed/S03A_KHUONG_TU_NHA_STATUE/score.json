@@ -1,0 +1,25 @@
+{
+  "shot": "S03A_KHUONG_TU_NHA_STATUE",
+  "outname": "S03A_KHUONG_TU_NHA_STATUE.jpg",
+  "kind": "image",
+  "best_score": 76.5154068820081,
+  "best_path": "public/chacalavong/raw_pool/S03A_KHUONG_TU_NHA_STATUE/pexels_03.jpg",
+  "all_candidates": [
+    {
+      "score": 76.5154068820081,
+      "path": "public/chacalavong/raw_pool/S03A_KHUONG_TU_NHA_STATUE/pexels_03.jpg"
+    },
+    {
+      "score": 76.5154068820081,
+      "path": "public/chacalavong/raw_pool/S03A_KHUONG_TU_NHA_STATUE/pexels_02.jpg"
+    },
+    {
+      "score": 76.5154068820081,
+      "path": "public/chacalavong/raw_pool/S03A_KHUONG_TU_NHA_STATUE/pexels_01.jpg"
+    },
+    {
+      "score": 58.96783288585742,
+      "path": "public/chacalavong/raw_pool/S03A_KHUONG_TU_NHA_STATUE/pexels_00.jpg"
+    }
+  ]
+}

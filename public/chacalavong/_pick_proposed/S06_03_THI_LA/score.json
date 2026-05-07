@@ -1,0 +1,41 @@
+{
+  "shot": "S06_03_THI_LA",
+  "outname": "S06_03_THI_LA.jpg",
+  "kind": "image",
+  "best_score": 72.3897581189805,
+  "best_path": "public/chacalavong/raw_pool/S06_03_THI_LA/wiki_01.png",
+  "all_candidates": [
+    {
+      "score": 72.3897581189805,
+      "path": "public/chacalavong/raw_pool/S06_03_THI_LA/wiki_01.png"
+    },
+    {
+      "score": 72.22752806638042,
+      "path": "public/chacalavong/raw_pool/S06_03_THI_LA/wiki_02.png"
+    },
+    {
+      "score": 70.22916666666667,
+      "path": "public/chacalavong/raw_pool/S06_03_THI_LA/wiki_00.png"
+    },
+    {
+      "score": 70.2115116534556,
+      "path": "public/chacalavong/raw_pool/S06_03_THI_LA/pexels_03.jpg"
+    },
+    {
+      "score": 70.2115116534556,
+      "path": "public/chacalavong/raw_pool/S06_03_THI_LA/pexels_02.jpg"
+    },
+    {
+      "score": 70.2115116534556,
+      "path": "public/chacalavong/raw_pool/S06_03_THI_LA/pexels_01.jpg"
+    },
+    {
+      "score": 69.5328759,
+      "path": "public/chacalavong/raw_pool/S06_03_THI_LA/pexels_00.jpg"
+    },
+    {
+      "score": 47.74638172743056,
+      "path": "public/chacalavong/raw_pool/S06_03_THI_LA/wiki_03.png"
+    }
+  ]
+}

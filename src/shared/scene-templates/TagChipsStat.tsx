@@ -88,7 +88,7 @@ export const TagChipsStat: React.FC<{
           boxShadow: '20px 20px 0 0 #1A1A1A',
           fontFamily: font.family.mono,
           fontWeight: 700,
-          fontSize: 280,
+          fontSize: 240,
           color: color.outline,
           lineHeight: 0.9,
         }}>

@@ -30,6 +30,8 @@ def main():
     ROOT = f"public/{slug}"
     failed = []
     for shot, info in shot_map.items():
+        if info.get("kind") == "synth" or "out" not in info:
+            continue
         outname = info["out"]
         kind = info["kind"]
         max_dur = str(info.get("maxDurationSec", 5 if kind == "video" else 0))

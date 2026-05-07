@@ -1,0 +1,90 @@
+{
+  "S01A_HOOK_BG": {
+    "kind": "video",
+    "file": "S01A_HOOK_BG.mp4"
+  },
+  "S02A_HOUSE_14": {
+    "kind": "image",
+    "file": "S02A_HOUSE_14.jpg"
+  },
+  "S02C_DOAN_FAMILY": {
+    "kind": "image",
+    "file": "S02C_DOAN_FAMILY.jpg"
+  },
+  "S03A_KHUONG_TU_NHA_STATUE": {
+    "kind": "image",
+    "file": "S03A_KHUONG_TU_NHA_STATUE.jpg"
+  },
+  "S03B_FISHING_PAINTING": {
+    "kind": "image",
+    "file": "S03B_FISHING_PAINTING.jpg"
+  },
+  "S03C_TUONG_LA_VONG_QUAN": {
+    "kind": "image",
+    "file": "S03C_TUONG_LA_VONG_QUAN.jpg"
+  },
+  "S04A_OLD_QUAN_BW": {
+    "kind": "image",
+    "file": "S04A_OLD_QUAN_BW.jpg"
+  },
+  "S04B_DOAN_PORTRAIT": {
+    "kind": "image",
+    "file": "S04B_DOAN_PORTRAIT.jpg"
+  },
+  "S04C_DE_THAM_PORTRAIT": {
+    "kind": "image",
+    "file": "S04C_DE_THAM_PORTRAIT.jpg"
+  },
+  "S04D_BAT_CHA_CA_NOW": {
+    "kind": "image",
+    "file": "S04D_BAT_CHA_CA_NOW.jpg"
+  },
+  "S05A_OLD_HANOI_MAP": {
+    "kind": "image",
+    "file": "S05A_OLD_HANOI_MAP.jpg"
+  },
+  "S05C_PHO_CHA_CA_NOW": {
+    "kind": "image",
+    "file": "S05C_PHO_CHA_CA_NOW.jpg"
+  },
+  "S06_01_CA_LANG": {
+    "kind": "image",
+    "file": "S06_01_CA_LANG.jpg"
+  },
+  "S06_02_BUN_ROI": {
+    "kind": "image",
+    "file": "S06_02_BUN_ROI.jpg"
+  },
+  "S06_03_THI_LA": {
+    "kind": "image",
+    "file": "S06_03_THI_LA.jpg"
+  },
+  "S06_04_HANH_LA": {
+    "kind": "image",
+    "file": "S06_04_HANH_LA.jpg"
+  },
+  "S06_05_LAC_RANG": {
+    "kind": "image",
+    "file": "S06_05_LAC_RANG.jpg"
+  },
+  "S06_06_MAM_TOM": {
+    "kind": "image",
+    "file": "S06_06_MAM_TOM.jpg"
+  },
+  "S06_07_OT": {
+    "kind": "image",
+    "file": "S06_07_OT.jpg"
+  },
+  "S06_08_CHANH": {
+    "kind": "image",
+    "file": "S06_08_CHANH.jpg"
+  },
+  "S06_09_RAU_MUI": {
+    "kind": "image",
+    "file": "S06_09_RAU_MUI.jpg"
+  },
+  "S06_10_DAO_CA_TABLE": {
+    "kind": "video",
+    "file": "S06_10_DAO_CA_TABLE.mp4"
+  }
+}

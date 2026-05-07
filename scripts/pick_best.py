@@ -110,6 +110,8 @@ def main():
 
     results = {}
     for shot, info in shot_map.items():
+        if info.get("kind") == "synth" or "out" not in info:
+            continue
         outname = info["out"]
         kind = info["kind"]
         pool_dir = os.path.join(POOL, shot)

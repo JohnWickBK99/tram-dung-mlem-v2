@@ -1,0 +1,2175 @@
+{
+  "slug": "chacalavong",
+  "title": "Chả Cá Lã Vọng — 5 funfact mind-blow",
+  "pillar": "D",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 2250,
+  "voiceover": "public/chacalavong/cha-ca-la-vong-voiceover.mp3",
+  "bgm": "public/audio/bgm-pillarD.mp3",
+  "scenes": [
+    {
+      "id": "S01_HOOK",
+      "start": 0,
+      "end": 149,
+      "durFrames": 149,
+      "bgKind": "photo",
+      "bg": "#FFFAF0",
+      "fallbackBg": "#1F6E79",
+      "tint": "rgba(31,110,121,0.35)",
+      "vignette": 0.45,
+      "karaokeActive": "yellow",
+      "asset": {
+        "kind": "photo",
+        "shot": "S01A_HOOK_BG",
+        "src": "public/chacalavong/_pick/S01A_HOOK_BG/override.jpg"
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "OutlineText",
+          "variant": "hook",
+          "text": "5 FUNFACT",
+          "color": "white",
+          "stroke": "#1A1A1A",
+          "strokeW": 6,
+          "y": 720
+        },
+        {
+          "t": 0,
+          "kind": "OutlineText",
+          "variant": "body",
+          "text": "Chả Cá Lã Vọng",
+          "color": "#FFD24A",
+          "stroke": "#1A1A1A",
+          "strokeW": 4,
+          "y": 880
+        },
+        {
+          "t": 75,
+          "kind": "StickerPop",
+          "text": "Số 3 — bạn không biết đâu",
+          "bg": "#E85D2F",
+          "color": "white",
+          "rotate": -2
+        }
+      ],
+      "subtitle": "Năm funfact về Chả Cá Lã Vọng. Funfact số ba, người Hà Nội còn không biết.",
+      "emphasis": [
+        "năm",
+        "funfact",
+        "số",
+        "ba",
+        "Hà",
+        "Nội",
+        "không",
+        "biết"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "whoosh-in.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 60,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        }
+      ],
+      "perWord": [
+        {
+          "word": "5",
+          "start": 0.0,
+          "end": 0.14
+        },
+        {
+          "word": "phân",
+          "start": 0.14,
+          "end": 0.36
+        },
+        {
+          "word": "phách",
+          "start": 0.36,
+          "end": 0.52
+        },
+        {
+          "word": "về",
+          "start": 0.52,
+          "end": 0.76
+        },
+        {
+          "word": "trả",
+          "start": 0.76,
+          "end": 0.96
+        },
+        {
+          "word": "cá",
+          "start": 0.96,
+          "end": 1.1
+        },
+        {
+          "word": "lã",
+          "start": 1.1,
+          "end": 1.2
+        },
+        {
+          "word": "vọng,",
+          "start": 1.2,
+          "end": 1.84
+        },
+        {
+          "word": "phân",
+          "start": 1.96,
+          "end": 2.08
+        },
+        {
+          "word": "phách",
+          "start": 2.08,
+          "end": 2.16
+        },
+        {
+          "word": "số",
+          "start": 2.16,
+          "end": 2.38
+        },
+        {
+          "word": "3,",
+          "start": 2.38,
+          "end": 2.68
+        },
+        {
+          "word": "người",
+          "start": 2.86,
+          "end": 3.02
+        },
+        {
+          "word": "Hà",
+          "start": 3.02,
+          "end": 3.22
+        },
+        {
+          "word": "Nội",
+          "start": 3.22,
+          "end": 3.32
+        },
+        {
+          "word": "còn",
+          "start": 3.32,
+          "end": 3.5
+        },
+        {
+          "word": "không",
+          "start": 3.5,
+          "end": 3.64
+        },
+        {
+          "word": "biết",
+          "start": 3.64,
+          "end": 4.22
+        },
+        {
+          "word": "Phân",
+          "start": 4.74,
+          "end": 5.1
+        }
+      ]
+    },
+    {
+      "id": "S02_FUNFACT_1_AGE",
+      "start": 149,
+      "end": 402,
+      "durFrames": 253,
+      "bgKind": "flat",
+      "bg": "#FFF4E0",
+      "karaokeActive": "yellow",
+      "withBadge": true,
+      "withMark": true,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": [
+          "S02A_HOUSE_14",
+          "S02B_TIMELINE",
+          "S02C_DOAN_FAMILY"
+        ]
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "StickerCard",
+          "text": "1871",
+          "sub": "155 NĂM TUỔI",
+          "bg": "#FFF4E0",
+          "stroke": "#1F6E79",
+          "strokeW": 8
+        },
+        {
+          "t": 150,
+          "kind": "Timeline",
+          "items": [
+            {
+              "label": "1871 quán mở",
+              "color": "#1F6E79"
+            },
+            {
+              "label": "1882 Pháp chiếm Hà Nội",
+              "color": "#E85D2F"
+            }
+          ],
+          "arrow": "← 11 năm"
+        },
+        {
+          "t": 270,
+          "kind": "ZoomPunch",
+          "to": "S02C_DOAN_FAMILY"
+        }
+      ],
+      "subtitle": "Funfact một. Quán Chả Cá Lã Vọng mở năm một nghìn tám trăm bảy mươi mốt. Sớm hơn Pháp chiếm Hà Nội mười một năm. Đến nay năm đời nhà họ Đoàn truyền nghề.",
+      "emphasis": [
+        "một",
+        "nghìn",
+        "tám",
+        "trăm",
+        "bảy",
+        "mươi",
+        "mốt",
+        "mười",
+        "một",
+        "năm",
+        "đời",
+        "họ",
+        "Đoàn"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "card-flip.mp3",
+          "dur": 0.4
+        },
+        {
+          "t": 150,
+          "file": "tick.mp3",
+          "dur": 0.15
+        },
+        {
+          "t": 165,
+          "file": "tick.mp3",
+          "dur": 0.15
+        },
+        {
+          "t": 270,
+          "file": "zoom-punch.mp3",
+          "dur": 0.5
+        }
+      ],
+      "perWord": [
+        {
+          "word": "phách",
+          "start": 5.1,
+          "end": 5.18
+        },
+        {
+          "word": "thứ",
+          "start": 5.18,
+          "end": 5.38
+        },
+        {
+          "word": "nhất,",
+          "start": 5.38,
+          "end": 5.86
+        },
+        {
+          "word": "quán",
+          "start": 6.02,
+          "end": 6.14
+        },
+        {
+          "word": "trả",
+          "start": 6.14,
+          "end": 6.34
+        },
+        {
+          "word": "cá",
+          "start": 6.34,
+          "end": 6.48
+        },
+        {
+          "word": "lã",
+          "start": 6.48,
+          "end": 6.6
+        },
+        {
+          "word": "vọng",
+          "start": 6.6,
+          "end": 6.86
+        },
+        {
+          "word": "mở",
+          "start": 6.86,
+          "end": 7.04
+        },
+        {
+          "word": "năm",
+          "start": 7.04,
+          "end": 7.26
+        },
+        {
+          "word": "1871,",
+          "start": 7.26,
+          "end": 8.4
+        },
+        {
+          "word": "sớm",
+          "start": 8.7,
+          "end": 8.82
+        },
+        {
+          "word": "hơn",
+          "start": 8.82,
+          "end": 9.0
+        },
+        {
+          "word": "Pháp",
+          "start": 9.0,
+          "end": 9.14
+        },
+        {
+          "word": "chiếm",
+          "start": 9.14,
+          "end": 9.32
+        },
+        {
+          "word": "Hà",
+          "start": 9.32,
+          "end": 9.54
+        },
+        {
+          "word": "Nội",
+          "start": 9.54,
+          "end": 9.66
+        },
+        {
+          "word": "11",
+          "start": 9.66,
+          "end": 9.98
+        },
+        {
+          "word": "năm,",
+          "start": 9.98,
+          "end": 10.6
+        },
+        {
+          "word": "đến",
+          "start": 10.78,
+          "end": 10.88
+        },
+        {
+          "word": "nay",
+          "start": 10.88,
+          "end": 11.04
+        },
+        {
+          "word": "năm",
+          "start": 11.04,
+          "end": 11.24
+        },
+        {
+          "word": "đời",
+          "start": 11.24,
+          "end": 11.36
+        },
+        {
+          "word": "nhà",
+          "start": 11.36,
+          "end": 11.58
+        },
+        {
+          "word": "họ",
+          "start": 11.58,
+          "end": 11.74
+        },
+        {
+          "word": "đoàn",
+          "start": 11.74,
+          "end": 11.9
+        },
+        {
+          "word": "chuyên",
+          "start": 11.9,
+          "end": 12.08
+        },
+        {
+          "word": "nghề",
+          "start": 12.08,
+          "end": 13.16
+        },
+        {
+          "word": "Phân",
+          "start": 13.16,
+          "end": 13.54
+        }
+      ]
+    },
+    {
+      "id": "S03_FUNFACT_2_NAME",
+      "start": 402,
+      "end": 819,
+      "durFrames": 417,
+      "bgKind": "photo",
+      "bg": "#FFFAF0",
+      "fallbackBg": "#1F6E79",
+      "tint": "rgba(31,110,121,0.4)",
+      "vignette": 0.45,
+      "karaokeActive": "yellow",
+      "withBadge": true,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": [
+          "S03A_KHUONG_TU_NHA_STATUE",
+          "S03B_FISHING_PAINTING",
+          "S03C_TUONG_LA_VONG_QUAN"
+        ]
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "OutlineText",
+          "variant": "hook",
+          "text": "LÃ VỌNG = ?",
+          "color": "#FFD24A",
+          "stroke": "#1A1A1A",
+          "strokeW": 6
+        },
+        {
+          "t": 30,
+          "kind": "Chip",
+          "text": "ÔNG TIÊN CÂU CÁ",
+          "bg": "#FFD24A",
+          "color": "#1A1A1A",
+          "rotate": 1
+        },
+        {
+          "t": 120,
+          "kind": "StatOverlay",
+          "value": "3000",
+          "unit": "NĂM TRƯỚC",
+          "color": "white",
+          "stroke": "#1A1A1A"
+        },
+        {
+          "t": 210,
+          "kind": "FactPop",
+          "text": "câu cá KHÔNG lưỡi · KHÔNG mồi"
+        },
+        {
+          "t": 300,
+          "kind": "ZoomPunch",
+          "to": "S03C_TUONG_LA_VONG_QUAN"
+        }
+      ],
+      "subtitle": "Funfact hai. Lã Vọng không phải tên chủ quán. Đó là tên một ông tiên câu cá ba nghìn năm trước. Khương Tử Nha trong Phong Thần Diễn Nghĩa. Câu cá không lưỡi không mồi. Chờ minh chủ. Nhà họ Đoàn đặt tượng trong quán. Tên món ra đời từ đấy.",
+      "emphasis": [
+        "ông",
+        "tiên",
+        "ba",
+        "nghìn",
+        "năm",
+        "Khương",
+        "Tử",
+        "Nha",
+        "Phong",
+        "Thần",
+        "Diễn",
+        "Nghĩa",
+        "không",
+        "lưỡi",
+        "không",
+        "mồi"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "gong-asian.mp3",
+          "dur": 0.6
+        },
+        {
+          "t": 120,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 210,
+          "file": "whoosh-mid.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 300,
+          "file": "zoom-punch.mp3",
+          "dur": 0.5
+        }
+      ],
+      "perWord": [
+        {
+          "word": "phách",
+          "start": 13.54,
+          "end": 13.64
+        },
+        {
+          "word": "thứ",
+          "start": 13.64,
+          "end": 13.88
+        },
+        {
+          "word": "hai,",
+          "start": 13.88,
+          "end": 14.2
+        },
+        {
+          "word": "lã",
+          "start": 14.64,
+          "end": 14.76
+        },
+        {
+          "word": "vọng",
+          "start": 14.76,
+          "end": 14.96
+        },
+        {
+          "word": "không",
+          "start": 14.96,
+          "end": 15.14
+        },
+        {
+          "word": "phải",
+          "start": 15.14,
+          "end": 15.24
+        },
+        {
+          "word": "tên",
+          "start": 15.24,
+          "end": 15.38
+        },
+        {
+          "word": "chủ",
+          "start": 15.38,
+          "end": 15.62
+        },
+        {
+          "word": "quán,",
+          "start": 15.62,
+          "end": 16.26
+        },
+        {
+          "word": "đó",
+          "start": 16.46,
+          "end": 16.56
+        },
+        {
+          "word": "là",
+          "start": 16.56,
+          "end": 16.68
+        },
+        {
+          "word": "tên",
+          "start": 16.68,
+          "end": 16.84
+        },
+        {
+          "word": "một",
+          "start": 16.84,
+          "end": 16.96
+        },
+        {
+          "word": "ông",
+          "start": 16.96,
+          "end": 17.18
+        },
+        {
+          "word": "tiên",
+          "start": 17.18,
+          "end": 17.36
+        },
+        {
+          "word": "câu",
+          "start": 17.36,
+          "end": 17.54
+        },
+        {
+          "word": "cá",
+          "start": 17.54,
+          "end": 17.66
+        },
+        {
+          "word": "3000",
+          "start": 17.66,
+          "end": 17.92
+        },
+        {
+          "word": "năm",
+          "start": 17.92,
+          "end": 18.14
+        },
+        {
+          "word": "trước,",
+          "start": 18.14,
+          "end": 18.46
+        },
+        {
+          "word": "cương",
+          "start": 18.94,
+          "end": 19.04
+        },
+        {
+          "word": "tử",
+          "start": 19.04,
+          "end": 19.2
+        },
+        {
+          "word": "nhà",
+          "start": 19.2,
+          "end": 19.36
+        },
+        {
+          "word": "trong",
+          "start": 19.36,
+          "end": 19.54
+        },
+        {
+          "word": "phong",
+          "start": 19.54,
+          "end": 19.68
+        },
+        {
+          "word": "thần",
+          "start": 19.68,
+          "end": 19.84
+        },
+        {
+          "word": "diễn",
+          "start": 19.84,
+          "end": 20.08
+        },
+        {
+          "word": "nghĩa",
+          "start": 20.08,
+          "end": 20.66
+        },
+        {
+          "word": "câu",
+          "start": 20.66,
+          "end": 20.94
+        },
+        {
+          "word": "cá",
+          "start": 20.94,
+          "end": 21.08
+        },
+        {
+          "word": "không",
+          "start": 21.08,
+          "end": 21.3
+        },
+        {
+          "word": "lưỡi",
+          "start": 21.3,
+          "end": 21.5
+        },
+        {
+          "word": "không",
+          "start": 21.5,
+          "end": 21.64
+        },
+        {
+          "word": "mồi,",
+          "start": 21.64,
+          "end": 22.14
+        },
+        {
+          "word": "chờ",
+          "start": 22.36,
+          "end": 22.5
+        },
+        {
+          "word": "minh",
+          "start": 22.5,
+          "end": 22.72
+        },
+        {
+          "word": "chủ,",
+          "start": 22.72,
+          "end": 23.28
+        },
+        {
+          "word": "nhà",
+          "start": 23.48,
+          "end": 23.6
+        },
+        {
+          "word": "họ",
+          "start": 23.6,
+          "end": 23.76
+        },
+        {
+          "word": "đoàn",
+          "start": 23.76,
+          "end": 23.92
+        },
+        {
+          "word": "đặt",
+          "start": 23.92,
+          "end": 24.1
+        },
+        {
+          "word": "tượng",
+          "start": 24.1,
+          "end": 24.26
+        },
+        {
+          "word": "trong",
+          "start": 24.26,
+          "end": 24.44
+        },
+        {
+          "word": "quán,",
+          "start": 24.44,
+          "end": 25.06
+        },
+        {
+          "word": "tên",
+          "start": 25.22,
+          "end": 25.4
+        },
+        {
+          "word": "món",
+          "start": 25.4,
+          "end": 25.54
+        },
+        {
+          "word": "ra",
+          "start": 25.54,
+          "end": 25.74
+        },
+        {
+          "word": "đời",
+          "start": 25.74,
+          "end": 25.86
+        },
+        {
+          "word": "từ",
+          "start": 25.86,
+          "end": 26.0
+        },
+        {
+          "word": "đấy",
+          "start": 26.0,
+          "end": 26.34
+        },
+        {
+          "word": "Phân",
+          "start": 27.1,
+          "end": 27.46
+        }
+      ]
+    },
+    {
+      "id": "S04_FUNFACT_3_REVOLUTION",
+      "start": 819,
+      "end": 1208,
+      "durFrames": 389,
+      "bgKind": "flat",
+      "bg": "#1A1A1A",
+      "karaokeActive": "coral",
+      "withBadge": false,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": [
+          "S04A_OLD_QUAN_BW",
+          "S04B_DOAN_PORTRAIT",
+          "S04C_DE_THAM_PORTRAIT",
+          "S04D_BAT_CHA_CA_NOW"
+        ]
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "OutlineText",
+          "variant": "hook",
+          "text": "ÍT NGƯỜI BIẾT",
+          "color": "#E85D2F",
+          "stroke": "white",
+          "strokeW": 6,
+          "rotate": -2
+        },
+        {
+          "t": 90,
+          "kind": "Spotlight",
+          "to": "S04A_OLD_QUAN_BW"
+        },
+        {
+          "t": 90,
+          "kind": "Chip",
+          "text": "CƠ SỞ BÍ MẬT",
+          "bg": "#E85D2F",
+          "color": "white",
+          "pulse": true
+        },
+        {
+          "t": 240,
+          "kind": "SplitScreen",
+          "left": {
+            "shot": "S04B_DOAN_PORTRAIT",
+            "label": "ĐOÀN XUÂN PHÚC — HỌA SĨ"
+          },
+          "right": {
+            "shot": "S04C_DE_THAM_PORTRAIT",
+            "label": "ĐỀ THÁM — NGHĨA QUÂN"
+          },
+          "arrow": "↔ LIÊN LẠC"
+        },
+        {
+          "t": 360,
+          "kind": "ZoomPunch",
+          "to": "S04D_BAT_CHA_CA_NOW"
+        },
+        {
+          "t": 390,
+          "kind": "Sticker",
+          "text": "1 THẾ KỶ CÁCH MẠNG",
+          "bg": "#FFD24A",
+          "color": "#1A1A1A",
+          "rotate": 1
+        }
+      ],
+      "subtitle": "Funfact ba. Trước khi là quán ăn, đây từng là cơ sở bí mật chống Pháp. Cụ Đoàn Xuân Phúc — chủ quán — vốn là họa sĩ, liên lạc nghĩa quân Đề Thám. Mở quán làm vỏ bọc tránh mật vụ Pháp. Bát chả cá bạn ăn có cả thế kỷ cách mạng.",
+      "emphasis": [
+        "cơ",
+        "sở",
+        "bí",
+        "mật",
+        "Đoàn",
+        "Xuân",
+        "Phúc",
+        "Đề",
+        "Thám",
+        "vỏ",
+        "bọc",
+        "thế",
+        "kỷ",
+        "cách",
+        "mạng"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "boom-impact.mp3",
+          "dur": 0.6
+        },
+        {
+          "t": 105,
+          "file": "whoosh-deep.mp3",
+          "dur": 0.4
+        },
+        {
+          "t": 240,
+          "file": "record-scratch.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 360,
+          "file": "zoom-punch.mp3",
+          "dur": 0.5
+        },
+        {
+          "t": 435,
+          "file": "bell-resolve.mp3",
+          "dur": 0.5
+        }
+      ],
+      "perWord": [
+        {
+          "word": "phách",
+          "start": 27.46,
+          "end": 27.54
+        },
+        {
+          "word": "thứ",
+          "start": 27.54,
+          "end": 27.74
+        },
+        {
+          "word": "ba,",
+          "start": 27.74,
+          "end": 27.92
+        },
+        {
+          "word": "trước",
+          "start": 28.4,
+          "end": 28.54
+        },
+        {
+          "word": "khi",
+          "start": 28.54,
+          "end": 28.72
+        },
+        {
+          "word": "là",
+          "start": 28.72,
+          "end": 28.82
+        },
+        {
+          "word": "quán",
+          "start": 28.82,
+          "end": 28.98
+        },
+        {
+          "word": "ăn,",
+          "start": 28.98,
+          "end": 29.36
+        },
+        {
+          "word": "đây",
+          "start": 29.54,
+          "end": 29.62
+        },
+        {
+          "word": "từng",
+          "start": 29.62,
+          "end": 29.86
+        },
+        {
+          "word": "là",
+          "start": 29.86,
+          "end": 29.98
+        },
+        {
+          "word": "cơ",
+          "start": 29.98,
+          "end": 30.16
+        },
+        {
+          "word": "sở",
+          "start": 30.16,
+          "end": 30.36
+        },
+        {
+          "word": "bí",
+          "start": 30.36,
+          "end": 30.58
+        },
+        {
+          "word": "mật",
+          "start": 30.58,
+          "end": 30.7
+        },
+        {
+          "word": "chống",
+          "start": 30.7,
+          "end": 30.9
+        },
+        {
+          "word": "Pháp",
+          "start": 30.9,
+          "end": 31.42
+        },
+        {
+          "word": "Cựu",
+          "start": 31.42,
+          "end": 31.82
+        },
+        {
+          "word": "đoàn",
+          "start": 31.82,
+          "end": 31.94
+        },
+        {
+          "word": "Xuân",
+          "start": 31.94,
+          "end": 32.1
+        },
+        {
+          "word": "Phúc",
+          "start": 32.1,
+          "end": 32.22
+        },
+        {
+          "word": "chủ",
+          "start": 32.22,
+          "end": 32.42
+        },
+        {
+          "word": "quán",
+          "start": 32.42,
+          "end": 32.66
+        },
+        {
+          "word": "vốn",
+          "start": 32.66,
+          "end": 32.82
+        },
+        {
+          "word": "là",
+          "start": 32.82,
+          "end": 32.96
+        },
+        {
+          "word": "họa",
+          "start": 32.96,
+          "end": 33.18
+        },
+        {
+          "word": "sĩ,",
+          "start": 33.18,
+          "end": 33.54
+        },
+        {
+          "word": "liên",
+          "start": 33.84,
+          "end": 33.98
+        },
+        {
+          "word": "lạc",
+          "start": 33.98,
+          "end": 34.08
+        },
+        {
+          "word": "nghệ",
+          "start": 34.08,
+          "end": 34.22
+        },
+        {
+          "word": "quân",
+          "start": 34.22,
+          "end": 34.38
+        },
+        {
+          "word": "đề",
+          "start": 34.38,
+          "end": 34.62
+        },
+        {
+          "word": "thám,",
+          "start": 34.62,
+          "end": 35.2
+        },
+        {
+          "word": "mở",
+          "start": 35.38,
+          "end": 35.54
+        },
+        {
+          "word": "quán",
+          "start": 35.54,
+          "end": 35.74
+        },
+        {
+          "word": "làm",
+          "start": 35.74,
+          "end": 35.92
+        },
+        {
+          "word": "vỏ",
+          "start": 35.92,
+          "end": 36.08
+        },
+        {
+          "word": "bọc",
+          "start": 36.08,
+          "end": 36.3
+        },
+        {
+          "word": "tránh",
+          "start": 36.3,
+          "end": 36.46
+        },
+        {
+          "word": "mật",
+          "start": 36.46,
+          "end": 36.62
+        },
+        {
+          "word": "vụ",
+          "start": 36.62,
+          "end": 36.78
+        },
+        {
+          "word": "Pháp,",
+          "start": 36.78,
+          "end": 37.38
+        },
+        {
+          "word": "bát",
+          "start": 37.66,
+          "end": 37.7
+        },
+        {
+          "word": "trả",
+          "start": 37.7,
+          "end": 37.88
+        },
+        {
+          "word": "cá",
+          "start": 37.88,
+          "end": 38.0
+        },
+        {
+          "word": "bạn",
+          "start": 38.0,
+          "end": 38.18
+        },
+        {
+          "word": "ăn",
+          "start": 38.18,
+          "end": 38.32
+        },
+        {
+          "word": "có",
+          "start": 38.32,
+          "end": 38.46
+        },
+        {
+          "word": "cả",
+          "start": 38.46,
+          "end": 38.58
+        },
+        {
+          "word": "thế",
+          "start": 38.58,
+          "end": 38.72
+        },
+        {
+          "word": "kỷ",
+          "start": 38.72,
+          "end": 38.82
+        },
+        {
+          "word": "cách",
+          "start": 38.82,
+          "end": 39.02
+        },
+        {
+          "word": "mạng",
+          "start": 39.02,
+          "end": 39.34
+        },
+        {
+          "word": "Phân",
+          "start": 40.1,
+          "end": 40.42
+        }
+      ]
+    },
+    {
+      "id": "S05_FUNFACT_4_STREET",
+      "start": 1208,
+      "end": 1529,
+      "durFrames": 321,
+      "bgKind": "flat",
+      "bg": "#FFF4E0",
+      "karaokeActive": "yellow",
+      "withBadge": true,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": [
+          "S05A_OLD_HANOI_MAP",
+          "S05B_STREET_SIGN_MORPH",
+          "S05C_PHO_CHA_CA_NOW"
+        ]
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "MapCutout",
+          "shot": "S05A_OLD_HANOI_MAP",
+          "spotlight": "Hàng Sơn"
+        },
+        {
+          "t": 90,
+          "kind": "StreetSignMorph",
+          "from": "PHỐ HÀNG SƠN",
+          "to": "PHỐ CHẢ CÁ",
+          "strokeW": 6
+        },
+        {
+          "t": 180,
+          "kind": "StickerCard",
+          "text": "1945",
+          "sub": "đổi tên chính thức",
+          "bg": "#FFF4E0",
+          "stroke": "#1F6E79",
+          "strokeW": 6
+        },
+        {
+          "t": 270,
+          "kind": "Chip",
+          "text": "DUY NHẤT VIỆT NAM",
+          "bg": "#FFD24A",
+          "color": "#1A1A1A",
+          "rotate": -1,
+          "sub": "đặt theo tên 1 món ăn"
+        }
+      ],
+      "subtitle": "Funfact bốn. Cả một con phố Hà Nội bị đổi tên vì quán ăn này. Phố Hàng Sơn cũ. Năm một nghìn chín trăm bốn mươi lăm, đổi thành phố Chả Cá. Con phố duy nhất Việt Nam mang tên món ăn.",
+      "emphasis": [
+        "Hàng",
+        "Sơn",
+        "một",
+        "nghìn",
+        "chín",
+        "trăm",
+        "bốn",
+        "mươi",
+        "lăm",
+        "phố",
+        "Chả",
+        "Cá",
+        "duy",
+        "nhất",
+        "Việt",
+        "Nam"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "paper-flip.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 90,
+          "file": "stamp.mp3",
+          "dur": 0.4
+        },
+        {
+          "t": 180,
+          "file": "card-flip.mp3",
+          "dur": 0.4
+        }
+      ],
+      "perWord": [
+        {
+          "word": "phách",
+          "start": 40.42,
+          "end": 40.5
+        },
+        {
+          "word": "thứ",
+          "start": 40.5,
+          "end": 40.76
+        },
+        {
+          "word": "tư,",
+          "start": 40.76,
+          "end": 41.0
+        },
+        {
+          "word": "cả",
+          "start": 41.4,
+          "end": 41.58
+        },
+        {
+          "word": "một",
+          "start": 41.58,
+          "end": 41.78
+        },
+        {
+          "word": "con",
+          "start": 41.78,
+          "end": 41.88
+        },
+        {
+          "word": "phố",
+          "start": 41.88,
+          "end": 42.0
+        },
+        {
+          "word": "Hà",
+          "start": 42.0,
+          "end": 42.22
+        },
+        {
+          "word": "Nội",
+          "start": 42.22,
+          "end": 42.32
+        },
+        {
+          "word": "bị",
+          "start": 42.32,
+          "end": 42.52
+        },
+        {
+          "word": "đổi",
+          "start": 42.52,
+          "end": 42.7
+        },
+        {
+          "word": "tên",
+          "start": 42.7,
+          "end": 42.92
+        },
+        {
+          "word": "vì",
+          "start": 42.92,
+          "end": 43.06
+        },
+        {
+          "word": "quán",
+          "start": 43.06,
+          "end": 43.26
+        },
+        {
+          "word": "ăn",
+          "start": 43.26,
+          "end": 43.36
+        },
+        {
+          "word": "này,",
+          "start": 43.36,
+          "end": 43.76
+        },
+        {
+          "word": "phố",
+          "start": 44.06,
+          "end": 44.22
+        },
+        {
+          "word": "hàng",
+          "start": 44.22,
+          "end": 44.4
+        },
+        {
+          "word": "sơn",
+          "start": 44.4,
+          "end": 44.56
+        },
+        {
+          "word": "cũ,",
+          "start": 44.56,
+          "end": 45.18
+        },
+        {
+          "word": "năm",
+          "start": 45.4,
+          "end": 45.52
+        },
+        {
+          "word": "1945,",
+          "start": 45.52,
+          "end": 46.3
+        },
+        {
+          "word": "đổi",
+          "start": 46.74,
+          "end": 46.9
+        },
+        {
+          "word": "thành",
+          "start": 46.9,
+          "end": 47.06
+        },
+        {
+          "word": "phố",
+          "start": 47.06,
+          "end": 47.26
+        },
+        {
+          "word": "trả",
+          "start": 47.26,
+          "end": 47.52
+        },
+        {
+          "word": "cá,",
+          "start": 47.52,
+          "end": 47.74
+        },
+        {
+          "word": "con",
+          "start": 48.18,
+          "end": 48.4
+        },
+        {
+          "word": "phố",
+          "start": 48.4,
+          "end": 48.54
+        },
+        {
+          "word": "duy",
+          "start": 48.54,
+          "end": 48.74
+        },
+        {
+          "word": "nhất",
+          "start": 48.74,
+          "end": 48.88
+        },
+        {
+          "word": "Việt",
+          "start": 48.88,
+          "end": 49.12
+        },
+        {
+          "word": "Nam",
+          "start": 49.12,
+          "end": 49.2
+        },
+        {
+          "word": "mang",
+          "start": 49.2,
+          "end": 49.36
+        },
+        {
+          "word": "tên",
+          "start": 49.36,
+          "end": 49.46
+        },
+        {
+          "word": "món",
+          "start": 49.46,
+          "end": 49.64
+        },
+        {
+          "word": "ăn",
+          "start": 49.64,
+          "end": 50.1
+        },
+        {
+          "word": "Phân",
+          "start": 50.739999999999995,
+          "end": 51.1
+        }
+      ]
+    },
+    {
+      "id": "S06_FUNFACT_5_INGREDIENTS",
+      "start": 1529,
+      "end": 1938,
+      "durFrames": 409,
+      "bgKind": "flat",
+      "bg": "#F8B147",
+      "karaokeActive": "ink",
+      "withBadge": true,
+      "asset": {
+        "kind": "carousel-9",
+        "shots": [
+          "S06_01_CA_LANG",
+          "S06_02_BUN_ROI",
+          "S06_03_THI_LA",
+          "S06_04_HANH_LA",
+          "S06_05_LAC_RANG",
+          "S06_06_MAM_TOM",
+          "S06_07_OT",
+          "S06_08_CHANH",
+          "S06_09_RAU_MUI",
+          "S06_10_DAO_CA_TABLE"
+        ]
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "OutlineText",
+          "variant": "hook",
+          "text": "9 THỨ",
+          "color": "white",
+          "stroke": "#1A1A1A",
+          "strokeW": 8
+        },
+        {
+          "t": 0,
+          "kind": "OutlineText",
+          "variant": "body",
+          "text": "thiếu 1 là sai",
+          "color": "#1A1A1A",
+          "stroke": "white",
+          "strokeW": 3
+        },
+        {
+          "t": 60,
+          "kind": "Carousel9Chip",
+          "items": [
+            {
+              "icon": "🐟",
+              "label": "Cá lăng sông Đà",
+              "bg": "#FFF4E0"
+            },
+            {
+              "icon": "🍜",
+              "label": "Bún rối",
+              "bg": "#4FC3D1"
+            },
+            {
+              "icon": "🌿",
+              "label": "Thì là",
+              "bg": "#FFF4E0"
+            },
+            {
+              "icon": "🌱",
+              "label": "Hành lá",
+              "bg": "#4FC3D1"
+            },
+            {
+              "icon": "🥜",
+              "label": "Lạc rang",
+              "bg": "#FFF4E0"
+            },
+            {
+              "icon": "🦐",
+              "label": "Mắm tôm",
+              "bg": "#E85D2F"
+            },
+            {
+              "icon": "🌶️",
+              "label": "Ớt",
+              "bg": "#E85D2F"
+            },
+            {
+              "icon": "🍋",
+              "label": "Chanh",
+              "bg": "#4FC3D1"
+            },
+            {
+              "icon": "🍃",
+              "label": "Rau mùi",
+              "bg": "#FFF4E0"
+            }
+          ],
+          "popInterval": 18
+        },
+        {
+          "t": 240,
+          "kind": "ZoomPunch",
+          "to": "S06_10_DAO_CA_TABLE"
+        },
+        {
+          "t": 270,
+          "kind": "Caption",
+          "text": "tự đảo cá tại bàn"
+        }
+      ],
+      "subtitle": "Funfact năm. Một bát đúng phải đủ chín thứ. Cá lăng sông Đà. Bún rối. Thì là. Hành lá. Lạc rang. Mắm tôm. Ớt. Chanh. Rau mùi. Khách tự đảo cá trên chảo tại bàn. Ngoài Hà Nội không quán nào copy đúng.",
+      "emphasis": [
+        "chín",
+        "thứ",
+        "cá",
+        "lăng",
+        "sông",
+        "Đà",
+        "tự",
+        "đảo",
+        "cá",
+        "tại",
+        "bàn"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "card-flip.mp3",
+          "dur": 0.4
+        },
+        {
+          "t": 60,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 78,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 96,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 114,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 132,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 150,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 168,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 186,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 204,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 255,
+          "file": "sizzle.mp3",
+          "dur": 0.6
+        }
+      ],
+      "perWord": [
+        {
+          "word": "phách",
+          "start": 51.1,
+          "end": 51.2
+        },
+        {
+          "word": "thứ",
+          "start": 51.2,
+          "end": 51.38
+        },
+        {
+          "word": "năm,",
+          "start": 51.38,
+          "end": 51.88
+        },
+        {
+          "word": "một",
+          "start": 52.08,
+          "end": 52.22
+        },
+        {
+          "word": "bát",
+          "start": 52.22,
+          "end": 52.44
+        },
+        {
+          "word": "đúng",
+          "start": 52.44,
+          "end": 52.62
+        },
+        {
+          "word": "phải",
+          "start": 52.62,
+          "end": 52.78
+        },
+        {
+          "word": "đủ",
+          "start": 52.78,
+          "end": 52.96
+        },
+        {
+          "word": "chín",
+          "start": 52.96,
+          "end": 53.16
+        },
+        {
+          "word": "thước,",
+          "start": 53.16,
+          "end": 53.6
+        },
+        {
+          "word": "cá",
+          "start": 53.9,
+          "end": 54.0
+        },
+        {
+          "word": "lăng",
+          "start": 54.0,
+          "end": 54.14
+        },
+        {
+          "word": "sông",
+          "start": 54.14,
+          "end": 54.3
+        },
+        {
+          "word": "đà,",
+          "start": 54.3,
+          "end": 54.78
+        },
+        {
+          "word": "buôn",
+          "start": 55.12,
+          "end": 55.26
+        },
+        {
+          "word": "dối,",
+          "start": 55.26,
+          "end": 55.76
+        },
+        {
+          "word": "hành",
+          "start": 56.68,
+          "end": 56.98
+        },
+        {
+          "word": "lá",
+          "start": 56.98,
+          "end": 57.12
+        },
+        {
+          "word": "lạc",
+          "start": 57.12,
+          "end": 57.34
+        },
+        {
+          "word": "răng,",
+          "start": 57.34,
+          "end": 57.56
+        },
+        {
+          "word": "mắm",
+          "start": 58.04,
+          "end": 58.18
+        },
+        {
+          "word": "tôm,",
+          "start": 58.18,
+          "end": 58.68
+        },
+        {
+          "word": "ớt,",
+          "start": 58.84,
+          "end": 59.38
+        },
+        {
+          "word": "trành",
+          "start": 59.56,
+          "end": 59.74
+        },
+        {
+          "word": "rau",
+          "start": 59.74,
+          "end": 59.96
+        },
+        {
+          "word": "mùi,",
+          "start": 59.96,
+          "end": 60.56
+        },
+        {
+          "word": "khách",
+          "start": 60.72,
+          "end": 60.84
+        },
+        {
+          "word": "tự",
+          "start": 60.84,
+          "end": 61.04
+        },
+        {
+          "word": "đảo",
+          "start": 61.04,
+          "end": 61.22
+        },
+        {
+          "word": "cá",
+          "start": 61.22,
+          "end": 61.36
+        },
+        {
+          "word": "trên",
+          "start": 61.36,
+          "end": 61.56
+        },
+        {
+          "word": "chảo",
+          "start": 61.56,
+          "end": 61.74
+        },
+        {
+          "word": "tại",
+          "start": 61.74,
+          "end": 61.9
+        },
+        {
+          "word": "bàn,",
+          "start": 61.9,
+          "end": 62.46
+        },
+        {
+          "word": "ngoài",
+          "start": 62.64,
+          "end": 62.72
+        },
+        {
+          "word": "Hà",
+          "start": 62.72,
+          "end": 62.88
+        },
+        {
+          "word": "Nội",
+          "start": 62.88,
+          "end": 63.0
+        },
+        {
+          "word": "không",
+          "start": 63.0,
+          "end": 63.16
+        },
+        {
+          "word": "quán",
+          "start": 63.16,
+          "end": 63.32
+        },
+        {
+          "word": "nào",
+          "start": 63.32,
+          "end": 63.42
+        },
+        {
+          "word": "copy",
+          "start": 63.42,
+          "end": 63.66
+        },
+        {
+          "word": "đúng",
+          "start": 63.66,
+          "end": 64.14
+        }
+      ]
+    },
+    {
+      "id": "S07_CTA",
+      "start": 1938,
+      "end": 2250,
+      "durFrames": 312,
+      "bgKind": "flat-striped",
+      "bg": "#1F6E79",
+      "stripeColor": "#FFD24A",
+      "stripeOpacity": 0.15,
+      "karaokeActive": "coral",
+      "withBadge": false,
+      "withMark": true,
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "OutlineText",
+          "variant": "body",
+          "text": "Số 14 phố Chả Cá",
+          "color": "#FFD24A",
+          "stroke": "#1A1A1A",
+          "strokeW": 4,
+          "y": 420
+        },
+        {
+          "t": 0,
+          "kind": "Chip",
+          "text": "QUÁN GỐC HÀ NỘI",
+          "bg": "#E85D2F",
+          "color": "white",
+          "y": 560
+        },
+        {
+          "t": 75,
+          "kind": "StickerPop",
+          "text": "MÓN TIẾP THEO?",
+          "bg": "#FFD24A",
+          "color": "#1A1A1A",
+          "rotate": -2,
+          "y": 780
+        },
+        {
+          "t": 75,
+          "kind": "FoodIconCloud",
+          "icons": [
+            "🍜",
+            "🥢",
+            "🍱",
+            "🌶️",
+            "🦀"
+          ],
+          "duration": 60,
+          "orbitAround": "sticker"
+        },
+        {
+          "t": 75,
+          "kind": "Chip",
+          "text": "COMMENT XUỐNG DƯỚI",
+          "bg": "#E85D2F",
+          "color": "white",
+          "y": 920
+        },
+        {
+          "t": 135,
+          "kind": "ZoomPunch",
+          "to": "brand"
+        },
+        {
+          "t": 135,
+          "kind": "BrandMark",
+          "text": "Trạm Dừng Mlem",
+          "color": "white",
+          "stroke": "#1A1A1A",
+          "strokeW": 8,
+          "fontSize": 120,
+          "y": 900,
+          "pulse": true
+        },
+        {
+          "t": 135,
+          "kind": "OutlineText",
+          "variant": "body",
+          "text": "🍜 mỗi ngày 2 món lạ thế giới",
+          "color": "#FFD24A",
+          "stroke": "#1A1A1A",
+          "strokeW": 3,
+          "y": 1050
+        },
+        {
+          "t": 135,
+          "kind": "OutlineText",
+          "variant": "thin",
+          "text": "@tramdungmlem",
+          "color": "white",
+          "stroke": "#1A1A1A",
+          "strokeW": 2,
+          "y": 1180
+        },
+        {
+          "t": 195,
+          "kind": "CTAPill",
+          "text": "FOLLOW NGAY",
+          "bg": "#E85D2F",
+          "color": "white",
+          "rotate": -1,
+          "pulse": true,
+          "y": 1340,
+          "arrow": "↑"
+        },
+        {
+          "t": 240,
+          "kind": "OutlineText",
+          "variant": "body",
+          "text": "Hẹn món tiếp theo!",
+          "color": "white",
+          "stroke": "#1A1A1A",
+          "strokeW": 3,
+          "y": 1500
+        }
+      ],
+      "subtitle": "Bạn từng đến số mười bốn phố Chả Cá chưa? Comment món tiếp theo bạn muốn xem. Mình là Trạm Dừng Mlem — mỗi ngày hai món lạ thế giới. Follow để không bỏ lỡ!",
+      "emphasis": [
+        "số",
+        "mười",
+        "bốn",
+        "phố",
+        "Chả",
+        "Cá",
+        "comment",
+        "món",
+        "tiếp",
+        "theo",
+        "Trạm",
+        "Dừng",
+        "Mlem",
+        "hai",
+        "món",
+        "lạ",
+        "thế",
+        "giới",
+        "Follow",
+        "bỏ",
+        "lỡ"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "whoosh-in.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 75,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 135,
+          "file": "bell-resolve.mp3",
+          "dur": 0.4
+        },
+        {
+          "t": 135,
+          "file": "zoom-punch.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 195,
+          "file": "button-tap.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 255,
+          "file": "logo-stinger.mp3",
+          "dur": 0.5
+        }
+      ],
+      "perWord": [
+        {
+          "word": "Vạn",
+          "start": 64.74,
+          "end": 65.1
+        },
+        {
+          "word": "từng",
+          "start": 65.1,
+          "end": 65.34
+        },
+        {
+          "word": "đến",
+          "start": 65.34,
+          "end": 65.42
+        },
+        {
+          "word": "số",
+          "start": 65.42,
+          "end": 65.6
+        },
+        {
+          "word": "14",
+          "start": 65.6,
+          "end": 65.88
+        },
+        {
+          "word": "phố",
+          "start": 65.88,
+          "end": 66.12
+        },
+        {
+          "word": "trả",
+          "start": 66.12,
+          "end": 66.3
+        },
+        {
+          "word": "cá",
+          "start": 66.3,
+          "end": 66.44
+        },
+        {
+          "word": "chưa?",
+          "start": 66.44,
+          "end": 66.76
+        },
+        {
+          "word": "Comment",
+          "start": 67.22,
+          "end": 67.4
+        },
+        {
+          "word": "món",
+          "start": 67.4,
+          "end": 67.54
+        },
+        {
+          "word": "tiếp",
+          "start": 67.54,
+          "end": 67.74
+        },
+        {
+          "word": "theo,",
+          "start": 67.74,
+          "end": 68.06
+        },
+        {
+          "word": "bạn",
+          "start": 68.12,
+          "end": 68.24
+        },
+        {
+          "word": "muốn",
+          "start": 68.24,
+          "end": 68.42
+        },
+        {
+          "word": "xem?",
+          "start": 68.42,
+          "end": 68.82
+        },
+        {
+          "word": "Mình",
+          "start": 69.28,
+          "end": 69.4
+        },
+        {
+          "word": "là",
+          "start": 69.4,
+          "end": 69.54
+        },
+        {
+          "word": "Trạm",
+          "start": 69.54,
+          "end": 69.74
+        },
+        {
+          "word": "Dừng",
+          "start": 69.74,
+          "end": 69.92
+        },
+        {
+          "word": "Blem",
+          "start": 69.92,
+          "end": 70.12
+        },
+        {
+          "word": "mỗi",
+          "start": 70.12,
+          "end": 70.32
+        },
+        {
+          "word": "ngày",
+          "start": 70.32,
+          "end": 70.5
+        },
+        {
+          "word": "hai",
+          "start": 70.5,
+          "end": 70.68
+        },
+        {
+          "word": "món",
+          "start": 70.68,
+          "end": 70.78
+        },
+        {
+          "word": "lạ",
+          "start": 70.78,
+          "end": 70.98
+        },
+        {
+          "word": "thế",
+          "start": 70.98,
+          "end": 71.2
+        },
+        {
+          "word": "giới,",
+          "start": 71.2,
+          "end": 71.78
+        },
+        {
+          "word": "follow",
+          "start": 72.04,
+          "end": 72.24
+        },
+        {
+          "word": "để",
+          "start": 72.24,
+          "end": 72.44
+        },
+        {
+          "word": "không",
+          "start": 72.44,
+          "end": 72.6
+        },
+        {
+          "word": "bỏ",
+          "start": 72.6,
+          "end": 72.74
+        },
+        {
+          "word": "lỡ",
+          "start": 72.74,
+          "end": 72.98
+        }
+      ]
+    }
+  ]
+}

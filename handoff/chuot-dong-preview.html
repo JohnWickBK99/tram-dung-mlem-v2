@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chuột Đồng Nướng Lu — 12 màn riêng (Pillar B)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" />
+<style>
+  :root {
+    --yellow:#F8B147; --orange:#F39820; --coral:#E85D2F; --red:#C8302D;
+    --teal:#4FC3D1; --cream:#FFF4E0; --white:#FFF; --off:#FFFAF0;
+    --ink:#1A1A1A; --body:#5C5443;
+    /* Pillar B (Món lạ quốc gia) — đỏ dominant */
+    --pillarB-light:#F4B0AE; --pillarB-base:#C8302D; --pillarB-dark:#7A1614;
+    --display:'Baloo 2', system-ui, sans-serif;
+    --heading:'Be Vietnam Pro', system-ui, sans-serif;
+    --body-f:'Be Vietnam Pro', system-ui, sans-serif;
+    --mono:'JetBrains Mono', ui-monospace, monospace;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--off);color:var(--ink);font-family:var(--body-f)}
+  .page{padding:48px;max-width:1600px;margin:0 auto}
+
+  /* Header */
+  .head-card{
+    background:var(--red); color:var(--white);
+    border:6px solid var(--ink); border-radius:32px;
+    box-shadow:14px 14px 0 0 var(--ink);
+    padding:48px; margin-bottom:64px;
+  }
+  .head-eyebrow{
+    display:inline-flex; gap:10px; align-items:center;
+    background:var(--ink); color:var(--yellow);
+    padding:8px 20px; border-radius:999px;
+    font-family:var(--heading); font-weight:800; font-size:14px; letter-spacing:2px; text-transform:uppercase;
+    margin-bottom:20px;
+  }
+  .head-title{font-family:var(--display); font-weight:800; font-size:88px; line-height:0.95; margin:0 0 16px; -webkit-text-stroke:4px var(--ink); paint-order:stroke fill;}
+  .head-sub{font-family:var(--heading); font-weight:600; font-size:22px; max-width:880px; margin:0;}
+
+  /* Grid */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+    gap:48px;
+  }
+  .card{
+    display:flex; flex-direction:column; gap:14px;
+  }
+  .card-meta{
+    background:var(--white); border:4px solid var(--ink); border-radius:16px;
+    box-shadow:6px 6px 0 0 var(--ink);
+    padding:14px 18px;
+    display:flex; align-items:center; gap:12px;
+  }
+  .badge{
+    width:42px; height:42px; border-radius:50%;
+    background:var(--ink); color:var(--yellow);
+    display:inline-flex; align-items:center; justify-content:center;
+    font-family:var(--display); font-weight:800; font-size:22px;
+  }
+  .card-meta .info{display:flex; flex-direction:column; gap:2px;}
+  .card-meta .key{font-family:var(--mono); font-weight:600; font-size:11px; color:var(--body); letter-spacing:1px;}
+  .card-meta .name{font-family:var(--display); font-weight:800; font-size:18px;}
+
+  /* Phone frame 9:16 */
+  .frame{
+    width:100%; aspect-ratio:9/16;
+    background:var(--ink);
+    border:6px solid var(--ink); border-radius:32px;
+    box-shadow:14px 14px 0 0 var(--ink);
+    overflow:hidden; position:relative;
+  }
+  .scene{
+    position:absolute; inset:0;
+    width:1080px; height:1920px;
+    transform-origin:top left;
+  }
+
+  /* generic */
+  .abs{position:absolute; inset:0;}
+  .center{
+    display:flex; align-items:center; justify-content:center; flex-direction:column;
+    padding:200px 60px 480px;
+  }
+
+  /* Pillar B badge — WHITE text on RED, ink dot, yellow letter (per PillarBadge.tsx v1.12) */
+  .pillar-badge{
+    position:absolute; top:60px; left:60px; z-index:10;
+    display:flex; align-items:center; gap:14px;
+    background:var(--red); color:var(--white);
+    border:3px solid var(--ink); border-radius:999px;
+    padding:12px 22px 12px 14px;
+    box-shadow:6px 6px 0 0 var(--ink);
+    font-family:var(--heading); font-weight:800;
+    letter-spacing:1.5px; font-size:28px;
+  }
+  .pillar-badge .dot{
+    width:44px; height:44px; border-radius:50%;
+    background:var(--ink); color:var(--yellow);
+    display:inline-flex; align-items:center; justify-content:center;
+    font-family:var(--display); font-weight:800; font-size:30px;
+  }
+  .channel-mark{
+    position:absolute; top:60px; right:60px; z-index:10;
+    background:var(--ink); color:var(--yellow);
+    border:3px solid var(--ink); border-radius:999px;
+    padding:10px 22px;
+    box-shadow:4px 4px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800;
+    font-size:26px; letter-spacing:2px; text-transform:uppercase;
+  }
+
+  /* karaoke subtitle — default */
+  .sub{
+    position:absolute; bottom:220px; left:60px; right:60px; z-index:9;
+    display:flex; flex-wrap:wrap; justify-content:center; gap:8px 6px;
+    max-height:340px; overflow:hidden;
+  }
+  .sub span{
+    font-family:var(--body-f); font-weight:700; font-size:48px;
+    color:var(--white); -webkit-text-stroke:4px var(--ink); paint-order:stroke fill;
+    line-height:1.3; padding:4px 10px; border-radius:8px;
+    border:3px solid transparent;
+  }
+  /* default highlight = yellow chip + ink text */
+  .sub span.hl{
+    color:var(--ink); background:var(--yellow);
+    border:3px solid var(--ink);
+    box-shadow:4px 4px 0 0 var(--ink);
+    -webkit-text-stroke:0;
+  }
+  /* emphasis (non-active but key word) — yellow text outlined */
+  .sub span.em{ color:var(--yellow); }
+
+  /* photo backdrop fallback */
+  .photo{
+    position:absolute; inset:0;
+    background:
+      radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.5) 100%),
+      var(--placeholder, var(--pillarB-dark));
+    opacity:0.6;
+  }
+  .photo.with-tint::after{
+    content:''; position:absolute; inset:0;
+    background:var(--tint, transparent); mix-blend-mode:multiply;
+  }
+
+  /* Outline text */
+  .outline-h{
+    font-family:var(--display); font-weight:800;
+    -webkit-text-stroke:6px var(--ink); paint-order:stroke fill;
+    text-shadow:0 8px 0 var(--ink);
+    line-height:0.95;
+    white-space:nowrap;
+  }
+  .outline-b{
+    font-family:var(--display); font-weight:800;
+    -webkit-text-stroke:4px var(--ink); paint-order:stroke fill;
+    text-shadow:0 4px 0 var(--ink);
+  }
+
+  /* Sticker chips */
+  .chip{
+    background:var(--cream); color:var(--ink);
+    border:4px solid var(--ink); border-radius:999px;
+    padding:14px 32px;
+    box-shadow:8px 8px 0 0 var(--ink);
+    font-family:var(--heading); font-weight:800;
+    font-size:36px;
+    white-space:nowrap;
+  }
+  .chip.yellow{background:var(--yellow);}
+  .chip.coral{background:var(--coral); color:var(--white);}
+  .chip.red{background:var(--red); color:var(--white);}
+  .chip.ink{background:var(--ink); color:var(--yellow);}
+  .chip.lg{font-size:52px; padding:16px 38px; box-shadow:14px 14px 0 0 var(--ink); border-width:6px;}
+
+  /* ─── Scene-specific styles (12 cảnh) ─────────────────────── */
+
+  /* S01 — split screen $50 USA vs 80K VN */
+  #s01{background:var(--ink);}
+  #s01 .split{display:flex; flex-direction:column; height:100%;}
+  #s01 .half{flex:1; position:relative; display:flex; align-items:center; justify-content:center;}
+  #s01 .half.top{padding:80px 0 200px; align-items:flex-end;}
+  #s01 .half.bot{padding:200px 0 600px; align-items:flex-start;}
+  #s01 .half-photo{position:absolute; inset:0; opacity:0.6;}
+  #s01 .half.top .half-photo{background:linear-gradient(135deg,#3a3a3a 0%,#7A1614 100%);}
+  #s01 .half.bot .half-photo{background:linear-gradient(135deg,#B87808 0%,#7A1614 100%);}
+  #s01 .divider{height:8px; background:var(--red); width:100%;}
+  #s01 .label{font-family:var(--display); font-weight:800; color:#FFD23F; font-size:200px; letter-spacing:-4px; -webkit-text-stroke:6px var(--ink); paint-order:stroke fill; text-shadow:0 8px 0 var(--ink); white-space:nowrap;}
+
+  /* S02 — Phù Dật place pill */
+  #s02 .photo{--placeholder:linear-gradient(135deg,#7A1614 0%,#5C5443 100%); --tint:rgba(122,22,20,0.40);}
+  #s02 .place{color:var(--yellow); font-size:240px; letter-spacing:-6px;}
+  #s02 .pill{background:var(--ink); color:var(--yellow); border:6px solid var(--ink); border-radius:16px; padding:20px 44px; box-shadow:14px 14px 0 0 var(--ink); font-family:var(--heading); font-weight:800; font-size:42px; letter-spacing:4px; text-align:center;}
+
+  /* S03 — Giant 30 năm (yellow BG) */
+  #s03{background:var(--yellow);}
+  #s03 .glow{position:absolute; inset:0; background:radial-gradient(circle at 50% 50%,#FFE0A8 0%,var(--yellow) 70%); opacity:0.6;}
+  #s03 .num{font-family:var(--display); font-weight:800; font-size:480px; color:var(--white); line-height:0.9; letter-spacing:-16px; text-shadow:12px 12px 0 var(--ink); white-space:nowrap;}
+  #s03 .unit{background:var(--coral); color:var(--white); border:6px solid var(--ink); border-radius:16px; padding:20px 50px; box-shadow:14px 14px 0 0 var(--ink); font-family:var(--display); font-weight:800; font-size:96px; letter-spacing:8px;}
+  #s03 .attr{font-family:var(--heading); font-weight:700; font-size:42px; color:var(--white); -webkit-text-stroke:2px var(--ink); paint-order:stroke fill; letter-spacing:2px; margin-top:30px;}
+  /* yellow BG → karaoke .hl chuyển coral chip + white text */
+  #s03 .sub span.hl{
+    background:var(--coral); color:var(--white);
+    -webkit-text-stroke:2px var(--ink);
+    border:3px solid var(--ink);
+    box-shadow:4px 4px 0 0 var(--ink);
+  }
+  #s03 .sub span{ color:var(--ink); -webkit-text-stroke:3px var(--white); }
+  #s03 .sub span.em{ color:var(--red); }
+
+  /* S04 — split ĐỒNG vs CỐNG */
+  #s04{background:var(--ink);}
+  #s04 .split{display:flex; flex-direction:column; height:100%;}
+  #s04 .half{flex:1; position:relative; display:flex; align-items:center; justify-content:center;}
+  #s04 .half.top{padding:80px 0 200px; align-items:flex-end;}
+  #s04 .half.bot{padding:200px 0 600px; align-items:flex-start;}
+  #s04 .half-photo{position:absolute; inset:0; opacity:0.6;}
+  #s04 .half.top .half-photo{background:linear-gradient(135deg,#B87808 0%,#3a8e3f 100%);}
+  #s04 .half.bot .half-photo{background:linear-gradient(135deg,#2b1a0a 0%,#5C5443 100%);}
+  #s04 .divider{height:8px; background:var(--red); width:100%;}
+  #s04 .label{font-family:var(--display); font-weight:800; color:#FFD23F; font-size:180px; letter-spacing:-4px; -webkit-text-stroke:6px var(--ink); paint-order:stroke fill; text-shadow:0 8px 0 var(--ink); white-space:nowrap;}
+
+  /* S05 — 4-panel tutorial */
+  #s05 .photo{--placeholder:linear-gradient(135deg,#3a2e1a 0%,#7A1614 100%); --tint:rgba(0,0,0,0.30);}
+  #s05 .panels{
+    display:grid; grid-template-columns:1fr 1fr; gap:28px;
+    width:980px; padding:40px;
+  }
+  #s05 .panel{
+    background:var(--white); border:8px solid var(--ink); border-radius:24px;
+    box-shadow:20px 20px 0 0 var(--ink);
+    padding:24px 28px; min-height:200px;
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--display); font-weight:800; font-size:50px;
+    color:var(--ink); text-align:center; line-height:1.1;
+  }
+  #s05 .panel.y{background:var(--yellow);}
+  #s05 .panel.r1{transform:rotate(-2deg);}
+  #s05 .panel.r2{transform:rotate(2deg);}
+  /* S05 panels chiếm trung tâm → karaoke đẩy sát đáy + font nhỏ */
+  #s05 .sub{ bottom:80px; }
+  #s05 .sub span{ font-size:38px; }
+
+  /* S06 — BITE reaction (CẮN!) */
+  #s06{background:var(--ink);}
+  #s06 .photo{--placeholder:linear-gradient(135deg,#3a1a14 0%,#7A1614 100%); --tint:rgba(0,0,0,0.40); opacity:0.6;}
+  #s06 .top-title{
+    position:absolute; top:220px; left:0; right:0; text-align:center;
+    font-family:var(--display); font-weight:800; font-size:200px;
+    color:#FFD23F; letter-spacing:-4px;
+    -webkit-text-stroke:6px var(--ink); paint-order:stroke fill;
+    text-shadow:0 8px 0 var(--ink);
+  }
+  #s06 .callouts{position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; gap:32px; padding-top:600px;}
+  #s06 .callout{
+    background:var(--yellow); color:var(--ink);
+    border:8px solid var(--ink); border-radius:16px;
+    padding:20px 40px; box-shadow:14px 14px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800; font-size:90px;
+    letter-spacing:-2px; white-space:nowrap;
+  }
+  #s06 .callout.w{background:var(--white);}
+  #s06 .callout.r1{transform:rotate(-4deg);}
+  #s06 .callout.r2{transform:rotate(3deg);}
+  #s06 .callout.r3{transform:rotate(-2deg);}
+  #s06 .sub{ bottom:80px; }
+  #s06 .sub span{ font-size:38px; }
+
+  /* S07 — Ratio cells gà/thỏ/chuột (cream BG) */
+  #s07{background:var(--cream);}
+  #s07 .photo{--placeholder:linear-gradient(135deg,#FFE0A8 0%,#FFF4E0 100%); --tint:rgba(255,244,224,0.55);}
+  #s07 .cells{display:flex; gap:24px;}
+  #s07 .cell{
+    width:200px; padding:32px 0;
+    border:8px solid var(--ink); border-radius:24px;
+    box-shadow:20px 20px 0 0 var(--ink); text-align:center;
+  }
+  #s07 .cell .num{font-size:130px; line-height:0.9;}
+  #s07 .cell .lab{font-family:var(--heading); font-weight:800; font-size:36px; letter-spacing:4px; margin-top:14px;}
+  #s07 .cell.y{background:var(--yellow); color:var(--ink);}
+  #s07 .cell.c{background:var(--cream); color:var(--ink);}
+  #s07 .cell.coral{background:var(--coral); color:var(--white);}
+  #s07 .extras{font-family:var(--heading); font-weight:700; font-size:48px; color:var(--ink); margin-top:20px; letter-spacing:2px;}
+  #s07 .extras .hl{background:var(--yellow); padding:4px 14px; border-radius:6px; border:3px solid var(--ink); margin:0 4px;}
+  /* cream BG → karaoke .hl chuyển red chip + white text */
+  #s07 .sub span.hl{
+    background:var(--red); color:var(--white);
+    -webkit-text-stroke:2px var(--ink);
+    border:3px solid var(--ink);
+    box-shadow:4px 4px 0 0 var(--ink);
+  }
+  #s07 .sub span{ color:var(--ink); -webkit-text-stroke:3px var(--white); }
+  #s07 .sub span.em{ color:var(--red); }
+
+  /* S08 — Stat 5000 KG (ink BG) */
+  #s08{background:var(--ink);}
+  #s08 .glow{position:absolute; inset:0; background:radial-gradient(ellipse at center,var(--pillarB-dark) 0%,var(--ink) 70%); opacity:0.6;}
+  #s08 .big-stat{
+    font-family:var(--mono); font-weight:700; font-size:300px;
+    color:var(--yellow); line-height:0.9; letter-spacing:-10px;
+    text-shadow:0 12px 0 var(--ink); -webkit-text-stroke:8px var(--ink); paint-order:stroke fill;
+    white-space:nowrap;
+  }
+  #s08 .km-pill{background:var(--coral); color:var(--white); border:6px solid var(--ink); border-radius:16px; padding:14px 42px; box-shadow:14px 14px 0 0 var(--ink); font-family:var(--display); font-weight:800; font-size:88px; letter-spacing:6px;}
+  #s08 .grow-line{width:600px; height:8px; background:var(--yellow);}
+  #s08 .tail{font-family:var(--heading); font-weight:700; font-size:56px; color:var(--cream); letter-spacing:2px; text-align:center;}
+  #s08 .tail .hl{background:var(--yellow); color:var(--ink); padding:4px 12px; border-radius:6px;}
+
+  /* S09 — TagChipsStat 150K KFC (light pink BG) */
+  #s09{background:var(--pillarB-light);}
+  #s09 .photo{--placeholder:linear-gradient(135deg,#F4B0AE 0%,#FFE0A8 100%); --tint:rgba(244,176,174,0.45);}
+  #s09 .price-block{
+    background:var(--yellow); border:8px solid var(--ink); border-radius:32px;
+    padding:40px 80px; box-shadow:20px 20px 0 0 var(--ink);
+    font-family:var(--mono); font-weight:700; font-size:240px;
+    color:var(--ink); line-height:0.9;
+  }
+  #s09 .suat{font-family:var(--display); font-weight:800; font-size:56px; color:var(--white); -webkit-text-stroke:4px var(--ink); paint-order:stroke fill; white-space:nowrap;}
+  #s09 .dim{font-family:var(--body-f); font-weight:500; font-size:36px; color:var(--cream); letter-spacing:4px; -webkit-text-stroke:2px var(--ink); paint-order:stroke fill;}
+  #s09 .sub{ bottom:180px; }
+  /* light pink → karaoke .hl chuyển red chip + white text */
+  #s09 .sub span.hl{
+    background:var(--red); color:var(--white);
+    -webkit-text-stroke:2px var(--ink);
+    border:3px solid var(--ink);
+    box-shadow:4px 4px 0 0 var(--ink);
+  }
+  #s09 .sub span{ color:var(--ink); -webkit-text-stroke:3px var(--white); }
+
+  /* S10 — Carousel 3 panel (Pháp / Ghana / VN) */
+  #s10{background:var(--ink);}
+  #s10 .carousel{position:absolute; inset:0; display:flex; flex-direction:column;}
+  #s10 .panel-row{flex:1; position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden;}
+  #s10 .panel-row + .panel-row{border-top:8px solid var(--ink);}
+  #s10 .panel-photo{position:absolute; inset:0; opacity:0.55;}
+  #s10 .pr1 .panel-photo{background:linear-gradient(135deg,#3a3a4a 0%,#5C5443 100%);}
+  #s10 .pr2 .panel-photo{background:linear-gradient(135deg,#5a4a2a 0%,#B87808 100%);}
+  #s10 .pr3 .panel-photo{background:linear-gradient(135deg,#7A1614 0%,#B87808 100%);}
+  #s10 .panel-label{
+    position:relative; z-index:2;
+    font-family:var(--display); font-weight:800; font-size:140px;
+    color:var(--white); letter-spacing:-4px;
+    -webkit-text-stroke:6px var(--ink); paint-order:stroke fill;
+    text-shadow:0 8px 0 var(--ink);
+    padding:20px 40px;
+  }
+  #s10 .pr1 .panel-label{color:var(--coral);}
+  #s10 .pr2 .panel-label{color:var(--yellow);}
+  #s10 .pr3 .panel-label{color:#FFD23F;}
+
+  /* S11 — FAO place pill (red dark BG) */
+  #s11{background:var(--pillarB-dark);}
+  #s11 .photo{--placeholder:linear-gradient(135deg,#5a0e10 0%,#7A1614 100%); --tint:rgba(122,22,20,0.50);}
+  #s11 .fao{color:var(--yellow); font-size:300px; letter-spacing:-8px;}
+  #s11 .pill{background:var(--ink); color:var(--yellow); border:6px solid var(--ink); border-radius:16px; padding:20px 44px; box-shadow:14px 14px 0 0 var(--ink); font-family:var(--heading); font-weight:800; font-size:42px; letter-spacing:4px; text-align:center;}
+  /* red dark BG → karaoke chuyển yellow chip + ink text cho contrast */
+  #s11 .sub span.hl{
+    background:var(--yellow); color:var(--ink);
+    -webkit-text-stroke:0;
+    border:3px solid var(--ink);
+    box-shadow:4px 4px 0 0 var(--ink);
+  }
+  #s11 .sub span.em{ color:var(--yellow); }
+
+  /* S12 — CTA striped (yellow BG) */
+  #s12{background:var(--yellow);}
+  #s12 .pat{background:repeating-linear-gradient(45deg,var(--yellow) 0 60px,#FFE0A8 60px 120px); opacity:0.5;}
+  #s12 .nbs{background:var(--ink); color:var(--yellow); border:4px solid var(--ink); border-radius:999px; padding:14px 40px; box-shadow:8px 8px 0 0 var(--ink); font-family:var(--heading); font-weight:800; font-size:44px; letter-spacing:6px; text-transform:uppercase;}
+  #s12 .follow{color:var(--coral); font-size:240px; letter-spacing:-6px;}
+  #s12 .cta-pill{background:var(--coral); color:var(--white); border:8px solid var(--ink); border-radius:999px; padding:28px 64px; box-shadow:20px 20px 0 0 var(--ink); font-family:var(--display); font-weight:800; font-size:64px; letter-spacing:4px; text-transform:uppercase; white-space:nowrap;}
+  #s12 .mn{font-family:var(--heading); font-weight:700; font-size:46px; color:var(--ink); letter-spacing:2px; text-align:center;}
+  #s12 .mn .hl{background:var(--ink); color:var(--yellow); padding:4px 14px; border-radius:6px;}
+  /* yellow striped BG → karaoke chuyển coral chip + white text */
+  #s12 .sub{ bottom:180px; }
+  #s12 .sub span.hl{
+    background:var(--coral); color:var(--white);
+    -webkit-text-stroke:2px var(--ink);
+    border:3px solid var(--ink);
+    box-shadow:5px 5px 0 0 var(--ink);
+    transform:rotate(-1deg);
+  }
+  #s12 .sub span{ color:var(--ink); -webkit-text-stroke:3px var(--white); }
+  #s12 .sub span.em{ color:var(--red); }
+
+  /* foot */
+  .foot{margin-top:80px; padding-top:24px; border-top:2px dashed var(--ink); font-family:var(--mono); font-size:13px; color:var(--body); display:flex; justify-content:space-between;}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="head-card">
+    <span class="head-eyebrow">● Chuột Đồng Nướng Lu · Pillar B · 12 màn riêng</span>
+    <h1 class="head-title">Chuột Đồng Nướng Lu<br/>An Giang — Phù Dật</h1>
+    <p class="head-sub">12 scene component, mỗi cái 1 file trong <code>src/scenes/chuotdong/</code> với 1 file <code>SceneBlock.tsx</code> điều phối. Pillar B (đỏ dominant), Baloo 2 + Be VN Pro, sticker chunky outline 4-6px, shadow offset solid. Karaoke override per-scene khi BG light/yellow để giữ contrast.</p>
+  </header>
+
+  <div class="grid" id="grid"></div>
+
+  <div class="foot">
+    <span>Trạm Dừng Mlem · Chuotdong v1 · Pillar B theme</span>
+    <span>1080×1920 · scaled 1:N to fit cards</span>
+  </div>
+</div>
+
+<script>
+  // 12 scenes — match SceneBlock.tsx
+  const scenes = [
+    { id:'s01', key:'S01_HOOK_USA_VN',         name:'Hook USA $50 vs VN 80K',  sub:'Bên Mỹ tốn năm chục đô diệt chuột bên ta tám chục nghìn ăn ngon', hl:[2,3,4,8,9,10] },
+    { id:'s02', key:'S02_SETUP_PHUDAT',        name:'Phù Dật chợ chuột',       sub:'Phù Dật An Giang chợ chuột đồng lớn nhất Việt Nam', hl:[0,1,2,8,9] },
+    { id:'s03', key:'S03_HISTORY_NUOCNOI',     name:'30 năm đặc sản',          sub:'Đặc sản ba mươi năm tuổi mùa nước nổi tháng tám âm lịch', hl:[2,3,4,5] },
+    { id:'s04', key:'S04_PROCESS_NGUYENLIEU',  name:'Đồng vs Cống',            sub:'Chuột đồng ăn lúa sạch khác hẳn chuột cống bẩn thỉu', hl:[1,2,7,8] },
+    { id:'s05', key:'S05_TUTORIAL_LU_DEEP',    name:'Nướng lu 4 bước',         sub:'Một ướp sả ớt hai treo lu đất ba nướng than ba mươi đến bốn mươi phút bốn da vàng giòn', hl:[2,3,4,5,6,7,8] },
+    { id:'s06', key:'S06_BITE_REACTION',       name:'CẮN! da giòn thịt ngọt',  sub:'Da giòn tan thịt ngọt mềm quên trời quên đất', hl:[1,2,4,5] },
+    { id:'s07', key:'S07_FLAVOR_GATATHO',      name:'Vị: gà · thỏ · chuột',    sub:'Vị béo của gà mềm như thỏ và đậm đà riêng biệt', hl:[1,2,5,6,9,10] },
+    { id:'s08', key:'S08_PHUDAT_MARKET',       name:'5000 KG/ngày',            sub:'Năm ngàn cân mỗi ngày tại chợ Phù Dật số một Việt Nam', hl:[0,1,2,3,7,8] },
+    { id:'s09', key:'S09_PRICE_KFC',           name:'150K đắt hơn KFC',        sub:'Một dĩa no nê một trăm năm chục nghìn đắt hơn KFC', hl:[0,1,2,8,9] },
+    { id:'s10', key:'S10_GLOBAL_RAT_DISHES',   name:'Pháp · Ghana · MT',       sub:'Pháp năm 1870 Ghana grasscutter và miền Tây cùng ăn chuột', hl:[0,2,3,4,8,9] },
+    { id:'s11', key:'S11_FAO_HEALTH',          name:'FAO an toàn',             sub:'FAO xác nhận an toàn và giàu đạm cho người', hl:[0,3,4,6] },
+    { id:'s12', key:'S12_CTA',                 name:'CTA Follow',              sub:'Dám thử không follow Trạm Dừng Mlem món lạ Việt Nam mỗi tuần', hl:[0,1,8,9] },
+  ];
+
+  // emphasis indices per scene (yellow-tinted non-active key words)
+  const emphasis = {
+    s01:[0,1,5,6,7],
+    s05:[10,11,12],
+    s06:[6,7,8,9],
+    s07:[],
+    s09:[6,7],
+    s12:[2,3,4,5,6,7],
+  };
+
+  function content(id){
+    if(id==='s01') return `
+      <div class="abs split">
+        <div class="half top">
+          <div class="half-photo"></div>
+          <div class="label" style="position:relative">$50 DIỆT</div>
+        </div>
+        <div class="divider"></div>
+        <div class="half bot">
+          <div class="half-photo"></div>
+          <div class="label" style="position:relative">80K ĂN</div>
+        </div>
+      </div>`;
+    if(id==='s02') return `
+      <div class="abs photo with-tint"></div>
+      <div class="abs center" style="gap:30px">
+        <div class="outline-h place">PHÙ DẬT</div>
+        <div class="pill">AN GIANG · CHỢ CHUỘT</div>
+      </div>`;
+    if(id==='s03') return `
+      <div class="abs glow"></div>
+      <div class="abs center" style="gap:30px">
+        <div class="num">30</div>
+        <div class="unit">NĂM ĐẶC SẢN</div>
+        <div class="attr">Mùa nước nổi · tháng 8 âm lịch</div>
+      </div>`;
+    if(id==='s04') return `
+      <div class="abs split">
+        <div class="half top">
+          <div class="half-photo"></div>
+          <div class="label" style="position:relative; color:#9bf08a">ĐỒNG ✓</div>
+        </div>
+        <div class="divider"></div>
+        <div class="half bot">
+          <div class="half-photo"></div>
+          <div class="label" style="position:relative; color:#F4B0AE">CỐNG ✗</div>
+        </div>
+      </div>`;
+    if(id==='s05') return `
+      <div class="abs photo with-tint"></div>
+      <div class="abs" style="display:flex; align-items:center; justify-content:center; padding-bottom:280px;">
+        <div class="panels">
+          <div class="panel y r1">1. Ướp sả ớt</div>
+          <div class="panel r2">2. Treo lu đất</div>
+          <div class="panel r1">3. Nướng than 30-40p</div>
+          <div class="panel r2">4. Da vàng giòn</div>
+        </div>
+      </div>`;
+    if(id==='s06') return `
+      <div class="abs photo with-tint"></div>
+      <div class="top-title">CẮN!</div>
+      <div class="callouts">
+        <div class="callout r1">DA GIÒN TAN</div>
+        <div class="callout w r2">THỊT NGỌT · MỀM</div>
+        <div class="callout r3">QUÊN TRỜI · QUÊN ĐẤT</div>
+      </div>`;
+    if(id==='s07') return `
+      <div class="abs photo with-tint"></div>
+      <div class="abs center" style="gap:36px">
+        <div class="cells">
+          <div class="cell y"><div class="num">🐔</div><div class="lab">GÀ TA</div></div>
+          <div class="cell c"><div class="num">🐰</div><div class="lab">THỊT THỎ</div></div>
+          <div class="cell coral"><div class="num">🐭</div><div class="lab">CHUỘT ĐỒNG</div></div>
+        </div>
+        <div class="extras">
+          <span class="hl">vị béo</span> ·
+          <span class="hl">mềm</span> ·
+          <span class="hl">đậm đà</span>
+        </div>
+      </div>`;
+    if(id==='s08') return `
+      <div class="abs glow"></div>
+      <div class="abs center" style="gap:28px">
+        <div class="big-stat">5000</div>
+        <div class="km-pill">KG/NGÀY</div>
+        <div class="grow-line"></div>
+        <div class="tail">Chợ <span class="hl">Phù Dật</span> · số 1 Việt Nam</div>
+      </div>`;
+    if(id==='s09') return `
+      <div class="abs photo with-tint"></div>
+      <div class="abs center" style="gap:24px">
+        <div style="display:flex;gap:16px">
+          <div class="chip" style="transform:rotate(-3deg)">1 dĩa</div>
+          <div class="chip" style="transform:rotate(3deg)">no nê</div>
+        </div>
+        <div class="price-block">150K</div>
+        <div class="suat">ĐẮT HƠN KFC</div>
+        <div class="dim">≈ 6 đô la Mỹ</div>
+      </div>`;
+    if(id==='s10') return `
+      <div class="abs carousel">
+        <div class="panel-row pr1">
+          <div class="panel-photo"></div>
+          <div class="panel-label">PHÁP 1870</div>
+        </div>
+        <div class="panel-row pr2">
+          <div class="panel-photo"></div>
+          <div class="panel-label">GHANA</div>
+        </div>
+        <div class="panel-row pr3">
+          <div class="panel-photo"></div>
+          <div class="panel-label">MIỀN TÂY</div>
+        </div>
+      </div>`;
+    if(id==='s11') return `
+      <div class="abs photo with-tint"></div>
+      <div class="abs center" style="gap:30px">
+        <div class="outline-h fao">FAO</div>
+        <div class="pill">✓ AN TOÀN · GIÀU ĐẠM</div>
+      </div>`;
+    if(id==='s12') return `
+      <div class="abs pat"></div>
+      <div class="abs center" style="gap:26px">
+        <div class="nbs">DÁM THỬ?</div>
+        <div class="outline-h follow">FOLLOW</div>
+        <div class="cta-pill">Trạm Dừng Mlem</div>
+        <div class="mn"><span class="hl">món lạ</span> Việt Nam mỗi tuần</div>
+      </div>`;
+    return '';
+  }
+
+  function buildSub(id, text, hlIdx){
+    const words = text.split(/\s+/);
+    const em = emphasis[id] || [];
+    return `<div class="sub">${words.map((w,i)=>{
+      const cls = hlIdx.includes(i) ? 'hl' : (em.includes(i) ? 'em' : '');
+      return `<span class="${cls}">${w}</span>`;
+    }).join('')}</div>`;
+  }
+
+  // S01 + S12 ko show pillar badge (theo SceneBlock.tsx showBadge logic)
+  // S01 ko show channel mark (theo withMark logic)
+  function showBadge(id){ return !['s01','s12'].includes(id); }
+  function showMark(id){ return id !== 's01'; }
+
+  const grid = document.getElementById('grid');
+  scenes.forEach((s, idx) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="card-meta">
+        <span class="badge">${idx+1}</span>
+        <div class="info">
+          <span class="key">${s.key}</span>
+          <span class="name">${s.name}</span>
+        </div>
+      </div>
+      <div class="frame">
+        <div class="scene" id="${s.id}">
+          ${content(s.id)}
+          ${showBadge(s.id) ? '<div class="pillar-badge"><span class="dot">B</span><span>MÓN LẠ QUỐC GIA</span></div>' : ''}
+          ${showMark(s.id) ? '<div class="channel-mark">Trạm Dừng Mlem</div>' : ''}
+          ${buildSub(s.id, s.sub, s.hl)}
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  function rescale(){
+    document.querySelectorAll('.frame').forEach(frame => {
+      const scene = frame.querySelector('.scene');
+      if (!scene) return;
+      const w = frame.clientWidth;
+      const scale = w / 1080;
+      scene.style.transform = `scale(${scale})`;
+    });
+  }
+  window.addEventListener('resize', rescale);
+  requestAnimationFrame(rescale);
+  setTimeout(rescale, 50);
+</script>
+</body>
+</html>

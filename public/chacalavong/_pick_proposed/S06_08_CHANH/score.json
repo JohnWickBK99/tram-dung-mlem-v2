@@ -1,0 +1,25 @@
+{
+  "shot": "S06_08_CHANH",
+  "outname": "S06_08_CHANH.jpg",
+  "kind": "image",
+  "best_score": 55.984207671499426,
+  "best_path": "public/chacalavong/raw_pool/S06_08_CHANH/pexels_00.jpg",
+  "all_candidates": [
+    {
+      "score": 55.984207671499426,
+      "path": "public/chacalavong/raw_pool/S06_08_CHANH/pexels_00.jpg"
+    },
+    {
+      "score": 54.97528011068945,
+      "path": "public/chacalavong/raw_pool/S06_08_CHANH/pexels_03.jpg"
+    },
+    {
+      "score": 54.97528011068945,
+      "path": "public/chacalavong/raw_pool/S06_08_CHANH/pexels_02.jpg"
+    },
+    {
+      "score": 54.97528011068945,
+      "path": "public/chacalavong/raw_pool/S06_08_CHANH/pexels_01.jpg"
+    }
+  ]
+}

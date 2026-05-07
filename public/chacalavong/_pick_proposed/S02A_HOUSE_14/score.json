@@ -1,0 +1,33 @@
+{
+  "shot": "S02A_HOUSE_14",
+  "outname": "S02A_HOUSE_14.jpg",
+  "kind": "image",
+  "best_score": 73.00735333842826,
+  "best_path": "public/chacalavong/raw_pool/S02A_HOUSE_14/pexels_03.jpg",
+  "all_candidates": [
+    {
+      "score": 73.00735333842826,
+      "path": "public/chacalavong/raw_pool/S02A_HOUSE_14/pexels_03.jpg"
+    },
+    {
+      "score": 73.00735333842826,
+      "path": "public/chacalavong/raw_pool/S02A_HOUSE_14/pexels_02.jpg"
+    },
+    {
+      "score": 73.00735333842826,
+      "path": "public/chacalavong/raw_pool/S02A_HOUSE_14/pexels_01.jpg"
+    },
+    {
+      "score": 70.22916666666667,
+      "path": "public/chacalavong/raw_pool/S02A_HOUSE_14/wiki_00.png"
+    },
+    {
+      "score": 51.62307274271428,
+      "path": "public/chacalavong/raw_pool/S02A_HOUSE_14/pexels_00.jpg"
+    },
+    {
+      "score": 47.20380557358976,
+      "path": "public/chacalavong/raw_pool/S02A_HOUSE_14/wiki_01.png"
+    }
+  ]
+}

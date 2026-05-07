@@ -1,0 +1,244 @@
+{
+  "slug": "chacalavong",
+  "title": "Chả Cá Lã Vọng — 5 funfact mind-blow",
+  "pillar": "D",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 2250,
+  "voiceover": "public/chacalavong/cha-ca-la-vong-voiceover.mp3",
+  "bgm": "public/audio/bgm-pillarD.mp3",
+  "scenes": [
+    {
+      "id": "S01_HOOK",
+      "start": 0,
+      "end": 120,
+      "durFrames": 120,
+      "bgKind": "photo",
+      "bg": "#FFFAF0",
+      "fallbackBg": "#1F6E79",
+      "tint": "rgba(31,110,121,0.35)",
+      "vignette": 0.45,
+      "karaokeActive": "yellow",
+      "asset": {
+        "kind": "photo",
+        "shot": "S01A_HOOK_BG",
+        "src": "public/chacalavong/_pick/S01A_HOOK_BG/override.jpg"
+      },
+      "overlays": [
+        {"t": 0, "kind": "OutlineText", "variant": "hook", "text": "5 FUNFACT", "color": "white", "stroke": "#1A1A1A", "strokeW": 6, "y": 720},
+        {"t": 0, "kind": "OutlineText", "variant": "body", "text": "Chả Cá Lã Vọng", "color": "#FFD24A", "stroke": "#1A1A1A", "strokeW": 4, "y": 880},
+        {"t": 75, "kind": "StickerPop", "text": "Số 3 — bạn không biết đâu", "bg": "#E85D2F", "color": "white", "rotate": -2}
+      ],
+      "subtitle": "Năm funfact về Chả Cá Lã Vọng. Funfact số ba, người Hà Nội còn không biết.",
+      "emphasis": ["năm", "funfact", "số", "ba", "Hà", "Nội", "không", "biết"],
+      "sfx": [
+        {"t": 0, "file": "whoosh-in.mp3", "dur": 0.3},
+        {"t": 60, "file": "pop-sticker.mp3", "dur": 0.2}
+      ]
+    },
+    {
+      "id": "S02_FUNFACT_1_AGE",
+      "start": 120,
+      "end": 450,
+      "durFrames": 330,
+      "bgKind": "flat",
+      "bg": "#FFF4E0",
+      "karaokeActive": "yellow",
+      "withBadge": true,
+      "withMark": true,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": ["S02A_HOUSE_14", "S02B_TIMELINE", "S02C_DOAN_FAMILY"]
+      },
+      "overlays": [
+        {"t": 0, "kind": "StickerCard", "text": "1871", "sub": "155 NĂM TUỔI", "bg": "#FFF4E0", "stroke": "#1F6E79", "strokeW": 8},
+        {"t": 150, "kind": "Timeline", "items": [
+          {"label": "1871 quán mở", "color": "#1F6E79"},
+          {"label": "1882 Pháp chiếm Hà Nội", "color": "#E85D2F"}
+        ], "arrow": "← 11 năm"},
+        {"t": 270, "kind": "ZoomPunch", "to": "S02C_DOAN_FAMILY"}
+      ],
+      "subtitle": "Funfact một. Quán Chả Cá Lã Vọng mở năm một nghìn tám trăm bảy mươi mốt. Sớm hơn Pháp chiếm Hà Nội mười một năm. Đến nay năm đời nhà họ Đoàn truyền nghề.",
+      "emphasis": ["một", "nghìn", "tám", "trăm", "bảy", "mươi", "mốt", "mười", "một", "năm", "đời", "họ", "Đoàn"],
+      "sfx": [
+        {"t": 0, "file": "card-flip.mp3", "dur": 0.4},
+        {"t": 150, "file": "tick.mp3", "dur": 0.15},
+        {"t": 165, "file": "tick.mp3", "dur": 0.15},
+        {"t": 270, "file": "zoom-punch.mp3", "dur": 0.5}
+      ]
+    },
+    {
+      "id": "S03_FUNFACT_2_NAME",
+      "start": 450,
+      "end": 840,
+      "durFrames": 390,
+      "bgKind": "photo",
+      "bg": "#FFFAF0",
+      "fallbackBg": "#1F6E79",
+      "tint": "rgba(31,110,121,0.4)",
+      "vignette": 0.45,
+      "karaokeActive": "yellow",
+      "withBadge": true,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": ["S03A_KHUONG_TU_NHA_STATUE", "S03B_FISHING_PAINTING", "S03C_TUONG_LA_VONG_QUAN"]
+      },
+      "overlays": [
+        {"t": 0, "kind": "OutlineText", "variant": "hook", "text": "LÃ VỌNG = ?", "color": "#FFD24A", "stroke": "#1A1A1A", "strokeW": 6},
+        {"t": 30, "kind": "Chip", "text": "ÔNG TIÊN CÂU CÁ", "bg": "#FFD24A", "color": "#1A1A1A", "rotate": 1},
+        {"t": 120, "kind": "StatOverlay", "value": "3000", "unit": "NĂM TRƯỚC", "color": "white", "stroke": "#1A1A1A"},
+        {"t": 210, "kind": "FactPop", "text": "câu cá KHÔNG lưỡi · KHÔNG mồi"},
+        {"t": 300, "kind": "ZoomPunch", "to": "S03C_TUONG_LA_VONG_QUAN"}
+      ],
+      "subtitle": "Funfact hai. Lã Vọng không phải tên chủ quán. Đó là tên một ông tiên câu cá ba nghìn năm trước. Khương Tử Nha trong Phong Thần Diễn Nghĩa. Câu cá không lưỡi không mồi. Chờ minh chủ. Nhà họ Đoàn đặt tượng trong quán. Tên món ra đời từ đấy.",
+      "emphasis": ["ông", "tiên", "ba", "nghìn", "năm", "Khương", "Tử", "Nha", "Phong", "Thần", "Diễn", "Nghĩa", "không", "lưỡi", "không", "mồi"],
+      "sfx": [
+        {"t": 0, "file": "gong-asian.mp3", "dur": 0.6},
+        {"t": 120, "file": "pop-sticker.mp3", "dur": 0.2},
+        {"t": 210, "file": "whoosh-mid.mp3", "dur": 0.3},
+        {"t": 300, "file": "zoom-punch.mp3", "dur": 0.5}
+      ]
+    },
+    {
+      "id": "S04_FUNFACT_3_REVOLUTION",
+      "start": 840,
+      "end": 1320,
+      "durFrames": 480,
+      "bgKind": "flat",
+      "bg": "#1A1A1A",
+      "karaokeActive": "coral",
+      "withBadge": false,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": ["S04A_OLD_QUAN_BW", "S04B_DOAN_PORTRAIT", "S04C_DE_THAM_PORTRAIT", "S04D_BAT_CHA_CA_NOW"]
+      },
+      "overlays": [
+        {"t": 0, "kind": "OutlineText", "variant": "hook", "text": "ÍT NGƯỜI BIẾT", "color": "#E85D2F", "stroke": "white", "strokeW": 6, "rotate": -2},
+        {"t": 90, "kind": "Spotlight", "to": "S04A_OLD_QUAN_BW"},
+        {"t": 90, "kind": "Chip", "text": "CƠ SỞ BÍ MẬT", "bg": "#E85D2F", "color": "white", "pulse": true},
+        {"t": 240, "kind": "SplitScreen", "left": {"shot": "S04B_DOAN_PORTRAIT", "label": "ĐOÀN XUÂN PHÚC — HỌA SĨ"}, "right": {"shot": "S04C_DE_THAM_PORTRAIT", "label": "ĐỀ THÁM — NGHĨA QUÂN"}, "arrow": "↔ LIÊN LẠC"},
+        {"t": 360, "kind": "ZoomPunch", "to": "S04D_BAT_CHA_CA_NOW"},
+        {"t": 390, "kind": "Sticker", "text": "1 THẾ KỶ CÁCH MẠNG", "bg": "#FFD24A", "color": "#1A1A1A", "rotate": 1}
+      ],
+      "subtitle": "Funfact ba. Trước khi là quán ăn, đây từng là cơ sở bí mật chống Pháp. Cụ Đoàn Xuân Phúc — chủ quán — vốn là họa sĩ, liên lạc nghĩa quân Đề Thám. Mở quán làm vỏ bọc tránh mật vụ Pháp. Bát chả cá bạn ăn có cả thế kỷ cách mạng.",
+      "emphasis": ["cơ", "sở", "bí", "mật", "Đoàn", "Xuân", "Phúc", "Đề", "Thám", "vỏ", "bọc", "thế", "kỷ", "cách", "mạng"],
+      "sfx": [
+        {"t": 0, "file": "boom-impact.mp3", "dur": 0.6},
+        {"t": 105, "file": "whoosh-deep.mp3", "dur": 0.4},
+        {"t": 240, "file": "record-scratch.mp3", "dur": 0.3},
+        {"t": 360, "file": "zoom-punch.mp3", "dur": 0.5},
+        {"t": 435, "file": "bell-resolve.mp3", "dur": 0.5}
+      ]
+    },
+    {
+      "id": "S05_FUNFACT_4_STREET",
+      "start": 1320,
+      "end": 1650,
+      "durFrames": 330,
+      "bgKind": "flat",
+      "bg": "#FFF4E0",
+      "karaokeActive": "yellow",
+      "withBadge": true,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": ["S05A_OLD_HANOI_MAP", "S05B_STREET_SIGN_MORPH", "S05C_PHO_CHA_CA_NOW"]
+      },
+      "overlays": [
+        {"t": 0, "kind": "MapCutout", "shot": "S05A_OLD_HANOI_MAP", "spotlight": "Hàng Sơn"},
+        {"t": 90, "kind": "StreetSignMorph", "from": "PHỐ HÀNG SƠN", "to": "PHỐ CHẢ CÁ", "strokeW": 6},
+        {"t": 180, "kind": "StickerCard", "text": "1945", "sub": "đổi tên chính thức", "bg": "#FFF4E0", "stroke": "#1F6E79", "strokeW": 6},
+        {"t": 270, "kind": "Chip", "text": "DUY NHẤT VIỆT NAM", "bg": "#FFD24A", "color": "#1A1A1A", "rotate": -1, "sub": "đặt theo tên 1 món ăn"}
+      ],
+      "subtitle": "Funfact bốn. Cả một con phố Hà Nội bị đổi tên vì quán ăn này. Phố Hàng Sơn cũ. Năm một nghìn chín trăm bốn mươi lăm, đổi thành phố Chả Cá. Con phố duy nhất Việt Nam mang tên món ăn.",
+      "emphasis": ["Hàng", "Sơn", "một", "nghìn", "chín", "trăm", "bốn", "mươi", "lăm", "phố", "Chả", "Cá", "duy", "nhất", "Việt", "Nam"],
+      "sfx": [
+        {"t": 0, "file": "paper-flip.mp3", "dur": 0.3},
+        {"t": 90, "file": "stamp.mp3", "dur": 0.4},
+        {"t": 180, "file": "card-flip.mp3", "dur": 0.4}
+      ]
+    },
+    {
+      "id": "S06_FUNFACT_5_INGREDIENTS",
+      "start": 1650,
+      "end": 1980,
+      "durFrames": 330,
+      "bgKind": "flat",
+      "bg": "#F8B147",
+      "karaokeActive": "ink",
+      "withBadge": true,
+      "asset": {
+        "kind": "carousel-9",
+        "shots": ["S06_01_CA_LANG", "S06_02_BUN_ROI", "S06_03_THI_LA", "S06_04_HANH_LA", "S06_05_LAC_RANG", "S06_06_MAM_TOM", "S06_07_OT", "S06_08_CHANH", "S06_09_RAU_MUI", "S06_10_DAO_CA_TABLE"]
+      },
+      "overlays": [
+        {"t": 0, "kind": "OutlineText", "variant": "hook", "text": "9 THỨ", "color": "white", "stroke": "#1A1A1A", "strokeW": 8},
+        {"t": 0, "kind": "OutlineText", "variant": "body", "text": "thiếu 1 là sai", "color": "#1A1A1A", "stroke": "white", "strokeW": 3},
+        {"t": 60, "kind": "Carousel9Chip", "items": [
+          {"icon": "🐟", "label": "Cá lăng sông Đà", "bg": "#FFF4E0"},
+          {"icon": "🍜", "label": "Bún rối", "bg": "#4FC3D1"},
+          {"icon": "🌿", "label": "Thì là", "bg": "#FFF4E0"},
+          {"icon": "🌱", "label": "Hành lá", "bg": "#4FC3D1"},
+          {"icon": "🥜", "label": "Lạc rang", "bg": "#FFF4E0"},
+          {"icon": "🦐", "label": "Mắm tôm", "bg": "#E85D2F"},
+          {"icon": "🌶️", "label": "Ớt", "bg": "#E85D2F"},
+          {"icon": "🍋", "label": "Chanh", "bg": "#4FC3D1"},
+          {"icon": "🍃", "label": "Rau mùi", "bg": "#FFF4E0"}
+        ], "popInterval": 18},
+        {"t": 240, "kind": "ZoomPunch", "to": "S06_10_DAO_CA_TABLE"},
+        {"t": 270, "kind": "Caption", "text": "tự đảo cá tại bàn"}
+      ],
+      "subtitle": "Funfact năm. Một bát đúng phải đủ chín thứ. Cá lăng sông Đà. Bún rối. Thì là. Hành lá. Lạc rang. Mắm tôm. Ớt. Chanh. Rau mùi. Khách tự đảo cá trên chảo tại bàn. Ngoài Hà Nội không quán nào copy đúng.",
+      "emphasis": ["chín", "thứ", "cá", "lăng", "sông", "Đà", "tự", "đảo", "cá", "tại", "bàn"],
+      "sfx": [
+        {"t": 0, "file": "card-flip.mp3", "dur": 0.4},
+        {"t": 60, "file": "pop-sticker.mp3", "dur": 0.2},
+        {"t": 78, "file": "pop-sticker.mp3", "dur": 0.2},
+        {"t": 96, "file": "pop-sticker.mp3", "dur": 0.2},
+        {"t": 114, "file": "pop-sticker.mp3", "dur": 0.2},
+        {"t": 132, "file": "pop-sticker.mp3", "dur": 0.2},
+        {"t": 150, "file": "pop-sticker.mp3", "dur": 0.2},
+        {"t": 168, "file": "pop-sticker.mp3", "dur": 0.2},
+        {"t": 186, "file": "pop-sticker.mp3", "dur": 0.2},
+        {"t": 204, "file": "pop-sticker.mp3", "dur": 0.2},
+        {"t": 255, "file": "sizzle.mp3", "dur": 0.6}
+      ]
+    },
+    {
+      "id": "S07_CTA",
+      "start": 1980,
+      "end": 2250,
+      "durFrames": 270,
+      "bgKind": "flat-striped",
+      "bg": "#1F6E79",
+      "stripeColor": "#FFD24A",
+      "stripeOpacity": 0.15,
+      "karaokeActive": "coral",
+      "withBadge": false,
+      "withMark": true,
+      "overlays": [
+        {"t": 0, "kind": "OutlineText", "variant": "body", "text": "Số 14 phố Chả Cá", "color": "#FFD24A", "stroke": "#1A1A1A", "strokeW": 4, "y": 420},
+        {"t": 0, "kind": "Chip", "text": "QUÁN GỐC HÀ NỘI", "bg": "#E85D2F", "color": "white", "y": 560},
+        {"t": 75, "kind": "StickerPop", "text": "MÓN TIẾP THEO?", "bg": "#FFD24A", "color": "#1A1A1A", "rotate": -2, "y": 780},
+        {"t": 75, "kind": "FoodIconCloud", "icons": ["🍜", "🥢", "🍱", "🌶️", "🦀"], "duration": 60, "orbitAround": "sticker"},
+        {"t": 75, "kind": "Chip", "text": "COMMENT XUỐNG DƯỚI", "bg": "#E85D2F", "color": "white", "y": 920},
+        {"t": 135, "kind": "ZoomPunch", "to": "brand"},
+        {"t": 135, "kind": "BrandMark", "text": "Trạm Dừng Mlem", "color": "white", "stroke": "#1A1A1A", "strokeW": 8, "fontSize": 120, "y": 900, "pulse": true},
+        {"t": 135, "kind": "OutlineText", "variant": "body", "text": "🍜 mỗi ngày 2 món lạ thế giới", "color": "#FFD24A", "stroke": "#1A1A1A", "strokeW": 3, "y": 1050},
+        {"t": 135, "kind": "OutlineText", "variant": "thin", "text": "@tramdungmlem", "color": "white", "stroke": "#1A1A1A", "strokeW": 2, "y": 1180},
+        {"t": 195, "kind": "CTAPill", "text": "FOLLOW NGAY", "bg": "#E85D2F", "color": "white", "rotate": -1, "pulse": true, "y": 1340, "arrow": "↑"},
+        {"t": 240, "kind": "OutlineText", "variant": "body", "text": "Hẹn món tiếp theo!", "color": "white", "stroke": "#1A1A1A", "strokeW": 3, "y": 1500}
+      ],
+      "subtitle": "Bạn từng đến số mười bốn phố Chả Cá chưa? Comment món tiếp theo bạn muốn xem. Mình là Trạm Dừng Mlem — mỗi ngày hai món lạ thế giới. Follow để không bỏ lỡ!",
+      "emphasis": ["số", "mười", "bốn", "phố", "Chả", "Cá", "comment", "món", "tiếp", "theo", "Trạm", "Dừng", "Mlem", "hai", "món", "lạ", "thế", "giới", "Follow", "bỏ", "lỡ"],
+      "sfx": [
+        {"t": 0, "file": "whoosh-in.mp3", "dur": 0.3},
+        {"t": 75, "file": "pop-sticker.mp3", "dur": 0.2},
+        {"t": 135, "file": "bell-resolve.mp3", "dur": 0.4},
+        {"t": 135, "file": "zoom-punch.mp3", "dur": 0.3},
+        {"t": 195, "file": "button-tap.mp3", "dur": 0.2},
+        {"t": 255, "file": "logo-stinger.mp3", "dur": 0.5}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "shot": "S04A_OLD_QUAN_BW",
+  "outname": "S04A_OLD_QUAN_BW.jpg",
+  "kind": "image",
+  "best_score": 72.22752806638042,
+  "best_path": "public/chacalavong/raw_pool/S04A_OLD_QUAN_BW/wiki_00.png",
+  "all_candidates": [
+    {
+      "score": 72.22752806638042,
+      "path": "public/chacalavong/raw_pool/S04A_OLD_QUAN_BW/wiki_00.png"
+    },
+    {
+      "score": 69.99841282190863,
+      "path": "public/chacalavong/raw_pool/S04A_OLD_QUAN_BW/pexels_03.jpg"
+    },
+    {
+      "score": 69.99841282190863,
+      "path": "public/chacalavong/raw_pool/S04A_OLD_QUAN_BW/pexels_02.jpg"
+    },
+    {
+      "score": 69.99841282190863,
+      "path": "public/chacalavong/raw_pool/S04A_OLD_QUAN_BW/pexels_01.jpg"
+    },
+    {
+      "score": 60.880776130858095,
+      "path": "public/chacalavong/raw_pool/S04A_OLD_QUAN_BW/pexels_00.jpg"
+    },
+    {
+      "score": 55.569493367039136,
+      "path": "public/chacalavong/raw_pool/S04A_OLD_QUAN_BW/wiki_01.png"
+    }
+  ]
+}

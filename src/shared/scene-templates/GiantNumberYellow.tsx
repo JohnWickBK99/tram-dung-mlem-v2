@@ -35,7 +35,7 @@ export const GiantNumberYellow: React.FC<{
   const frame = useCurrentFrame();
   const attrOp = interpolate(frame, [40, 60], [0, 1], { extrapolateRight: 'clamp' });
   const p = getPillar(pillar);
-  const _shadow = shadowColor ?? color.brand.coral;
+  const _shadow = shadowColor ?? color.outline;
 
   return (
     <AbsoluteFill style={{ background: '#000' }}>
@@ -76,7 +76,7 @@ export const GiantNumberYellow: React.FC<{
             fontFamily: font.family.display,
             fontWeight: 800,
             fontSize: 96,
-            letterSpacing: 12,
+            letterSpacing: 8,
           }}>
             {unit}
           </div>

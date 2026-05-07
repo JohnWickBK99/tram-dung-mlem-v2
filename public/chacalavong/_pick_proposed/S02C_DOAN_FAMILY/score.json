@@ -1,0 +1,37 @@
+{
+  "shot": "S02C_DOAN_FAMILY",
+  "outname": "S02C_DOAN_FAMILY.jpg",
+  "kind": "image",
+  "best_score": 72.89671415316155,
+  "best_path": "public/chacalavong/raw_pool/S02C_DOAN_FAMILY/wiki_01.png",
+  "all_candidates": [
+    {
+      "score": 72.89671415316155,
+      "path": "public/chacalavong/raw_pool/S02C_DOAN_FAMILY/wiki_01.png"
+    },
+    {
+      "score": 59.22921866827612,
+      "path": "public/chacalavong/raw_pool/S02C_DOAN_FAMILY/pexels_03.jpg"
+    },
+    {
+      "score": 59.22921866827612,
+      "path": "public/chacalavong/raw_pool/S02C_DOAN_FAMILY/pexels_02.jpg"
+    },
+    {
+      "score": 59.22921866827612,
+      "path": "public/chacalavong/raw_pool/S02C_DOAN_FAMILY/pexels_01.jpg"
+    },
+    {
+      "score": 54.99890115351564,
+      "path": "public/chacalavong/raw_pool/S02C_DOAN_FAMILY/wiki_02.png"
+    },
+    {
+      "score": 41.777896340191305,
+      "path": "public/chacalavong/raw_pool/S02C_DOAN_FAMILY/pexels_00.jpg"
+    },
+    {
+      "score": 35.99632103376461,
+      "path": "public/chacalavong/raw_pool/S02C_DOAN_FAMILY/wiki_00.png"
+    }
+  ]
+}

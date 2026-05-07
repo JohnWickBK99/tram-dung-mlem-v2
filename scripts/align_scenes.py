@@ -131,7 +131,7 @@ def align_scenes(slug: str, padding_frames: int = 6) -> None:
     total_words_assigned = 0
 
     for sc_idx, sc in enumerate(scenes_data['scenes']):
-        scene_text = sc.get('text', '').strip()
+        scene_text = (sc.get('text') or sc.get('subtitle') or '').strip()
         scene_words = scene_text.split()
 
         if not scene_words:

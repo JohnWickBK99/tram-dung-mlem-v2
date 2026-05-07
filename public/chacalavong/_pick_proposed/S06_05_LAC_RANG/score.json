@@ -1,0 +1,25 @@
+{
+  "shot": "S06_05_LAC_RANG",
+  "outname": "S06_05_LAC_RANG.jpg",
+  "kind": "image",
+  "best_score": 74.83751086264022,
+  "best_path": "public/chacalavong/raw_pool/S06_05_LAC_RANG/pexels_03.jpg",
+  "all_candidates": [
+    {
+      "score": 74.83751086264022,
+      "path": "public/chacalavong/raw_pool/S06_05_LAC_RANG/pexels_03.jpg"
+    },
+    {
+      "score": 74.83751086264022,
+      "path": "public/chacalavong/raw_pool/S06_05_LAC_RANG/pexels_02.jpg"
+    },
+    {
+      "score": 74.83751086264022,
+      "path": "public/chacalavong/raw_pool/S06_05_LAC_RANG/pexels_01.jpg"
+    },
+    {
+      "score": 63.64518597981825,
+      "path": "public/chacalavong/raw_pool/S06_05_LAC_RANG/pexels_00.jpg"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "shot": "S03B_FISHING_PAINTING",
+  "outname": "S03B_FISHING_PAINTING.jpg",
+  "kind": "image",
+  "best_score": 73.27465478554515,
+  "best_path": "public/chacalavong/raw_pool/S03B_FISHING_PAINTING/pexels_00.jpg",
+  "all_candidates": [
+    {
+      "score": 73.27465478554515,
+      "path": "public/chacalavong/raw_pool/S03B_FISHING_PAINTING/pexels_00.jpg"
+    },
+    {
+      "score": 64.0827847165784,
+      "path": "public/chacalavong/raw_pool/S03B_FISHING_PAINTING/pexels_03.jpg"
+    },
+    {
+      "score": 64.0827847165784,
+      "path": "public/chacalavong/raw_pool/S03B_FISHING_PAINTING/pexels_02.jpg"
+    },
+    {
+      "score": 64.0827847165784,
+      "path": "public/chacalavong/raw_pool/S03B_FISHING_PAINTING/pexels_01.jpg"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "shot": "S06_04_HANH_LA",
+  "outname": "S06_04_HANH_LA.jpg",
+  "kind": "image",
+  "best_score": 54.2583912037037,
+  "best_path": "public/chacalavong/raw_pool/S06_04_HANH_LA/wiki_01.png",
+  "all_candidates": [
+    {
+      "score": 54.2583912037037,
+      "path": "public/chacalavong/raw_pool/S06_04_HANH_LA/wiki_01.png"
+    },
+    {
+      "score": 54.2583912037037,
+      "path": "public/chacalavong/raw_pool/S06_04_HANH_LA/wiki_00.png"
+    },
+    {
+      "score": 50.499942573316666,
+      "path": "public/chacalavong/raw_pool/S06_04_HANH_LA/wiki_02.png"
+    },
+    {
+      "score": 50.117943690960274,
+      "path": "public/chacalavong/raw_pool/S06_04_HANH_LA/pexels_03.jpg"
+    },
+    {
+      "score": 50.117943690960274,
+      "path": "public/chacalavong/raw_pool/S06_04_HANH_LA/pexels_02.jpg"
+    },
+    {
+      "score": 50.117943690960274,
+      "path": "public/chacalavong/raw_pool/S06_04_HANH_LA/pexels_01.jpg"
+    },
+    {
+      "score": 44.33900509513889,
+      "path": "public/chacalavong/raw_pool/S06_04_HANH_LA/pexels_00.jpg"
+    }
+  ]
+}

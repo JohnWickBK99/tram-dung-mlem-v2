@@ -12,5 +12,5 @@
     "noUnusedLocals": true,
     "resolveJsonModule": true
   },
-  "exclude": ["remotion.config.ts", "src/shared.backup-*"]
+  "exclude": ["remotion.config.ts", "src/shared.backup-*", "remotion-shared"]
 }

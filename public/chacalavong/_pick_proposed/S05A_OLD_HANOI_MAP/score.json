@@ -1,0 +1,25 @@
+{
+  "shot": "S05A_OLD_HANOI_MAP",
+  "outname": "S05A_OLD_HANOI_MAP.jpg",
+  "kind": "image",
+  "best_score": 74.83751086264022,
+  "best_path": "public/chacalavong/raw_pool/S05A_OLD_HANOI_MAP/pexels_03.jpg",
+  "all_candidates": [
+    {
+      "score": 74.83751086264022,
+      "path": "public/chacalavong/raw_pool/S05A_OLD_HANOI_MAP/pexels_03.jpg"
+    },
+    {
+      "score": 74.83751086264022,
+      "path": "public/chacalavong/raw_pool/S05A_OLD_HANOI_MAP/pexels_02.jpg"
+    },
+    {
+      "score": 74.83751086264022,
+      "path": "public/chacalavong/raw_pool/S05A_OLD_HANOI_MAP/pexels_01.jpg"
+    },
+    {
+      "score": 63.64518597981825,
+      "path": "public/chacalavong/raw_pool/S05A_OLD_HANOI_MAP/pexels_00.jpg"
+    }
+  ]
+}

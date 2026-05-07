@@ -1,0 +1,25 @@
+{
+  "shot": "S03C_TUONG_LA_VONG_QUAN",
+  "outname": "S03C_TUONG_LA_VONG_QUAN.jpg",
+  "kind": "image",
+  "best_score": 69.23674459508945,
+  "best_path": "public/chacalavong/raw_pool/S03C_TUONG_LA_VONG_QUAN/pexels_03.jpg",
+  "all_candidates": [
+    {
+      "score": 69.23674459508945,
+      "path": "public/chacalavong/raw_pool/S03C_TUONG_LA_VONG_QUAN/pexels_03.jpg"
+    },
+    {
+      "score": 69.23674459508945,
+      "path": "public/chacalavong/raw_pool/S03C_TUONG_LA_VONG_QUAN/pexels_02.jpg"
+    },
+    {
+      "score": 69.23674459508945,
+      "path": "public/chacalavong/raw_pool/S03C_TUONG_LA_VONG_QUAN/pexels_01.jpg"
+    },
+    {
+      "score": 46.91235591701292,
+      "path": "public/chacalavong/raw_pool/S03C_TUONG_LA_VONG_QUAN/pexels_00.jpg"
+    }
+  ]
+}

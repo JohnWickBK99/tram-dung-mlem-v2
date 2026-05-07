@@ -1,0 +1,25 @@
+{
+  "shot": "S06_09_RAU_MUI",
+  "outname": "S06_09_RAU_MUI.jpg",
+  "kind": "image",
+  "best_score": 70.59394801111105,
+  "best_path": "public/chacalavong/raw_pool/S06_09_RAU_MUI/pexels_03.jpg",
+  "all_candidates": [
+    {
+      "score": 70.59394801111105,
+      "path": "public/chacalavong/raw_pool/S06_09_RAU_MUI/pexels_03.jpg"
+    },
+    {
+      "score": 70.59394801111105,
+      "path": "public/chacalavong/raw_pool/S06_09_RAU_MUI/pexels_02.jpg"
+    },
+    {
+      "score": 70.59394801111105,
+      "path": "public/chacalavong/raw_pool/S06_09_RAU_MUI/pexels_01.jpg"
+    },
+    {
+      "score": 54.24163280934395,
+      "path": "public/chacalavong/raw_pool/S06_09_RAU_MUI/pexels_00.jpg"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "shot": "S01A_HOOK_BG",
+  "outname": "S01A_HOOK_BG.mp4",
+  "kind": "video",
+  "best_score": 100.0,
+  "best_path": "public/chacalavong/raw_pool/S01A_HOOK_BG/pexels_03.mp4",
+  "all_candidates": [
+    {
+      "score": 100.0,
+      "path": "public/chacalavong/raw_pool/S01A_HOOK_BG/pexels_03.mp4"
+    },
+    {
+      "score": 100.0,
+      "path": "public/chacalavong/raw_pool/S01A_HOOK_BG/pexels_00.mp4"
+    },
+    {
+      "score": 77.5,
+      "path": "public/chacalavong/raw_pool/S01A_HOOK_BG/pexels_02.mp4"
+    },
+    {
+      "score": 66.6301663716634,
+      "path": "public/chacalavong/raw_pool/S01A_HOOK_BG/pexels_01.mp4"
+    },
+    {
+      "score": 58.142361111111114,
+      "path": "public/chacalavong/raw_pool/S01A_HOOK_BG/mixkit_03.mp4"
+    },
+    {
+      "score": 58.142361111111114,
+      "path": "public/chacalavong/raw_pool/S01A_HOOK_BG/mixkit_02.mp4"
+    },
+    {
+      "score": 58.142361111111114,
+      "path": "public/chacalavong/raw_pool/S01A_HOOK_BG/mixkit_00.mp4"
+    },
+    {
+      "score": 56.941780514187286,
+      "path": "public/chacalavong/raw_pool/S01A_HOOK_BG/mixkit_01.mp4"
+    }
+  ]
+}

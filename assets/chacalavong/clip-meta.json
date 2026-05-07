@@ -1,0 +1,17 @@
+{
+  "slug": "chacalavong",
+  "slugDash": "chacalavong",
+  "title": "Chả Cá Lã Vọng — 5 funfact mind-blow",
+  "pillar": "D",
+  "pillarName": "Văn hóa & Cách làm",
+  "pillarColor": "#4FC3D1",
+  "durationSec": 75,
+  "fps": 30,
+  "totalFrames": 2250,
+  "width": 1080,
+  "height": 1920,
+  "format": "tiktok-9x16",
+  "voiceoverFile": "chacalavong/cha-ca-la-vong-voiceover.mp3",
+  "scenesJson": "chacalavong/scenes-with-perword.json",
+  "createdAt": "2026-05-07T22:36:26Z"
+}

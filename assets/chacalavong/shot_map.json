@@ -1,0 +1,203 @@
+{
+  "S01A_HOOK_BG": {
+    "kind": "video",
+    "scene": "S01_HOOK",
+    "duration": 4,
+    "preferred": ["pexels", "mixkit", "pixabay"],
+    "queries": ["cha ca la vong sizzle close up", "vietnamese fish hot pot bubbling", "chả cá hà nội cận cảnh"],
+    "fallback": "yt-cc",
+    "out": "S01A_HOOK_BG.mp4"
+  },
+  "S02A_HOUSE_14": {
+    "kind": "image",
+    "scene": "S02_FUNFACT_1_AGE",
+    "duration": 5,
+    "preferred": ["wikimedia", "google-cc"],
+    "queries": ["số 14 chả cá hà nội nhà cổ", "old hanoi house number 14 cha ca street", "ngôi nhà nhà họ Đoàn cổ"],
+    "fallback": "freepik",
+    "out": "S02A_HOUSE_14.jpg"
+  },
+  "S02B_TIMELINE": {
+    "kind": "synth",
+    "scene": "S02_FUNFACT_1_AGE",
+    "duration": 4,
+    "synth": "Timeline component (1871-1882)"
+  },
+  "S02C_DOAN_FAMILY": {
+    "kind": "image",
+    "scene": "S02_FUNFACT_1_AGE",
+    "duration": 2,
+    "preferred": ["wikimedia", "google"],
+    "queries": ["nhà họ Đoàn chả cá lã vọng truyền thống", "five generations doan family vietnam", "old vietnamese family portrait sepia"],
+    "fallback": "freepik",
+    "out": "S02C_DOAN_FAMILY.jpg"
+  },
+  "S03A_KHUONG_TU_NHA_STATUE": {
+    "kind": "image",
+    "scene": "S03_FUNFACT_2_NAME",
+    "duration": 6,
+    "preferred": ["wikimedia", "google-cc"],
+    "queries": ["Khương Tử Nha tượng câu cá", "Lã Vọng tượng phong thủy", "Jiang Ziya fishing statue chinese"],
+    "fallback": "freepik",
+    "out": "S03A_KHUONG_TU_NHA_STATUE.jpg"
+  },
+  "S03B_FISHING_PAINTING": {
+    "kind": "image",
+    "scene": "S03_FUNFACT_2_NAME",
+    "duration": 4,
+    "preferred": ["wikimedia"],
+    "queries": ["Khương Tử Nha câu cá tranh thủy mặc", "Jiang Ziya fishing chinese painting", "Phong Thần Diễn Nghĩa minh họa"],
+    "fallback": "freepik",
+    "out": "S03B_FISHING_PAINTING.jpg"
+  },
+  "S03C_TUONG_LA_VONG_QUAN": {
+    "kind": "image",
+    "scene": "S03_FUNFACT_2_NAME",
+    "duration": 3,
+    "preferred": ["google", "wikimedia"],
+    "queries": ["tượng lã vọng trong quán chả cá hà nội", "la vong statue cha ca restaurant interior"],
+    "fallback": "freepik",
+    "out": "S03C_TUONG_LA_VONG_QUAN.jpg"
+  },
+  "S04A_OLD_QUAN_BW": {
+    "kind": "image",
+    "scene": "S04_FUNFACT_3_REVOLUTION",
+    "duration": 5,
+    "preferred": ["wikimedia", "google-cc"],
+    "queries": ["chả cá lã vọng đầu thế kỷ 20 đen trắng", "old hanoi cha ca restaurant 1900 1910", "vintage hanoi street vendor black white"],
+    "fallback": "freepik",
+    "out": "S04A_OLD_QUAN_BW.jpg"
+  },
+  "S04B_DOAN_PORTRAIT": {
+    "kind": "image",
+    "scene": "S04_FUNFACT_3_REVOLUTION",
+    "duration": 4,
+    "preferred": ["wikimedia", "google"],
+    "queries": ["Đoàn Xuân Phúc họa sĩ chân dung", "doan xuan phuc vietnamese painter portrait", "vietnamese revolutionary painter early 20th century"],
+    "fallback": "freepik-portrait-style",
+    "out": "S04B_DOAN_PORTRAIT.jpg"
+  },
+  "S04C_DE_THAM_PORTRAIT": {
+    "kind": "image",
+    "scene": "S04_FUNFACT_3_REVOLUTION",
+    "duration": 4,
+    "preferred": ["wikimedia"],
+    "queries": ["Đề Thám Hoàng Hoa Thám chân dung", "de tham vietnamese revolutionary leader portrait", "yen the leader vietnam"],
+    "fallback": "wikimedia-mandatory",
+    "out": "S04C_DE_THAM_PORTRAIT.jpg"
+  },
+  "S04D_BAT_CHA_CA_NOW": {
+    "kind": "image",
+    "scene": "S04_FUNFACT_3_REVOLUTION",
+    "duration": 3,
+    "preferred": ["pexels", "pixabay"],
+    "queries": ["chả cá lã vọng bát hiện đại close up", "cha ca la vong bowl food photography hanoi"],
+    "fallback": "freepik",
+    "out": "S04D_BAT_CHA_CA_NOW.jpg"
+  },
+  "S05A_OLD_HANOI_MAP": {
+    "kind": "image",
+    "scene": "S05_FUNFACT_4_STREET",
+    "duration": 3,
+    "preferred": ["wikimedia", "gallica.bnf"],
+    "queries": ["bản đồ phố cổ hà nội thời pháp", "carte hanoi vieux quartier 1900", "rue de la laque hanoi map"],
+    "fallback": "freepik-vintage-map",
+    "out": "S05A_OLD_HANOI_MAP.jpg"
+  },
+  "S05B_STREET_SIGN_MORPH": {
+    "kind": "synth",
+    "scene": "S05_FUNFACT_4_STREET",
+    "duration": 3,
+    "synth": "StreetSignMorph component (Hàng Sơn → Chả Cá)"
+  },
+  "S05C_PHO_CHA_CA_NOW": {
+    "kind": "image",
+    "scene": "S05_FUNFACT_4_STREET",
+    "duration": 3,
+    "preferred": ["pexels", "google", "pixabay"],
+    "queries": ["phố Chả Cá hà nội biển hiệu phố cổ", "cha ca street sign hanoi old quarter"],
+    "fallback": "freepik",
+    "out": "S05C_PHO_CHA_CA_NOW.jpg"
+  },
+  "S06_01_CA_LANG": {
+    "kind": "image",
+    "scene": "S06_FUNFACT_5_INGREDIENTS",
+    "duration": 2,
+    "preferred": ["pexels", "pixabay"],
+    "queries": ["cá lăng sông đà tươi", "vietnamese hemibagrus fish raw"],
+    "out": "S06_01_CA_LANG.jpg"
+  },
+  "S06_02_BUN_ROI": {
+    "kind": "image",
+    "scene": "S06_FUNFACT_5_INGREDIENTS",
+    "duration": 2,
+    "preferred": ["pexels", "pixabay"],
+    "queries": ["bún rối hà nội", "vietnamese rice noodles cold loose"],
+    "out": "S06_02_BUN_ROI.jpg"
+  },
+  "S06_03_THI_LA": {
+    "kind": "image",
+    "scene": "S06_FUNFACT_5_INGREDIENTS",
+    "duration": 2,
+    "preferred": ["pexels"],
+    "queries": ["thì là tươi rau gia vị", "fresh dill herb"],
+    "out": "S06_03_THI_LA.jpg"
+  },
+  "S06_04_HANH_LA": {
+    "kind": "image",
+    "scene": "S06_FUNFACT_5_INGREDIENTS",
+    "duration": 2,
+    "preferred": ["pexels"],
+    "queries": ["hành lá tươi", "fresh green onions scallions"],
+    "out": "S06_04_HANH_LA.jpg"
+  },
+  "S06_05_LAC_RANG": {
+    "kind": "image",
+    "scene": "S06_FUNFACT_5_INGREDIENTS",
+    "duration": 2,
+    "preferred": ["pexels", "pixabay"],
+    "queries": ["lạc rang muối hà nội", "roasted peanuts vietnamese bowl"],
+    "out": "S06_05_LAC_RANG.jpg"
+  },
+  "S06_06_MAM_TOM": {
+    "kind": "image",
+    "scene": "S06_FUNFACT_5_INGREDIENTS",
+    "duration": 2,
+    "preferred": ["google", "pexels"],
+    "queries": ["mắm tôm bát chấm", "vietnamese mam tom shrimp paste bowl"],
+    "out": "S06_06_MAM_TOM.jpg"
+  },
+  "S06_07_OT": {
+    "kind": "image",
+    "scene": "S06_FUNFACT_5_INGREDIENTS",
+    "duration": 2,
+    "preferred": ["pexels"],
+    "queries": ["ớt tươi đỏ", "fresh red chili"],
+    "out": "S06_07_OT.jpg"
+  },
+  "S06_08_CHANH": {
+    "kind": "image",
+    "scene": "S06_FUNFACT_5_INGREDIENTS",
+    "duration": 2,
+    "preferred": ["pexels"],
+    "queries": ["chanh tươi cắt miếng", "lime sliced quarters"],
+    "out": "S06_08_CHANH.jpg"
+  },
+  "S06_09_RAU_MUI": {
+    "kind": "image",
+    "scene": "S06_FUNFACT_5_INGREDIENTS",
+    "duration": 2,
+    "preferred": ["pexels"],
+    "queries": ["rau mùi ngò rí tươi", "fresh cilantro coriander"],
+    "out": "S06_09_RAU_MUI.jpg"
+  },
+  "S06_10_DAO_CA_TABLE": {
+    "kind": "video",
+    "scene": "S06_FUNFACT_5_INGREDIENTS",
+    "duration": 3,
+    "preferred": ["pexels", "yt-cc"],
+    "queries": ["chả cá lã vọng đảo trên chảo tại bàn", "stir fish tableside vietnamese sizzle pan"],
+    "fallback": "yt-cc-max-3s",
+    "out": "S06_10_DAO_CA_TABLE.mp4"
+  }
+}

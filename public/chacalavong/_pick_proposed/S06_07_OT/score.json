@@ -1,0 +1,25 @@
+{
+  "shot": "S06_07_OT",
+  "outname": "S06_07_OT.jpg",
+  "kind": "image",
+  "best_score": 73.95590958685243,
+  "best_path": "public/chacalavong/raw_pool/S06_07_OT/pexels_03.jpg",
+  "all_candidates": [
+    {
+      "score": 73.95590958685243,
+      "path": "public/chacalavong/raw_pool/S06_07_OT/pexels_03.jpg"
+    },
+    {
+      "score": 73.95590958685243,
+      "path": "public/chacalavong/raw_pool/S06_07_OT/pexels_02.jpg"
+    },
+    {
+      "score": 73.95590958685243,
+      "path": "public/chacalavong/raw_pool/S06_07_OT/pexels_01.jpg"
+    },
+    {
+      "score": 48.0182639104611,
+      "path": "public/chacalavong/raw_pool/S06_07_OT/pexels_00.jpg"
+    }
+  ]
+}

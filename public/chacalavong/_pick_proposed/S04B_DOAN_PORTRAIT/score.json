@@ -1,0 +1,25 @@
+{
+  "shot": "S04B_DOAN_PORTRAIT",
+  "outname": "S04B_DOAN_PORTRAIT.jpg",
+  "kind": "image",
+  "best_score": 81.43585058313386,
+  "best_path": "public/chacalavong/raw_pool/S04B_DOAN_PORTRAIT/pexels_03.jpg",
+  "all_candidates": [
+    {
+      "score": 81.43585058313386,
+      "path": "public/chacalavong/raw_pool/S04B_DOAN_PORTRAIT/pexels_03.jpg"
+    },
+    {
+      "score": 81.43585058313386,
+      "path": "public/chacalavong/raw_pool/S04B_DOAN_PORTRAIT/pexels_02.jpg"
+    },
+    {
+      "score": 81.43585058313386,
+      "path": "public/chacalavong/raw_pool/S04B_DOAN_PORTRAIT/pexels_01.jpg"
+    },
+    {
+      "score": 33.38943852418544,
+      "path": "public/chacalavong/raw_pool/S04B_DOAN_PORTRAIT/pexels_00.jpg"
+    }
+  ]
+}
