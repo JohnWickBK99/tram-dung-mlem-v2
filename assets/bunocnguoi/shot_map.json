@@ -1,0 +1,153 @@
+{
+  "S01A_HOOK_BOWL": {
+    "kind": "video",
+    "scene": "S01_HOOK",
+    "duration": 8,
+    "preferred": ["pexels", "mixkit", "pixabay"],
+    "queries": [
+      "vietnamese bun oc cool bowl close up",
+      "noodle soup top down no steam",
+      "vietnamese cold noodle dish ceramic bowl"
+    ],
+    "fallback": "freepik",
+    "out": "S01A_HOOK_BOWL.mp4",
+    "note": "TUYỆT ĐỐI KHÔNG có hơi nước/khói — đây là bún ốc NGUỘI"
+  },
+  "S02A_CHOPSTICKS": {
+    "kind": "image", "scene": "S02_REVEAL", "duration": 6,
+    "preferred": ["pexels", "google-cc"],
+    "queries": ["chopsticks lifting white rice noodles cool no steam", "vietnamese rice noodle chopsticks close up"],
+    "fallback": "freepik", "out": "S02A_CHOPSTICKS.jpg"
+  },
+  "S02B_BOWL_COOL": {
+    "kind": "image", "scene": "S02_REVEAL", "duration": 4,
+    "preferred": ["pexels", "google-cc"],
+    "queries": ["vietnamese bun oc bowl golden broth no steam", "bún ốc nguội tô đất cận cảnh"],
+    "fallback": "freepik", "out": "S02B_BOWL_COOL.jpg"
+  },
+  "S03A_DAM_BONG_POUR": {
+    "kind": "image", "scene": "S03_DAM_BONG", "duration": 5,
+    "preferred": ["google-cc", "wikimedia"],
+    "queries": ["dấm bỗng vàng óng đổ chai sành", "fermented sticky rice vinegar pour ceramic"],
+    "fallback": "freepik", "out": "S03A_DAM_BONG_POUR.jpg",
+    "note": "Macro shot dấm bỗng vàng óng, hạt nếp lên men nhìn rõ"
+  },
+  "S03B_RICE_FERMENT": {
+    "kind": "image", "scene": "S03_DAM_BONG", "duration": 4,
+    "preferred": ["google-cc", "pixabay"],
+    "queries": ["men gạo nếp lên men âu sành", "fermented sticky rice grains traditional ceramic jar"],
+    "fallback": "freepik", "out": "S03B_RICE_FERMENT.jpg"
+  },
+  "S03C_BOWL_GOLDEN": {
+    "kind": "image", "scene": "S03_DAM_BONG", "duration": 4,
+    "preferred": ["pexels", "google-cc"],
+    "queries": ["bún ốc bowl golden broth dấm bỗng vàng", "vietnamese golden broth noodle soup bowl"],
+    "fallback": "freepik", "out": "S03C_BOWL_GOLDEN.jpg"
+  },
+  "S04A_SNAILS_PLATE": {
+    "kind": "image", "scene": "S04_OC_NHOI", "duration": 5,
+    "preferred": ["google-cc", "pixabay"],
+    "queries": ["ốc nhồi luộc lá chanh đĩa nhỏ", "vietnamese boiled apple snails lime leaves plate"],
+    "fallback": "freepik", "out": "S04A_SNAILS_PLATE.jpg",
+    "note": "Top-down 8-10 con ốc nhồi đen luộc lá chanh, KHÔNG còn vỏ"
+  },
+  "S04B_SNAIL_DIPPING": {
+    "kind": "image", "scene": "S04_OC_NHOI", "duration": 4,
+    "preferred": ["pexels", "google-cc"],
+    "queries": ["chopsticks dipping snail meat into bowl", "đũa gắp ốc nhồi chấm bát bún"],
+    "fallback": "freepik", "out": "S04B_SNAIL_DIPPING.jpg"
+  },
+  "S05A_HERBS_CHOPPED": {
+    "kind": "image", "scene": "S05_HERBS", "duration": 5,
+    "preferred": ["pexels", "google-cc"],
+    "queries": ["tía tô kinh giới thái nhỏ rắc bát bún", "vietnamese perilla coriander finely chopped sprinkle"],
+    "fallback": "freepik", "out": "S05A_HERBS_CHOPPED.jpg",
+    "note": "Macro tía tô tím + kinh giới xanh thái nhỏ, KHÔNG nguyên cây"
+  },
+  "S05B_HERBS_COMPARE": {
+    "kind": "synth", "scene": "S05_HERBS", "duration": 4,
+    "synth": "Carousel3Panel split — LEFT raw whole herbs ✗ / RIGHT minced herbs ✓"
+  },
+  "S06A_HANOI_VENDOR": {
+    "kind": "image", "scene": "S06_WHY_NGUOI", "duration": 6,
+    "preferred": ["wikimedia", "google-cc"],
+    "queries": ["bà gánh hàng rong Hà Nội xưa thập niên 50", "vietnamese street food vendor woman shoulder pole vintage"],
+    "fallback": "freepik", "out": "S06A_HANOI_VENDOR.jpg",
+    "note": "Vintage sepia, áo bà ba nâu, đôi quang gánh, phố cổ HN"
+  },
+  "S06B_OLD_STREET": {
+    "kind": "image", "scene": "S06_WHY_NGUOI", "duration": 4,
+    "preferred": ["wikimedia", "google-cc"],
+    "queries": ["phố cổ Hàng Bè Hàng Buồm Hà Nội xưa đen trắng", "old hanoi old quarter street vintage 1950s"],
+    "fallback": "freepik", "out": "S06B_OLD_STREET.jpg"
+  },
+  "S07A_BA_LUONG": {
+    "kind": "image",
+    "scene": "S07_QUAN_BA_LUONG",
+    "duration": 7,
+    "preferred": ["google-cc", "facebook-public", "foody"],
+    "queries": [
+      "bún ốc Bà Lương ngõ 191 Khương Thượng Đống Đa",
+      "Bà Lương quán bún ốc gia truyền Hà Nội",
+      "bun oc Ba Luong Khuong Thuong Hanoi food review"
+    ],
+    "fallback": "freepik",
+    "out": "S07A_BA_LUONG.jpg",
+    "note": "Ảnh quán Bà Lương — biển hiệu / bát bún tại quán / shopfront ngõ 191. Source: Foody, Lao Động, kenh14."
+  },
+  "S08A_CO_HUE": {
+    "kind": "image",
+    "scene": "S08_QUAN_CO_HUE",
+    "duration": 7,
+    "preferred": ["google-cc", "facebook-public", "foody"],
+    "queries": [
+      "bún ốc Cô Huệ 43 Nguyễn Siêu Hà Nội phố cổ",
+      "Co Hue bun oc 43 Nguyen Sieu Hanoi",
+      "quán bún ốc Cô Huệ phố cổ Hàng Buồm"
+    ],
+    "fallback": "freepik",
+    "out": "S08A_CO_HUE.jpg",
+    "note": "Ảnh quán Cô Huệ 43 Nguyễn Siêu — biển hiệu / bà chủ / bát bún. Source: VnExpress 4590663, Foody."
+  },
+  "S09_O_QUAN_CHUONG_LANDMARK": {
+    "kind": "image",
+    "scene": "S09_QUAN_O_QUAN_CHUONG",
+    "duration": 5,
+    "preferred": ["wikimedia", "google-cc"],
+    "queries": [
+      "Ô Quan Chưởng cổng phố cổ Hà Nội",
+      "O Quan Chuong gate Hanoi old quarter landmark",
+      "cổng Ô Quan Chưởng Hàng Chiếu"
+    ],
+    "fallback": "freepik",
+    "out": "S09_O_QUAN_CHUONG_LANDMARK.jpg",
+    "note": "Landmark cổng Ô Quan Chưởng — Wikimedia public domain, photogenic. BG cho scene S09."
+  },
+  "S09A_CO_XUAN": {
+    "kind": "image",
+    "scene": "S09_QUAN_O_QUAN_CHUONG",
+    "duration": 5,
+    "preferred": ["google-cc", "facebook-public", "foody"],
+    "queries": [
+      "bún ốc nguội Cô Xuân Hàng Chiếu Ô Quan Chưởng",
+      "Co Xuan bun oc nguoi vỉa hè Hàng Chiếu",
+      "quán bún ốc nguội đối diện Ô Quan Chưởng"
+    ],
+    "fallback": "freepik",
+    "out": "S09A_CO_XUAN.jpg",
+    "note": "Ảnh quán Cô Xuân vỉa hè 1 Hàng Chiếu — gánh / bát / bà chủ. Source: Foody BunocnguoiCoXuan FB."
+  },
+  "S07_HERO_BOWL": {
+    "kind": "image",
+    "scene": "S10_CTA_BOOKMARK",
+    "duration": 3,
+    "preferred": ["pexels", "google-cc"],
+    "queries": [
+      "vietnamese bun oc nguoi hero food photography",
+      "bún ốc nguội bát hero shot top down premium"
+    ],
+    "fallback": "freepik",
+    "out": "S07_HERO_BOWL.jpg",
+    "note": "Hero shot tô bún đầy đủ cho S10 CTA — BG cho sticker bookmark."
+  }
+}

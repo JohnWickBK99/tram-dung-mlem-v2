@@ -1,0 +1,65 @@
+{
+  "shot": "S09A_CO_XUAN",
+  "outname": "S09A_CO_XUAN.jpg",
+  "kind": "image",
+  "best_score": 73.30138215843355,
+  "best_path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/pexels_03.jpg",
+  "all_candidates": [
+    {
+      "score": 73.30138215843355,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/pexels_03.jpg"
+    },
+    {
+      "score": 73.30138215843355,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/pexels_02.jpg"
+    },
+    {
+      "score": 73.30138215843355,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/pexels_01.jpg"
+    },
+    {
+      "score": 70.56144982124007,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/bing_03.jpg"
+    },
+    {
+      "score": 70.250828757551,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/bing_05.jpg"
+    },
+    {
+      "score": 66.39645181272212,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/pexels_00.jpg"
+    },
+    {
+      "score": 65.87025485792559,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/bing_04.jpg"
+    },
+    {
+      "score": 63.58056322901374,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/pixabay_02.jpg"
+    },
+    {
+      "score": 58.27904621238426,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/bing_01.jpg"
+    },
+    {
+      "score": 52.93030766493056,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/bing_00.jpg"
+    },
+    {
+      "score": 48.30853069305814,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/pixabay_01.jpg"
+    },
+    {
+      "score": 43.36612011437634,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/bing_02.jpg"
+    },
+    {
+      "score": 39.70758795753583,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/pixabay_03.jpg"
+    },
+    {
+      "score": 38.21321028783278,
+      "path": "public/bunocnguoi/raw_pool/S09A_CO_XUAN/pixabay_00.jpg"
+    }
+  ]
+}

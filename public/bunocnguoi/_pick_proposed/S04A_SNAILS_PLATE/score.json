@@ -1,0 +1,49 @@
+{
+  "shot": "S04A_SNAILS_PLATE",
+  "outname": "S04A_SNAILS_PLATE.jpg",
+  "kind": "image",
+  "best_score": 62.66446502604167,
+  "best_path": "public/bunocnguoi/raw_pool/S04A_SNAILS_PLATE/bing_04.jpg",
+  "all_candidates": [
+    {
+      "score": 62.66446502604167,
+      "path": "public/bunocnguoi/raw_pool/S04A_SNAILS_PLATE/bing_04.jpg"
+    },
+    {
+      "score": 62.57107776041667,
+      "path": "public/bunocnguoi/raw_pool/S04A_SNAILS_PLATE/bing_02.jpg"
+    },
+    {
+      "score": 62.394675925925924,
+      "path": "public/bunocnguoi/raw_pool/S04A_SNAILS_PLATE/v3_01.jpg"
+    },
+    {
+      "score": 62.394675925925924,
+      "path": "public/bunocnguoi/raw_pool/S04A_SNAILS_PLATE/v3_00.jpg"
+    },
+    {
+      "score": 58.49422621443743,
+      "path": "public/bunocnguoi/raw_pool/S04A_SNAILS_PLATE/bing_03.jpg"
+    },
+    {
+      "score": 49.6464956699201,
+      "path": "public/bunocnguoi/raw_pool/S04A_SNAILS_PLATE/bing_05.png"
+    },
+    {
+      "score": 43.7863640674425,
+      "path": "public/bunocnguoi/raw_pool/S04A_SNAILS_PLATE/bing_00.jpg"
+    },
+    {
+      "score": 42.341876639736896,
+      "path": "public/bunocnguoi/raw_pool/S04A_SNAILS_PLATE/v3_03.jpg"
+    },
+    {
+      "score": 39.4983491874312,
+      "path": "public/bunocnguoi/raw_pool/S04A_SNAILS_PLATE/v3_02.jpg"
+    },
+    {
+      "score": 34.86954869788542,
+      "path": "public/bunocnguoi/raw_pool/S04A_SNAILS_PLATE/bing_01.jpg"
+    }
+  ]
+}

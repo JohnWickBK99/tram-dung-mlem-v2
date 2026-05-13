@@ -1,0 +1,66 @@
+{
+  "S01A_HOOK_BOWL": {
+    "kind": "video",
+    "file": "S01A_HOOK_BOWL.mp4"
+  },
+  "S02A_CHOPSTICKS": {
+    "kind": "image",
+    "file": "S02A_CHOPSTICKS.jpg"
+  },
+  "S02B_BOWL_COOL": {
+    "kind": "image",
+    "file": "S02B_BOWL_COOL.jpg"
+  },
+  "S03A_DAM_BONG_POUR": {
+    "kind": "image",
+    "file": "S03A_DAM_BONG_POUR.jpg"
+  },
+  "S03B_RICE_FERMENT": {
+    "kind": "image",
+    "file": "S03B_RICE_FERMENT.jpg"
+  },
+  "S03C_BOWL_GOLDEN": {
+    "kind": "image",
+    "file": "S03C_BOWL_GOLDEN.jpg"
+  },
+  "S04A_SNAILS_PLATE": {
+    "kind": "image",
+    "file": "S04A_SNAILS_PLATE.jpg"
+  },
+  "S04B_SNAIL_DIPPING": {
+    "kind": "image",
+    "file": "S04B_SNAIL_DIPPING.jpg"
+  },
+  "S05A_HERBS_CHOPPED": {
+    "kind": "image",
+    "file": "S05A_HERBS_CHOPPED.jpg"
+  },
+  "S06A_HANOI_VENDOR": {
+    "kind": "image",
+    "file": "S06A_HANOI_VENDOR.jpg"
+  },
+  "S06B_OLD_STREET": {
+    "kind": "image",
+    "file": "S06B_OLD_STREET.jpg"
+  },
+  "S07A_BA_LUONG": {
+    "kind": "image",
+    "file": "S07A_BA_LUONG.jpg"
+  },
+  "S08A_CO_HUE": {
+    "kind": "image",
+    "file": "S08A_CO_HUE.jpg"
+  },
+  "S09_O_QUAN_CHUONG_LANDMARK": {
+    "kind": "image",
+    "file": "S09_O_QUAN_CHUONG_LANDMARK.jpg"
+  },
+  "S09A_CO_XUAN": {
+    "kind": "image",
+    "file": "S09A_CO_XUAN.jpg"
+  },
+  "S07_HERO_BOWL": {
+    "kind": "image",
+    "file": "S07_HERO_BOWL.jpg"
+  }
+}

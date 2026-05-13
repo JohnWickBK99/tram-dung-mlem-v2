@@ -785,7 +785,6 @@
         "kind": "image-sequence",
         "shots": [
           "S04A_OLD_QUAN_BW",
-          "S04B_DOAN_PORTRAIT",
           "S04C_DE_THAM_PORTRAIT",
           "S04D_BAT_CHA_CA_NOW"
         ]
@@ -818,8 +817,8 @@
           "t": 240,
           "kind": "SplitScreen",
           "left": {
-            "shot": "S04B_DOAN_PORTRAIT",
-            "label": "ĐOÀN XUÂN PHÚC — HỌA SĨ"
+            "shot": "__PLACEHOLDER__",
+            "label": "ĐOÀN XUÂN PHÚC — HỌA SĨ\n(không có ảnh tư liệu)"
           },
           "right": {
             "shot": "S04C_DE_THAM_PORTRAIT",

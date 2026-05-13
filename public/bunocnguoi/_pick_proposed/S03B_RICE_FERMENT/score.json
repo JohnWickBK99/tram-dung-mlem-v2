@@ -1,0 +1,49 @@
+{
+  "shot": "S03B_RICE_FERMENT",
+  "outname": "S03B_RICE_FERMENT.jpg",
+  "kind": "image",
+  "best_score": 88.78739562912973,
+  "best_path": "public/bunocnguoi/raw_pool/S03B_RICE_FERMENT/v3_02.jpg",
+  "all_candidates": [
+    {
+      "score": 88.78739562912973,
+      "path": "public/bunocnguoi/raw_pool/S03B_RICE_FERMENT/v3_02.jpg"
+    },
+    {
+      "score": 75.40166303705286,
+      "path": "public/bunocnguoi/raw_pool/S03B_RICE_FERMENT/v3_01.png"
+    },
+    {
+      "score": 73.33200555419921,
+      "path": "public/bunocnguoi/raw_pool/S03B_RICE_FERMENT/v3_00.jpg"
+    },
+    {
+      "score": 71.73189449393617,
+      "path": "public/bunocnguoi/raw_pool/S03B_RICE_FERMENT/v3_03.jpg"
+    },
+    {
+      "score": 68.65426387493197,
+      "path": "public/bunocnguoi/raw_pool/S03B_RICE_FERMENT/bing_01.jpg"
+    },
+    {
+      "score": 66.82209913289105,
+      "path": "public/bunocnguoi/raw_pool/S03B_RICE_FERMENT/bing_00.jpg"
+    },
+    {
+      "score": 62.55273265335648,
+      "path": "public/bunocnguoi/raw_pool/S03B_RICE_FERMENT/bing_03.jpg"
+    },
+    {
+      "score": 59.30677248374113,
+      "path": "public/bunocnguoi/raw_pool/S03B_RICE_FERMENT/bing_02.jpg"
+    },
+    {
+      "score": 45.05324889096004,
+      "path": "public/bunocnguoi/raw_pool/S03B_RICE_FERMENT/bing_05.jpg"
+    },
+    {
+      "score": 43.61965146328963,
+      "path": "public/bunocnguoi/raw_pool/S03B_RICE_FERMENT/bing_04.jpg"
+    }
+  ]
+}

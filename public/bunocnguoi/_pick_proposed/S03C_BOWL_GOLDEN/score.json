@@ -1,0 +1,41 @@
+{
+  "shot": "S03C_BOWL_GOLDEN",
+  "outname": "S03C_BOWL_GOLDEN.jpg",
+  "kind": "image",
+  "best_score": 93.85239618421696,
+  "best_path": "public/bunocnguoi/raw_pool/S03C_BOWL_GOLDEN/v3_00.jpg",
+  "all_candidates": [
+    {
+      "score": 93.85239618421696,
+      "path": "public/bunocnguoi/raw_pool/S03C_BOWL_GOLDEN/v3_00.jpg"
+    },
+    {
+      "score": 76.4383819546621,
+      "path": "public/bunocnguoi/raw_pool/S03C_BOWL_GOLDEN/bing_01.jpg"
+    },
+    {
+      "score": 75.53202705439816,
+      "path": "public/bunocnguoi/raw_pool/S03C_BOWL_GOLDEN/bing_00.jpg"
+    },
+    {
+      "score": 64.96694693416693,
+      "path": "public/bunocnguoi/raw_pool/S03C_BOWL_GOLDEN/bing_03.jpg"
+    },
+    {
+      "score": 61.935425896701716,
+      "path": "public/bunocnguoi/raw_pool/S03C_BOWL_GOLDEN/bing_04.jpg"
+    },
+    {
+      "score": 61.262457878471665,
+      "path": "public/bunocnguoi/raw_pool/S03C_BOWL_GOLDEN/bing_02.jpg"
+    },
+    {
+      "score": 59.600358724455795,
+      "path": "public/bunocnguoi/raw_pool/S03C_BOWL_GOLDEN/v3_03.jpg"
+    },
+    {
+      "score": 40.69953216835025,
+      "path": "public/bunocnguoi/raw_pool/S03C_BOWL_GOLDEN/bing_05.jpg"
+    }
+  ]
+}

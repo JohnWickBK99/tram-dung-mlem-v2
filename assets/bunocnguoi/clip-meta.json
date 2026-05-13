@@ -1,0 +1,17 @@
+{
+  "slug": "bunocnguoi",
+  "slugDash": "bunocnguoi",
+  "title": "B\u00fan \u1ed0c Ngu\u1ed9i H\u00e0 N\u1ed9i \u2014 m\u00f3n l\u1ea1 + 3 qu\u00e1n chi ti\u1ebft",
+  "pillar": "B",
+  "pillarName": "M\u00f3n l\u1ea1 qu\u1ed1c gia",
+  "pillarColor": "#C8302D",
+  "durationSec": 86.0,
+  "fps": 30,
+  "totalFrames": 2580,
+  "width": 1080,
+  "height": 1920,
+  "format": "tiktok-9x16",
+  "voiceoverFile": "bunocnguoi/bun-oc-nguoi-voiceover.mp3",
+  "scenesJson": "bunocnguoi/scenes-with-perword.json",
+  "createdAt": "2026-05-13T07:27:37Z"
+}

@@ -1,0 +1,53 @@
+{
+  "shot": "S07_HERO_BOWL",
+  "outname": "S07_HERO_BOWL.jpg",
+  "kind": "image",
+  "best_score": 81.62446172222222,
+  "best_path": "public/bunocnguoi/raw_pool/S07_HERO_BOWL/bing_05.webp",
+  "all_candidates": [
+    {
+      "score": 81.62446172222222,
+      "path": "public/bunocnguoi/raw_pool/S07_HERO_BOWL/bing_05.webp"
+    },
+    {
+      "score": 76.4383819546621,
+      "path": "public/bunocnguoi/raw_pool/S07_HERO_BOWL/bing_00.jpg"
+    },
+    {
+      "score": 73.7796830444336,
+      "path": "public/bunocnguoi/raw_pool/S07_HERO_BOWL/v3_00.jpg"
+    },
+    {
+      "score": 67.1247900221083,
+      "path": "public/bunocnguoi/raw_pool/S07_HERO_BOWL/bing_02.jpg"
+    },
+    {
+      "score": 63.106494404761904,
+      "path": "public/bunocnguoi/raw_pool/S07_HERO_BOWL/bing_03.jpg"
+    },
+    {
+      "score": 62.89874866225933,
+      "path": "public/bunocnguoi/raw_pool/S07_HERO_BOWL/v3_01.jpg"
+    },
+    {
+      "score": 61.262457878471665,
+      "path": "public/bunocnguoi/raw_pool/S07_HERO_BOWL/bing_01.jpg"
+    },
+    {
+      "score": 58.864635456242695,
+      "path": "public/bunocnguoi/raw_pool/S07_HERO_BOWL/v3_02.jpg"
+    },
+    {
+      "score": 55.69251835840543,
+      "path": "public/bunocnguoi/raw_pool/S07_HERO_BOWL/bing_04.jpg"
+    },
+    {
+      "score": 47.97143084820262,
+      "path": "public/bunocnguoi/raw_pool/S07_HERO_BOWL/v3_03.jpg"
+    },
+    {
+      "score": 47.74343550309967,
+      "path": "public/bunocnguoi/raw_pool/S07_HERO_BOWL/v3_04.jpg"
+    }
+  ]
+}

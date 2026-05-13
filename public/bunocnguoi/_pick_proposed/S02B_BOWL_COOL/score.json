@@ -1,0 +1,53 @@
+{
+  "shot": "S02B_BOWL_COOL",
+  "outname": "S02B_BOWL_COOL.jpg",
+  "kind": "image",
+  "best_score": 83.04914175488466,
+  "best_path": "public/bunocnguoi/raw_pool/S02B_BOWL_COOL/bing_00.jpg",
+  "all_candidates": [
+    {
+      "score": 83.04914175488466,
+      "path": "public/bunocnguoi/raw_pool/S02B_BOWL_COOL/bing_00.jpg"
+    },
+    {
+      "score": 73.7796830444336,
+      "path": "public/bunocnguoi/raw_pool/S02B_BOWL_COOL/v3_00.jpg"
+    },
+    {
+      "score": 73.20620356865476,
+      "path": "public/bunocnguoi/raw_pool/S02B_BOWL_COOL/bing_05.jpg"
+    },
+    {
+      "score": 65.63301504168845,
+      "path": "public/bunocnguoi/raw_pool/S02B_BOWL_COOL/bing_03.jpg"
+    },
+    {
+      "score": 63.106494404761904,
+      "path": "public/bunocnguoi/raw_pool/S02B_BOWL_COOL/bing_01.jpg"
+    },
+    {
+      "score": 62.89874866225933,
+      "path": "public/bunocnguoi/raw_pool/S02B_BOWL_COOL/v3_01.jpg"
+    },
+    {
+      "score": 58.864635456242695,
+      "path": "public/bunocnguoi/raw_pool/S02B_BOWL_COOL/v3_02.jpg"
+    },
+    {
+      "score": 55.69251835840543,
+      "path": "public/bunocnguoi/raw_pool/S02B_BOWL_COOL/bing_02.jpg"
+    },
+    {
+      "score": 50.703887535397755,
+      "path": "public/bunocnguoi/raw_pool/S02B_BOWL_COOL/bing_04.webp"
+    },
+    {
+      "score": 47.97143084820262,
+      "path": "public/bunocnguoi/raw_pool/S02B_BOWL_COOL/v3_03.jpg"
+    },
+    {
+      "score": 47.74343550309967,
+      "path": "public/bunocnguoi/raw_pool/S02B_BOWL_COOL/v3_04.jpg"
+    }
+  ]
+}

@@ -1,0 +1,1052 @@
+{
+  "slug": "bunocnguoi",
+  "title": "Bún Ốc Nguội Hà Nội — món lạ + 3 quán chi tiết (90s long-form)",
+  "pillar": "B",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 2580,
+  "voiceover": "public/bunocnguoi/bun-oc-nguoi-voiceover.mp3",
+  "bgm": "public/audio/bgm-pillarB.mp3",
+  "scenes": [
+    {
+      "id": "S01_HOOK",
+      "start": 0,
+      "end": 179,
+      "durFrames": 179,
+      "bgKind": "photo",
+      "bg": "#FFFAF0",
+      "fallbackBg": "#8B1F1D",
+      "tint": "rgba(139,31,29,0.25)",
+      "vignette": 0.45,
+      "karaokeActive": "yellow",
+      "asset": {
+        "kind": "video",
+        "shot": "S01A_HOOK_BOWL",
+        "src": "public/bunocnguoi/_pick/S01A_HOOK_BOWL/override.mp4"
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "OutlineText",
+          "variant": "hook",
+          "text": "MÓN BÚN ĐỘC NHẤT VIỆT NAM",
+          "color": "white",
+          "stroke": "#1A1A1A",
+          "strokeW": 6,
+          "y": 700
+        },
+        {
+          "t": 120,
+          "kind": "StickerPop",
+          "text": "BÚN ỐC NGUỘI",
+          "bg": "#F8B147",
+          "color": "#1A1A1A",
+          "rotate": -2,
+          "stroke": "#1A1A1A",
+          "strokeW": 5
+        },
+        {
+          "t": 195,
+          "kind": "OutlineText",
+          "variant": "caption",
+          "text": "Phải ăn lạnh nhé 🍜",
+          "italic": true,
+          "color": "#F8B147",
+          "stroke": "#1A1A1A",
+          "strokeW": 4,
+          "y": 1150
+        }
+      ],
+      "subtitle": "Có một món bún độc nhất Việt Nam mà người Hà Nội xưa rất yêu — bún ốc nguội. Phải ăn lạnh nhé, không nóng đâu.",
+      "emphasis": [
+        "món",
+        "bún",
+        "độc",
+        "nhất",
+        "Việt",
+        "Nam",
+        "Hà",
+        "Nội",
+        "xưa",
+        "bún",
+        "ốc",
+        "nguội",
+        "lạnh"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "whoosh-in.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 120,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 195,
+          "file": "bell-soft.mp3",
+          "dur": 0.2
+        }
+      ]
+    },
+    {
+      "id": "S02_REVEAL",
+      "start": 179,
+      "end": 493,
+      "durFrames": 314,
+      "bgKind": "flat",
+      "bg": "#FFFAF0",
+      "karaokeActive": "yellow",
+      "withBadge": true,
+      "withMark": true,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": [
+          "S02A_CHOPSTICKS",
+          "S02B_BOWL_COOL"
+        ]
+      },
+      "overlays": [
+        {
+          "t": 15,
+          "kind": "StickerCard",
+          "text": "NGUỘI",
+          "sub": "BẢN GỐC HÀ NỘI XƯA",
+          "bg": "#FFFAF0",
+          "stroke": "#C8302D",
+          "strokeW": 8
+        },
+        {
+          "t": 120,
+          "kind": "PhotoInset",
+          "src": "public/bunocnguoi/_pick/S02A_CHOPSTICKS/override.jpg",
+          "side": "right"
+        },
+        {
+          "t": 210,
+          "kind": "StickerPop",
+          "text": "3 ĐIỀU + 3 QUÁN",
+          "bg": "#F8B147",
+          "color": "#1A1A1A",
+          "rotate": 1,
+          "stroke": "#1A1A1A",
+          "strokeW": 5
+        }
+      ],
+      "subtitle": "Đúng rồi, bún ốc nguội mới là bản gốc Hà Nội xưa. Thanh mát, chua dịu, đậm đà rất riêng. Hôm nay mình giới thiệu ba điều khiến món này đặc biệt, và ba quán ngon nhất để bạn đi thử.",
+      "emphasis": [
+        "Đúng",
+        "rồi",
+        "nguội",
+        "bản",
+        "gốc",
+        "Hà",
+        "Nội",
+        "xưa",
+        "ba",
+        "điều",
+        "đặc",
+        "biệt",
+        "ba",
+        "quán"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "card-flip.mp3",
+          "dur": 0.4
+        },
+        {
+          "t": 120,
+          "file": "bell-soft.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 210,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        }
+      ]
+    },
+    {
+      "id": "S03_DAM_BONG",
+      "start": 493,
+      "end": 874,
+      "durFrames": 381,
+      "bgKind": "photo",
+      "bg": "#FFFAF0",
+      "fallbackBg": "#8B1F1D",
+      "tint": "rgba(248,177,71,0.15)",
+      "vignette": 0.45,
+      "karaokeOverride": {
+        "highlightBg": "#1A1A1A",
+        "highlightTextColor": "#F8B147",
+        "highlightShadowColor": "#E85D2F"
+      },
+      "withBadge": true,
+      "withMark": true,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": [
+          "S03A_DAM_BONG_POUR",
+          "S03B_RICE_FERMENT",
+          "S03C_BOWL_GOLDEN"
+        ]
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "StickerCard",
+          "text": "1",
+          "sub": "DẤM BỖNG",
+          "bg": "#C8302D",
+          "stroke": "#F8B147",
+          "strokeW": 8,
+          "shape": "circle"
+        },
+        {
+          "t": 120,
+          "kind": "ZoomPunch",
+          "to": "S03B_RICE_FERMENT"
+        },
+        {
+          "t": 240,
+          "kind": "StatOverlay",
+          "text": "MEN NẾP LÊN MEN",
+          "color": "white",
+          "stroke": "#1A1A1A",
+          "strokeW": 6
+        },
+        {
+          "t": 330,
+          "kind": "ZoomPunch",
+          "to": "S03C_BOWL_GOLDEN"
+        }
+      ],
+      "subtitle": "Thứ nhất, linh hồn của bát bún không phải mắm tôm hay chanh, mà là dấm bỗng. Dấm bỗng làm từ men gạo nếp lên men tự nhiên, có vị chua thanh, ngọt nhẹ, vàng óng. Người Hà Nội xưa nói nếu thiếu dấm bỗng, đó không còn là bún ốc.",
+      "emphasis": [
+        "Thứ",
+        "nhất",
+        "dấm",
+        "bỗng",
+        "men",
+        "gạo",
+        "nếp",
+        "lên",
+        "men",
+        "chua",
+        "thanh",
+        "vàng",
+        "óng",
+        "Hà",
+        "Nội",
+        "xưa"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "card-flip.mp3",
+          "dur": 0.4
+        },
+        {
+          "t": 120,
+          "file": "pour-liquid.mp3",
+          "dur": 0.5
+        },
+        {
+          "t": 240,
+          "file": "chime-fact.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 330,
+          "file": "zoom-punch.mp3",
+          "dur": 0.4
+        }
+      ]
+    },
+    {
+      "id": "S04_OC_NHOI",
+      "start": 874,
+      "end": 1255,
+      "durFrames": 381,
+      "bgKind": "flat",
+      "bg": "#F8B147",
+      "karaokeOverride": {
+        "highlightBg": "#1A1A1A",
+        "highlightTextColor": "#F8B147",
+        "highlightShadowColor": "#E85D2F"
+      },
+      "withBadge": true,
+      "withMark": true,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": [
+          "S04A_SNAILS_PLATE",
+          "S04B_SNAIL_DIPPING"
+        ]
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "StickerCard",
+          "text": "2",
+          "sub": "ỐC NHỒI",
+          "bg": "#C8302D",
+          "stroke": "#1A1A1A",
+          "strokeW": 8,
+          "shape": "circle"
+        },
+        {
+          "t": 90,
+          "kind": "PhotoInset",
+          "src": "public/bunocnguoi/_pick/S04A_SNAILS_PLATE/override.jpg",
+          "fullbleed": true
+        },
+        {
+          "t": 210,
+          "kind": "Compare2Chip",
+          "left": {
+            "text": "Ốc nhồi ✓",
+            "color": "#1A1A1A"
+          },
+          "right": {
+            "text": "Ốc đá ✗",
+            "color": "#C8302D"
+          }
+        },
+        {
+          "t": 300,
+          "kind": "ZoomPunch",
+          "to": "S04B_SNAIL_DIPPING"
+        }
+      ],
+      "subtitle": "Thứ hai, ốc phải là ốc nhồi to bằng đầu ngón tay cái. Không dùng ốc đá nhỏ. Ốc nhồi luộc cùng lá chanh, để nguội, khêu sẵn từng con bày riêng trong đĩa nhỏ. Khi ăn, gắp con ốc giòn dai chấm vào bát bún chua thanh — đúng vị Hà Nội xưa.",
+      "emphasis": [
+        "Thứ",
+        "hai",
+        "ốc",
+        "nhồi",
+        "ngón",
+        "tay",
+        "cái",
+        "lá",
+        "chanh",
+        "khêu",
+        "sẵn",
+        "giòn",
+        "dai",
+        "Hà",
+        "Nội",
+        "xưa"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "card-flip.mp3",
+          "dur": 0.4
+        },
+        {
+          "t": 90,
+          "file": "plate-clink.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 210,
+          "file": "tick.mp3",
+          "dur": 0.15
+        },
+        {
+          "t": 225,
+          "file": "tick.mp3",
+          "dur": 0.15
+        },
+        {
+          "t": 300,
+          "file": "crisp-bite.mp3",
+          "dur": 0.3
+        }
+      ]
+    },
+    {
+      "id": "S05_HERBS",
+      "start": 1255,
+      "end": 1517,
+      "durFrames": 262,
+      "bgKind": "flat",
+      "bg": "#FFFAF0",
+      "karaokeActive": "yellow",
+      "withBadge": true,
+      "withMark": true,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": [
+          "S05A_HERBS_CHOPPED",
+          "S05B_HERBS_COMPARE"
+        ]
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "StickerCard",
+          "text": "3",
+          "sub": "KHÔNG RAU SỐNG NGUYÊN CÂY",
+          "bg": "#C8302D",
+          "stroke": "#1A1A1A",
+          "strokeW": 8,
+          "shape": "circle"
+        },
+        {
+          "t": 90,
+          "kind": "Carousel3Panel",
+          "panels": [
+            {
+              "label": "RAU SỐNG NGUYÊN CÂY",
+              "icon": "✗",
+              "color": "#C8302D"
+            },
+            {
+              "label": "TÍA TÔ + KINH GIỚI",
+              "sub": "THÁI NHỎ",
+              "icon": "✓",
+              "color": "#1F6E79"
+            }
+          ]
+        },
+        {
+          "t": 210,
+          "kind": "PhotoInset",
+          "src": "public/bunocnguoi/_pick/S05A_HERBS_CHOPPED/override.jpg",
+          "fullbleed": true
+        },
+        {
+          "t": 300,
+          "kind": "OutlineText",
+          "variant": "caption",
+          "text": "vị tinh tế của canh không bị át",
+          "italic": true,
+          "color": "white",
+          "stroke": "#1A1A1A",
+          "strokeW": 4,
+          "y": 1500
+        }
+      ],
+      "subtitle": "Thứ ba, không có rau sống nguyên cây như các loại bún khác. Tía tô, kinh giới được thái nhỏ, trộn thẳng vào bát. Người Hà Nội cũ tin rằng cách này giữ được vị tinh tế của nước canh, không bị át bởi rau.",
+      "emphasis": [
+        "Thứ",
+        "ba",
+        "KHÔNG",
+        "rau",
+        "sống",
+        "Tía",
+        "tô",
+        "kinh",
+        "giới",
+        "thái",
+        "nhỏ",
+        "Hà",
+        "Nội",
+        "cũ",
+        "tinh",
+        "tế"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "card-flip.mp3",
+          "dur": 0.4
+        },
+        {
+          "t": 90,
+          "file": "whoosh-transition.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 210,
+          "file": "knife-chop.mp3",
+          "dur": 0.4
+        },
+        {
+          "t": 300,
+          "file": "chime-fact.mp3",
+          "dur": 0.2
+        }
+      ]
+    },
+    {
+      "id": "S06_WHY_NGUOI",
+      "start": 1517,
+      "end": 1742,
+      "durFrames": 225,
+      "bgKind": "photo",
+      "bg": "#FFFAF0",
+      "fallbackBg": "#5A3A1F",
+      "tint": "rgba(139,69,19,0.25)",
+      "vignette": 0.5,
+      "karaokeOverride": {
+        "highlightBg": "#E85D2F",
+        "highlightTextColor": "#FFFFFF",
+        "highlightStroke": 2
+      },
+      "withBadge": true,
+      "withMark": true,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": [
+          "S06A_HANOI_VENDOR",
+          "S06B_OLD_STREET"
+        ]
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "OutlineText",
+          "variant": "hook",
+          "text": "VÌ SAO NGUỘI?",
+          "color": "white",
+          "stroke": "#1A1A1A",
+          "strokeW": 6,
+          "y": 700
+        },
+        {
+          "t": 60,
+          "kind": "StickerPop",
+          "text": "70 NĂM TRƯỚC",
+          "bg": "#F8B147",
+          "color": "#1A1A1A",
+          "rotate": -3,
+          "stroke": "#1A1A1A",
+          "strokeW": 5
+        },
+        {
+          "t": 120,
+          "kind": "ZoomPunch",
+          "to": "S06B_OLD_STREET"
+        },
+        {
+          "t": 180,
+          "kind": "Bullet3Row",
+          "items": [
+            {
+              "icon": "🚫",
+              "text": "không bếp"
+            },
+            {
+              "icon": "❄",
+              "text": "để nguội"
+            },
+            {
+              "icon": "🚶",
+              "text": "mang đi"
+            }
+          ]
+        }
+      ],
+      "subtitle": "Vì sao nguội? Bảy mươi năm trước, bún ốc là món gánh hàng rong xế chiều. Không bếp, làm sẵn để nguội rồi mang đi.",
+      "emphasis": [
+        "Vì",
+        "sao",
+        "nguội",
+        "Bảy",
+        "mươi",
+        "năm",
+        "trước",
+        "gánh",
+        "hàng",
+        "rong",
+        "xế",
+        "chiều"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "nostalgic-violin.mp3",
+          "dur": 0.8
+        },
+        {
+          "t": 120,
+          "file": "bell-soft.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 180,
+          "file": "tick.mp3",
+          "dur": 0.15
+        },
+        {
+          "t": 195,
+          "file": "tick.mp3",
+          "dur": 0.15
+        },
+        {
+          "t": 210,
+          "file": "tick.mp3",
+          "dur": 0.15
+        }
+      ]
+    },
+    {
+      "id": "S07_QUAN_BA_LUONG",
+      "start": 1742,
+      "end": 1933,
+      "durFrames": 191,
+      "bgKind": "flat",
+      "bg": "#FFFAF0",
+      "karaokeActive": "yellow",
+      "withBadge": true,
+      "withMark": true,
+      "asset": {
+        "kind": "image",
+        "shot": "S07A_BA_LUONG",
+        "src": "public/bunocnguoi/_pick/S07A_BA_LUONG/override.jpg"
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "OutlineText",
+          "variant": "hook",
+          "text": "BÀ LƯƠNG",
+          "color": "#C8302D",
+          "stroke": "#1A1A1A",
+          "strokeW": 6,
+          "y": 600,
+          "size": 200
+        },
+        {
+          "t": 0,
+          "kind": "PillarBadge",
+          "text": "QUÁN #1",
+          "color": "#C8302D"
+        },
+        {
+          "t": 45,
+          "kind": "StickerPop",
+          "text": "📍 Ngõ 191 Khương Thượng",
+          "bg": "#F8B147",
+          "color": "#1A1A1A",
+          "rotate": -1,
+          "stroke": "#1A1A1A",
+          "strokeW": 5,
+          "y": 950
+        },
+        {
+          "t": 75,
+          "kind": "StickerPop",
+          "text": "⏰ 8h30 — 22h30",
+          "bg": "#4FC3D1",
+          "color": "#1A1A1A",
+          "rotate": 1,
+          "stroke": "#1A1A1A",
+          "strokeW": 5,
+          "y": 1100
+        },
+        {
+          "t": 105,
+          "kind": "StickerPop",
+          "text": "🏛 GIA TRUYỀN 40 NĂM",
+          "bg": "#E85D2F",
+          "color": "white",
+          "rotate": -2,
+          "stroke": "#1A1A1A",
+          "strokeW": 5,
+          "y": 1250
+        },
+        {
+          "t": 135,
+          "kind": "PhotoInset",
+          "src": "public/bunocnguoi/_pick/S07A_BA_LUONG/override.jpg",
+          "side": "right",
+          "frame": "rounded"
+        }
+      ],
+      "subtitle": "Quán đầu tiên — Bà Lương ở Khương Thượng. Quán gia truyền bốn mươi năm, nước dùng vàng óng, vị chua thanh đậm đà.",
+      "emphasis": [
+        "Quán",
+        "đầu",
+        "tiên",
+        "Bà",
+        "Lương",
+        "Khương",
+        "Thượng",
+        "gia",
+        "truyền",
+        "bốn",
+        "mươi",
+        "năm",
+        "vàng",
+        "óng"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "whoosh-in.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 45,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 75,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 105,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 135,
+          "file": "chime-fact.mp3",
+          "dur": 0.3
+        }
+      ]
+    },
+    {
+      "id": "S08_QUAN_CO_HUE",
+      "start": 1933,
+      "end": 2152,
+      "durFrames": 219,
+      "bgKind": "flat",
+      "bg": "#FFFAF0",
+      "karaokeActive": "yellow",
+      "withBadge": true,
+      "withMark": true,
+      "asset": {
+        "kind": "image",
+        "shot": "S08A_CO_HUE",
+        "src": "public/bunocnguoi/_pick/S08A_CO_HUE/override.jpg"
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "OutlineText",
+          "variant": "hook",
+          "text": "CÔ HUỆ",
+          "color": "#E85D2F",
+          "stroke": "#1A1A1A",
+          "strokeW": 6,
+          "y": 600,
+          "size": 200
+        },
+        {
+          "t": 0,
+          "kind": "PillarBadge",
+          "text": "QUÁN #2",
+          "color": "#C8302D"
+        },
+        {
+          "t": 45,
+          "kind": "StickerPop",
+          "text": "📍 43 Nguyễn Siêu (phố cổ)",
+          "bg": "#F8B147",
+          "color": "#1A1A1A",
+          "rotate": 1,
+          "stroke": "#1A1A1A",
+          "strokeW": 5,
+          "y": 950
+        },
+        {
+          "t": 75,
+          "kind": "StickerPop",
+          "text": "⏰ 6h — 14h",
+          "bg": "#4FC3D1",
+          "color": "#1A1A1A",
+          "rotate": -1,
+          "stroke": "#1A1A1A",
+          "strokeW": 5,
+          "y": 1100
+        },
+        {
+          "t": 105,
+          "kind": "StickerPop",
+          "text": "💵 35K — 45K / bát",
+          "bg": "#1A1A1A",
+          "color": "#F8B147",
+          "rotate": 2,
+          "stroke": "white",
+          "strokeW": 5,
+          "y": 1250
+        },
+        {
+          "t": 135,
+          "kind": "PhotoInset",
+          "src": "public/bunocnguoi/_pick/S08A_CO_HUE/override.jpg",
+          "side": "right",
+          "frame": "rounded"
+        }
+      ],
+      "subtitle": "Quán thứ hai — Cô Huệ, bốn mươi ba Nguyễn Siêu, ngay phố cổ. Sáu giờ sáng đến hai giờ chiều, ba lăm đến bốn lăm nghìn một bát.",
+      "emphasis": [
+        "Quán",
+        "thứ",
+        "hai",
+        "Cô",
+        "Huệ",
+        "bốn",
+        "mươi",
+        "ba",
+        "Nguyễn",
+        "Siêu",
+        "phố",
+        "cổ",
+        "ba",
+        "lăm",
+        "bốn",
+        "lăm",
+        "nghìn"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "whoosh-in.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 45,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 75,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 105,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 135,
+          "file": "chime-fact.mp3",
+          "dur": 0.3
+        }
+      ]
+    },
+    {
+      "id": "S09_QUAN_O_QUAN_CHUONG",
+      "start": 2152,
+      "end": 2358,
+      "durFrames": 206,
+      "bgKind": "photo",
+      "bg": "#FFFAF0",
+      "fallbackBg": "#5A3A1F",
+      "tint": "rgba(248,177,71,0.15)",
+      "vignette": 0.35,
+      "karaokeOverride": {
+        "highlightBg": "#1A1A1A",
+        "highlightTextColor": "#F8B147",
+        "highlightShadowColor": "#E85D2F"
+      },
+      "withBadge": true,
+      "withMark": true,
+      "asset": {
+        "kind": "image-sequence",
+        "shots": [
+          "S09_O_QUAN_CHUONG_LANDMARK",
+          "S09A_CO_XUAN"
+        ]
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "OutlineText",
+          "variant": "hook",
+          "text": "CÔ XUÂN",
+          "color": "#4FC3D1",
+          "stroke": "#1A1A1A",
+          "strokeW": 6,
+          "y": 600,
+          "size": 200
+        },
+        {
+          "t": 0,
+          "kind": "PillarBadge",
+          "text": "QUÁN #3",
+          "color": "#C8302D"
+        },
+        {
+          "t": 45,
+          "kind": "StickerPop",
+          "text": "📍 Vỉa hè 1 Hàng Chiếu",
+          "sub": "đối diện Ô Quan Chưởng",
+          "bg": "#F8B147",
+          "color": "#1A1A1A",
+          "rotate": -1,
+          "stroke": "#1A1A1A",
+          "strokeW": 5,
+          "y": 950
+        },
+        {
+          "t": 75,
+          "kind": "StickerPop",
+          "text": "⏰ 8h — 13h",
+          "bg": "#E85D2F",
+          "color": "white",
+          "rotate": 1,
+          "stroke": "#1A1A1A",
+          "strokeW": 5,
+          "y": 1100
+        },
+        {
+          "t": 105,
+          "kind": "StickerPop",
+          "text": "🏛 VỊ TRUYỀN THỐNG PHỐ CỔ",
+          "bg": "#1A1A1A",
+          "color": "#F8B147",
+          "rotate": -1,
+          "stroke": "white",
+          "strokeW": 5,
+          "y": 1250
+        },
+        {
+          "t": 135,
+          "kind": "PhotoInset",
+          "src": "public/bunocnguoi/_pick/S09A_CO_XUAN/override.jpg",
+          "side": "right",
+          "frame": "rounded"
+        }
+      ],
+      "subtitle": "Quán thứ ba — Cô Xuân, vỉa hè một Hàng Chiếu, ngay cổng Ô Quan Chưởng. Bán tám đến một giờ chiều, vị truyền thống phố cổ.",
+      "emphasis": [
+        "Quán",
+        "thứ",
+        "ba",
+        "Cô",
+        "Xuân",
+        "Hàng",
+        "Chiếu",
+        "Ô",
+        "Quan",
+        "Chưởng",
+        "tám",
+        "đến",
+        "một",
+        "giờ",
+        "phố",
+        "cổ"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "whoosh-in.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 45,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 75,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 105,
+          "file": "pop-sticker.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 135,
+          "file": "chime-fact.mp3",
+          "dur": 0.3
+        }
+      ]
+    },
+    {
+      "id": "S10_CTA_BOOKMARK",
+      "start": 2358,
+      "end": 2580,
+      "durFrames": 222,
+      "bgKind": "photo",
+      "bg": "#FFFAF0",
+      "fallbackBg": "#8B1F1D",
+      "tint": "rgba(200,48,45,0.15)",
+      "vignette": 0.4,
+      "karaokeOverride": {
+        "highlightBg": "#1A1A1A",
+        "highlightTextColor": "#F8B147"
+      },
+      "withMark": true,
+      "asset": {
+        "kind": "image",
+        "shot": "S07_HERO_BOWL",
+        "src": "public/bunocnguoi/_pick/S07_HERO_BOWL/override.jpg"
+      },
+      "overlays": [
+        {
+          "t": 0,
+          "kind": "StickerPop",
+          "text": "LƯU LẠI BOOKMARK 🔖",
+          "bg": "#C8302D",
+          "color": "white",
+          "rotate": -3,
+          "stroke": "#1A1A1A",
+          "strokeW": 6,
+          "y": 800,
+          "scale": 1.15,
+          "size": 160
+        },
+        {
+          "t": 30,
+          "kind": "OutlineText",
+          "variant": "caption",
+          "text": "1.BÀ LƯƠNG  ·  2.CÔ HUỆ  ·  3.CÔ XUÂN",
+          "color": "white",
+          "stroke": "#1A1A1A",
+          "strokeW": 4,
+          "y": 1400
+        },
+        {
+          "t": 60,
+          "kind": "ChannelMark",
+          "handle": "@tramdungmlem",
+          "sub": "🍜 Trạm dừng khám phá món lạ"
+        },
+        {
+          "t": 75,
+          "kind": "MlemStingLogo"
+        }
+      ],
+      "subtitle": "Bạn còn biết quán nào ngon nữa? Comment chia sẻ nhé. Nếu bạn yêu thích, hãy follow Trạm Dừng Mlem — mỗi ngày một món lạ thế giới nhé!",
+      "emphasis": [
+        "Comment",
+        "chia",
+        "sẻ",
+        "follow",
+        "Trạm",
+        "Dừng",
+        "Mlem",
+        "món",
+        "lạ",
+        "thế",
+        "giới"
+      ],
+      "sfx": [
+        {
+          "t": 0,
+          "file": "chime-fact.mp3",
+          "dur": 0.3
+        },
+        {
+          "t": 30,
+          "file": "bell-soft.mp3",
+          "dur": 0.2
+        },
+        {
+          "t": 75,
+          "file": "mlem-sting.mp3",
+          "dur": 0.5
+        }
+      ]
+    }
+  ],
+  "durationSec": 86.0
+}

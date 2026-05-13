@@ -1,0 +1,49 @@
+{
+  "shot": "S07A_BA_LUONG",
+  "outname": "S07A_BA_LUONG.jpg",
+  "kind": "image",
+  "best_score": 88.44273327631191,
+  "best_path": "public/bunocnguoi/raw_pool/S07A_BA_LUONG/bing_04.jpg",
+  "all_candidates": [
+    {
+      "score": 88.44273327631191,
+      "path": "public/bunocnguoi/raw_pool/S07A_BA_LUONG/bing_04.jpg"
+    },
+    {
+      "score": 87.9675499608898,
+      "path": "public/bunocnguoi/raw_pool/S07A_BA_LUONG/bing_01.jpg"
+    },
+    {
+      "score": 79.88623751965409,
+      "path": "public/bunocnguoi/raw_pool/S07A_BA_LUONG/wiki2_01.jpg"
+    },
+    {
+      "score": 73.20620356865476,
+      "path": "public/bunocnguoi/raw_pool/S07A_BA_LUONG/bing_00.jpg"
+    },
+    {
+      "score": 69.02946308884827,
+      "path": "public/bunocnguoi/raw_pool/S07A_BA_LUONG/wiki2_02.jpg"
+    },
+    {
+      "score": 67.50014883626062,
+      "path": "public/bunocnguoi/raw_pool/S07A_BA_LUONG/wiki2_03.jpg"
+    },
+    {
+      "score": 64.468155143613,
+      "path": "public/bunocnguoi/raw_pool/S07A_BA_LUONG/bing_05.jpg"
+    },
+    {
+      "score": 56.65711055227945,
+      "path": "public/bunocnguoi/raw_pool/S07A_BA_LUONG/bing_02.jpg"
+    },
+    {
+      "score": 44.61293190056453,
+      "path": "public/bunocnguoi/raw_pool/S07A_BA_LUONG/wiki2_00.jpg"
+    },
+    {
+      "score": 32.432066558815976,
+      "path": "public/bunocnguoi/raw_pool/S07A_BA_LUONG/bing_03.jpg"
+    }
+  ]
+}

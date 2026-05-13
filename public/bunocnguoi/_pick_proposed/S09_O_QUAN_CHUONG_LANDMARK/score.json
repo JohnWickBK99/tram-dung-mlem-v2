@@ -1,0 +1,29 @@
+{
+  "shot": "S09_O_QUAN_CHUONG_LANDMARK",
+  "outname": "S09_O_QUAN_CHUONG_LANDMARK.jpg",
+  "kind": "image",
+  "best_score": 91.5707132357877,
+  "best_path": "public/bunocnguoi/raw_pool/S09_O_QUAN_CHUONG_LANDMARK/v3_03.jpg",
+  "all_candidates": [
+    {
+      "score": 91.5707132357877,
+      "path": "public/bunocnguoi/raw_pool/S09_O_QUAN_CHUONG_LANDMARK/v3_03.jpg"
+    },
+    {
+      "score": 71.86248309326172,
+      "path": "public/bunocnguoi/raw_pool/S09_O_QUAN_CHUONG_LANDMARK/v3_02.jpg"
+    },
+    {
+      "score": 69.35591900634765,
+      "path": "public/bunocnguoi/raw_pool/S09_O_QUAN_CHUONG_LANDMARK/v3_04.jpg"
+    },
+    {
+      "score": 63.06159729881536,
+      "path": "public/bunocnguoi/raw_pool/S09_O_QUAN_CHUONG_LANDMARK/v3_00.jpg"
+    },
+    {
+      "score": 62.697846854003714,
+      "path": "public/bunocnguoi/raw_pool/S09_O_QUAN_CHUONG_LANDMARK/v3_01.jpg"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "shot": "S06B_OLD_STREET",
+  "outname": "S06B_OLD_STREET.jpg",
+  "kind": "image",
+  "best_score": 88.62590110318872,
+  "best_path": "public/bunocnguoi/raw_pool/S06B_OLD_STREET/bing_02.jpg",
+  "all_candidates": [
+    {
+      "score": 88.62590110318872,
+      "path": "public/bunocnguoi/raw_pool/S06B_OLD_STREET/bing_02.jpg"
+    },
+    {
+      "score": 80.95376972941318,
+      "path": "public/bunocnguoi/raw_pool/S06B_OLD_STREET/bing_03.jpg"
+    },
+    {
+      "score": 75.43793487979329,
+      "path": "public/bunocnguoi/raw_pool/S06B_OLD_STREET/bing_01.jpg"
+    },
+    {
+      "score": 63.752432020399304,
+      "path": "public/bunocnguoi/raw_pool/S06B_OLD_STREET/v3_00.jpg"
+    },
+    {
+      "score": 61.16721916953045,
+      "path": "public/bunocnguoi/raw_pool/S06B_OLD_STREET/bing_00.jpg"
+    },
+    {
+      "score": 59.29812549174939,
+      "path": "public/bunocnguoi/raw_pool/S06B_OLD_STREET/v3_02.png"
+    },
+    {
+      "score": 58.11730546476246,
+      "path": "public/bunocnguoi/raw_pool/S06B_OLD_STREET/bing_04.jpg"
+    },
+    {
+      "score": 57.390372900088416,
+      "path": "public/bunocnguoi/raw_pool/S06B_OLD_STREET/v3_01.png"
+    },
+    {
+      "score": 54.5304543097138,
+      "path": "public/bunocnguoi/raw_pool/S06B_OLD_STREET/bing_05.jpg"
+    },
+    {
+      "score": 46.151418901465135,
+      "path": "public/bunocnguoi/raw_pool/S06B_OLD_STREET/v3_03.png"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "shot": "S05A_HERBS_CHOPPED",
+  "outname": "S05A_HERBS_CHOPPED.jpg",
+  "kind": "image",
+  "best_score": 91.0389019440478,
+  "best_path": "public/bunocnguoi/raw_pool/S05A_HERBS_CHOPPED/v3_02.jpg",
+  "all_candidates": [
+    {
+      "score": 91.0389019440478,
+      "path": "public/bunocnguoi/raw_pool/S05A_HERBS_CHOPPED/v3_02.jpg"
+    },
+    {
+      "score": 80.54732348004215,
+      "path": "public/bunocnguoi/raw_pool/S05A_HERBS_CHOPPED/bing_02.jpg"
+    },
+    {
+      "score": 76.3109898071289,
+      "path": "public/bunocnguoi/raw_pool/S05A_HERBS_CHOPPED/v3_04.jpg"
+    },
+    {
+      "score": 73.78843127441405,
+      "path": "public/bunocnguoi/raw_pool/S05A_HERBS_CHOPPED/v3_03.jpg"
+    },
+    {
+      "score": 71.67588415527344,
+      "path": "public/bunocnguoi/raw_pool/S05A_HERBS_CHOPPED/v3_01.jpg"
+    },
+    {
+      "score": 71.66455249023437,
+      "path": "public/bunocnguoi/raw_pool/S05A_HERBS_CHOPPED/v3_00.jpg"
+    },
+    {
+      "score": 57.58906369439793,
+      "path": "public/bunocnguoi/raw_pool/S05A_HERBS_CHOPPED/bing_04.jpg"
+    },
+    {
+      "score": 56.81685833497117,
+      "path": "public/bunocnguoi/raw_pool/S05A_HERBS_CHOPPED/bing_00.png"
+    },
+    {
+      "score": 54.20211767043455,
+      "path": "public/bunocnguoi/raw_pool/S05A_HERBS_CHOPPED/bing_01.jpg"
+    },
+    {
+      "score": 46.2888485725679,
+      "path": "public/bunocnguoi/raw_pool/S05A_HERBS_CHOPPED/bing_05.jpg"
+    },
+    {
+      "score": 41.62709122862468,
+      "path": "public/bunocnguoi/raw_pool/S05A_HERBS_CHOPPED/bing_03.jpg"
+    }
+  ]
+}

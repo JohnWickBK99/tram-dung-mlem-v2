@@ -1,0 +1,49 @@
+{
+  "shot": "S08A_CO_HUE",
+  "outname": "S08A_CO_HUE.jpg",
+  "kind": "image",
+  "best_score": 86.72923063382034,
+  "best_path": "public/bunocnguoi/raw_pool/S08A_CO_HUE/wiki2_01.jpg",
+  "all_candidates": [
+    {
+      "score": 86.72923063382034,
+      "path": "public/bunocnguoi/raw_pool/S08A_CO_HUE/wiki2_01.jpg"
+    },
+    {
+      "score": 86.12749527219741,
+      "path": "public/bunocnguoi/raw_pool/S08A_CO_HUE/wiki2_00.jpg"
+    },
+    {
+      "score": 79.88623751965409,
+      "path": "public/bunocnguoi/raw_pool/S08A_CO_HUE/wiki2_02.jpg"
+    },
+    {
+      "score": 67.50014883626062,
+      "path": "public/bunocnguoi/raw_pool/S08A_CO_HUE/wiki2_03.jpg"
+    },
+    {
+      "score": 61.574153085484035,
+      "path": "public/bunocnguoi/raw_pool/S08A_CO_HUE/bing_02.jpg"
+    },
+    {
+      "score": 58.47868485216751,
+      "path": "public/bunocnguoi/raw_pool/S08A_CO_HUE/bing_04.jpg"
+    },
+    {
+      "score": 54.935160891963875,
+      "path": "public/bunocnguoi/raw_pool/S08A_CO_HUE/bing_01.png"
+    },
+    {
+      "score": 54.66411270728115,
+      "path": "public/bunocnguoi/raw_pool/S08A_CO_HUE/bing_03.jpg"
+    },
+    {
+      "score": 51.47517228206524,
+      "path": "public/bunocnguoi/raw_pool/S08A_CO_HUE/bing_05.jpg"
+    },
+    {
+      "score": 50.273531663247056,
+      "path": "public/bunocnguoi/raw_pool/S08A_CO_HUE/bing_00.jpg"
+    }
+  ]
+}

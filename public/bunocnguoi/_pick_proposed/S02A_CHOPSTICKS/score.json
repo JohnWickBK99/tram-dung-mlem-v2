@@ -1,0 +1,49 @@
+{
+  "shot": "S02A_CHOPSTICKS",
+  "outname": "S02A_CHOPSTICKS.jpg",
+  "kind": "image",
+  "best_score": 82.2910117149395,
+  "best_path": "public/bunocnguoi/raw_pool/S02A_CHOPSTICKS/v3_03.jpg",
+  "all_candidates": [
+    {
+      "score": 82.2910117149395,
+      "path": "public/bunocnguoi/raw_pool/S02A_CHOPSTICKS/v3_03.jpg"
+    },
+    {
+      "score": 76.4383819546621,
+      "path": "public/bunocnguoi/raw_pool/S02A_CHOPSTICKS/bing_00.jpg"
+    },
+    {
+      "score": 74.74974176025391,
+      "path": "public/bunocnguoi/raw_pool/S02A_CHOPSTICKS/v3_01.jpg"
+    },
+    {
+      "score": 71.62404553222656,
+      "path": "public/bunocnguoi/raw_pool/S02A_CHOPSTICKS/v3_00.jpg"
+    },
+    {
+      "score": 64.96694693416693,
+      "path": "public/bunocnguoi/raw_pool/S02A_CHOPSTICKS/bing_04.jpg"
+    },
+    {
+      "score": 62.40836953136811,
+      "path": "public/bunocnguoi/raw_pool/S02A_CHOPSTICKS/bing_05.jpg"
+    },
+    {
+      "score": 61.262457878471665,
+      "path": "public/bunocnguoi/raw_pool/S02A_CHOPSTICKS/bing_01.jpg"
+    },
+    {
+      "score": 54.20638529759417,
+      "path": "public/bunocnguoi/raw_pool/S02A_CHOPSTICKS/bing_02.jpg"
+    },
+    {
+      "score": 53.475608317057294,
+      "path": "public/bunocnguoi/raw_pool/S02A_CHOPSTICKS/v3_02.jpg"
+    },
+    {
+      "score": 39.57011167593268,
+      "path": "public/bunocnguoi/raw_pool/S02A_CHOPSTICKS/bing_03.jpg"
+    }
+  ]
+}

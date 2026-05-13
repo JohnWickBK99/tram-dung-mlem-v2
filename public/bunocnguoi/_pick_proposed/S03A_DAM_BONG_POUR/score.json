@@ -1,0 +1,37 @@
+{
+  "shot": "S03A_DAM_BONG_POUR",
+  "outname": "S03A_DAM_BONG_POUR.jpg",
+  "kind": "image",
+  "best_score": 70.98841402054398,
+  "best_path": "public/bunocnguoi/raw_pool/S03A_DAM_BONG_POUR/bing_01.jpg",
+  "all_candidates": [
+    {
+      "score": 70.98841402054398,
+      "path": "public/bunocnguoi/raw_pool/S03A_DAM_BONG_POUR/bing_01.jpg"
+    },
+    {
+      "score": 66.09752679398147,
+      "path": "public/bunocnguoi/raw_pool/S03A_DAM_BONG_POUR/bing_04.jpg"
+    },
+    {
+      "score": 65.20377226629142,
+      "path": "public/bunocnguoi/raw_pool/S03A_DAM_BONG_POUR/bing_05.jpg"
+    },
+    {
+      "score": 64.17678183004483,
+      "path": "public/bunocnguoi/raw_pool/S03A_DAM_BONG_POUR/bing_02.jpg"
+    },
+    {
+      "score": 62.181949701003084,
+      "path": "public/bunocnguoi/raw_pool/S03A_DAM_BONG_POUR/bing_00.jpg"
+    },
+    {
+      "score": 56.48148148148148,
+      "path": "public/bunocnguoi/raw_pool/S03A_DAM_BONG_POUR/bing_03.jpg"
+    },
+    {
+      "score": 55.46178785265283,
+      "path": "public/bunocnguoi/raw_pool/S03A_DAM_BONG_POUR/v3_00.jpg"
+    }
+  ]
+}

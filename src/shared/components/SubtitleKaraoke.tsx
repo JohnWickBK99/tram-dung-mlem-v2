@@ -13,38 +13,62 @@ void stripPunct;
 const isHardBreak = (word: string) => /[.!?]$/.test(word);
 const isSoftBreak = (word: string) => /[,;:]$/.test(word);
 
+/**
+ * Sentence-first pagination:
+ * 1. Split words into sentences at .!?  (each sentence kept whole if ≤ maxWords)
+ * 2. If a sentence is longer, split at commas/semicolons into clauses, group greedily up to maxWords.
+ * 3. Never end a page mid-clause unless a single clause > maxWords (then split at word boundary).
+ * 4. Merge tiny tail pages (< minWords) into the previous page.
+ */
 const computePages = (words: string[], minWords: number, maxWords: number): number[][] => {
-  const pages: number[][] = [];
-  let current: number[] = [];
+  // 1) sentences
+  const sentences: number[][] = [];
+  let s: number[] = [];
   for (let i = 0; i < words.length; i++) {
-    current.push(i);
-    if (isHardBreak(words[i]) && current.length >= minWords) {
-      pages.push(current);
-      current = [];
-      continue;
+    s.push(i);
+    if (isHardBreak(words[i])) { sentences.push(s); s = []; }
+  }
+  if (s.length) sentences.push(s);
+
+  const pages: number[][] = [];
+  for (const sent of sentences) {
+    if (sent.length <= maxWords) { pages.push(sent); continue; }
+    // 2) split sentence into clauses by soft breaks
+    const clauses: number[][] = [];
+    let c: number[] = [];
+    for (const idx of sent) {
+      c.push(idx);
+      if (isSoftBreak(words[idx])) { clauses.push(c); c = []; }
     }
-    if (current.length >= maxWords) {
-      let softIdx = -1;
-      for (let j = current.length - 1; j >= minWords - 1; j--) {
-        if (isSoftBreak(words[current[j]])) { softIdx = j; break; }
+    if (c.length) clauses.push(c);
+    // 3) greedy group clauses
+    let buf: number[] = [];
+    for (const cl of clauses) {
+      if (cl.length > maxWords) {
+        // flush buf, then chunk this oversized clause at word boundary
+        if (buf.length) { pages.push(buf); buf = []; }
+        for (let k = 0; k < cl.length; k += maxWords) pages.push(cl.slice(k, k + maxWords));
+        continue;
       }
-      if (softIdx > 0) {
-        pages.push(current.slice(0, softIdx + 1));
-        current = current.slice(softIdx + 1);
+      if (buf.length + cl.length > maxWords) {
+        if (buf.length) pages.push(buf);
+        buf = [...cl];
       } else {
-        pages.push(current);
-        current = [];
+        buf = [...buf, ...cl];
       }
     }
+    if (buf.length) pages.push(buf);
   }
-  if (current.length > 0) {
-    if (current.length < minWords && pages.length > 0) {
-      pages[pages.length - 1].push(...current);
+  // 4) merge tiny tail pages
+  const out: number[][] = [];
+  for (const p of pages) {
+    if (out.length && p.length < minWords && out[out.length - 1].length + p.length <= maxWords + 2) {
+      out[out.length - 1] = [...out[out.length - 1], ...p];
     } else {
-      pages.push(current);
+      out.push(p);
     }
   }
-  return pages;
+  return out;
 };
 
 export const SubtitleKaraoke: React.FC<{
@@ -61,6 +85,10 @@ export const SubtitleKaraoke: React.FC<{
   bottom?: number;
   fontSize?: number;
   strokeWidth?: number;
+  /** Color for non-active, non-emphasis words. Default white. */
+  textColor?: string;
+  /** Stroke color around non-active words. Default ink. */
+  textStrokeColor?: string;
   minWordsPerPage?: number;
   maxWordsPerPage?: number;
 }> = ({
@@ -68,6 +96,7 @@ export const SubtitleKaraoke: React.FC<{
   highlightBg, highlightTextColor, highlightBorderColor, highlightShadowColor,
   highlightStroke, emphasis, emphasisColor,
   bottom = 140, fontSize = 48, strokeWidth = 4,
+  textColor, textStrokeColor,
   minWordsPerPage = 4, maxWordsPerPage = 12,
 }) => {
   const frame = useCurrentFrame();
@@ -126,14 +155,14 @@ export const SubtitleKaraoke: React.FC<{
 
   const baseStyle: React.CSSProperties = {
     fontFamily: font.family.body,
-    fontWeight: weight.bold,
+    fontWeight: weight.medium,
     fontSize,
     lineHeight: 1.3,
     padding: '4px 10px',
     borderRadius: 8,
     borderWidth: 3,
     borderStyle: 'solid',
-    WebkitTextStroke: `${strokeWidth}px ${color.outline}`,
+    WebkitTextStroke: `${strokeWidth}px ${textStrokeColor ?? color.outline}`,
     paintOrder: 'stroke fill' as const,
     display: 'inline-block',
   };
@@ -185,7 +214,7 @@ export const SubtitleKaraoke: React.FC<{
         return (
           <span key={`${currentPageIdx}-${i}`} style={{
             ...baseStyle,
-            color: isEmphasized ? (emphasisColor ?? color.brand.yellow) : color.neutral[0],
+            color: isEmphasized ? (emphasisColor ?? color.brand.yellow) : (textColor ?? color.neutral[0]),
             background: 'transparent',
             borderColor: 'transparent',
           }}>{w}</span>

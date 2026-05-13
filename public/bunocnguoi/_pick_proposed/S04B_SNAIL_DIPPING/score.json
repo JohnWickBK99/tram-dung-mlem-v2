@@ -1,0 +1,49 @@
+{
+  "shot": "S04B_SNAIL_DIPPING",
+  "outname": "S04B_SNAIL_DIPPING.jpg",
+  "kind": "image",
+  "best_score": 82.51854346595904,
+  "best_path": "public/bunocnguoi/raw_pool/S04B_SNAIL_DIPPING/v3_02.jpg",
+  "all_candidates": [
+    {
+      "score": 82.51854346595904,
+      "path": "public/bunocnguoi/raw_pool/S04B_SNAIL_DIPPING/v3_02.jpg"
+    },
+    {
+      "score": 74.66493055555556,
+      "path": "public/bunocnguoi/raw_pool/S04B_SNAIL_DIPPING/v3_01.jpg"
+    },
+    {
+      "score": 73.83626746961805,
+      "path": "public/bunocnguoi/raw_pool/S04B_SNAIL_DIPPING/bing_05.png"
+    },
+    {
+      "score": 72.08149983135955,
+      "path": "public/bunocnguoi/raw_pool/S04B_SNAIL_DIPPING/bing_04.jpg"
+    },
+    {
+      "score": 70.77125527054397,
+      "path": "public/bunocnguoi/raw_pool/S04B_SNAIL_DIPPING/bing_00.jpg"
+    },
+    {
+      "score": 63.30723122153705,
+      "path": "public/bunocnguoi/raw_pool/S04B_SNAIL_DIPPING/bing_02.jpg"
+    },
+    {
+      "score": 62.05237268518519,
+      "path": "public/bunocnguoi/raw_pool/S04B_SNAIL_DIPPING/v3_00.jpg"
+    },
+    {
+      "score": 58.43642022425086,
+      "path": "public/bunocnguoi/raw_pool/S04B_SNAIL_DIPPING/bing_03.jpg"
+    },
+    {
+      "score": 57.82904409100722,
+      "path": "public/bunocnguoi/raw_pool/S04B_SNAIL_DIPPING/bing_01.jpg"
+    },
+    {
+      "score": 49.75514922275096,
+      "path": "public/bunocnguoi/raw_pool/S04B_SNAIL_DIPPING/v3_03.jpg"
+    }
+  ]
+}

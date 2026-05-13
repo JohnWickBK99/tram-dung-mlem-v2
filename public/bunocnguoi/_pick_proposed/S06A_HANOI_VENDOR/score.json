@@ -1,0 +1,53 @@
+{
+  "shot": "S06A_HANOI_VENDOR",
+  "outname": "S06A_HANOI_VENDOR.jpg",
+  "kind": "image",
+  "best_score": 76.98828228759766,
+  "best_path": "public/bunocnguoi/raw_pool/S06A_HANOI_VENDOR/v3_01.jpg",
+  "all_candidates": [
+    {
+      "score": 76.98828228759766,
+      "path": "public/bunocnguoi/raw_pool/S06A_HANOI_VENDOR/v3_01.jpg"
+    },
+    {
+      "score": 74.68611846923828,
+      "path": "public/bunocnguoi/raw_pool/S06A_HANOI_VENDOR/v3_00.jpg"
+    },
+    {
+      "score": 71.92988568115234,
+      "path": "public/bunocnguoi/raw_pool/S06A_HANOI_VENDOR/v3_02.jpg"
+    },
+    {
+      "score": 69.27484149694659,
+      "path": "public/bunocnguoi/raw_pool/S06A_HANOI_VENDOR/v3_03.jpg"
+    },
+    {
+      "score": 66.19934093138765,
+      "path": "public/bunocnguoi/raw_pool/S06A_HANOI_VENDOR/bing_03.jpg"
+    },
+    {
+      "score": 62.5,
+      "path": "public/bunocnguoi/raw_pool/S06A_HANOI_VENDOR/v3_04.jpg"
+    },
+    {
+      "score": 62.40836953136811,
+      "path": "public/bunocnguoi/raw_pool/S06A_HANOI_VENDOR/bing_05.jpg"
+    },
+    {
+      "score": 60.1240866087963,
+      "path": "public/bunocnguoi/raw_pool/S06A_HANOI_VENDOR/bing_02.jpg"
+    },
+    {
+      "score": 58.05137830729167,
+      "path": "public/bunocnguoi/raw_pool/S06A_HANOI_VENDOR/bing_01.jpg"
+    },
+    {
+      "score": 55.796352484621295,
+      "path": "public/bunocnguoi/raw_pool/S06A_HANOI_VENDOR/bing_00.jpg"
+    },
+    {
+      "score": 50.035946669302675,
+      "path": "public/bunocnguoi/raw_pool/S06A_HANOI_VENDOR/bing_04.jpg"
+    }
+  ]
+}

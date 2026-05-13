@@ -1,0 +1,25 @@
+{
+  "shot": "S01A_HOOK_BOWL",
+  "outname": "S01A_HOOK_BOWL.mp4",
+  "kind": "video",
+  "best_score": 100.0,
+  "best_path": "public/bunocnguoi/raw_pool/S01A_HOOK_BOWL/yt_3.mp4",
+  "all_candidates": [
+    {
+      "score": 100.0,
+      "path": "public/bunocnguoi/raw_pool/S01A_HOOK_BOWL/yt_3.mp4"
+    },
+    {
+      "score": 100.0,
+      "path": "public/bunocnguoi/raw_pool/S01A_HOOK_BOWL/yt_2.mp4"
+    },
+    {
+      "score": 100.0,
+      "path": "public/bunocnguoi/raw_pool/S01A_HOOK_BOWL/yt_1.mp4"
+    },
+    {
+      "score": 94.45545196533203,
+      "path": "public/bunocnguoi/raw_pool/S01A_HOOK_BOWL/yt_4.mp4"
+    }
+  ]
+}
