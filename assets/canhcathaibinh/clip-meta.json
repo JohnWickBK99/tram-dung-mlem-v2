@@ -1,0 +1,17 @@
+{
+  "slug": "canhcathaibinh",
+  "slugDash": "canhcathaibinh",
+  "title": "Canh Cá Thái Bình — Tên gọi đánh lừa 400 năm",
+  "pillar": "B",
+  "pillarName": "Món lạ quốc gia",
+  "pillarColor": "#C8302D",
+  "durationSec": 90,
+  "fps": 30,
+  "totalFrames": 2700,
+  "width": 1080,
+  "height": 1920,
+  "format": "tiktok-9x16",
+  "voiceoverFile": "canhcathaibinh/canhca-voiceover.mp3",
+  "scenesJson": "canhcathaibinh/scenes-with-perword.json",
+  "createdAt": "2026-05-14T09:20:31Z"
+}

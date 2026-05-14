@@ -7,6 +7,8 @@ import { Chacalavong } from './compositions/Chacalavong';
 import metaChacalavong from '../assets/chacalavong/clip-meta.json';
 import { Bunocnguoi } from './compositions/Bunocnguoi';
 import metaBunocnguoi from '../assets/bunocnguoi/clip-meta.json';
+import { Canhcathaibinh } from './compositions/Canhcathaibinh';
+import metaCanhcathaibinh from '../assets/canhcathaibinh/clip-meta.json';
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -34,6 +36,14 @@ export const RemotionRoot: React.FC = () => {
         fps={metaBunocnguoi.fps}
         width={metaBunocnguoi.width}
         height={metaBunocnguoi.height}
+      />
+      <Composition
+        id="Canhcathaibinh"
+        component={Canhcathaibinh}
+        durationInFrames={metaCanhcathaibinh.totalFrames}
+        fps={metaCanhcathaibinh.fps}
+        width={metaCanhcathaibinh.width}
+        height={metaCanhcathaibinh.height}
       />
     </>
   );

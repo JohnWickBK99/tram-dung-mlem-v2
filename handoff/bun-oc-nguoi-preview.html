@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bún Ốc Nguội Hà Nội — long-form 90s · 10 cảnh (Pillar B)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" />
+<style>
+  :root {
+    --yellow:#F8B147; --yellow-hi:#FFD24A; --orange:#F39820; --coral:#E85D2F; --red:#C8302D;
+    --teal:#4FC3D1; --cream:#FFF4E0; --white:#FFF; --off:#FFFAF0;
+    --ink:#1A1A1A; --body:#5C5443;
+    /* Pillar B — Món lạ quốc gia (đỏ dominant) */
+    --pillarB-light:#F4B0AE; --pillarB-base:#C8302D; --pillarB-dark:#7A1614;
+    --display:'Baloo 2', system-ui, sans-serif;
+    --heading:'Be Vietnam Pro', system-ui, sans-serif;
+    --body-f:'Be Vietnam Pro', system-ui, sans-serif;
+    --mono:'JetBrains Mono', ui-monospace, monospace;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--off);color:var(--ink);font-family:var(--body-f)}
+  .page{padding:48px;max-width:1600px;margin:0 auto}
+
+  /* Header */
+  .head-card{
+    background:var(--red); color:var(--white);
+    border:6px solid var(--ink); border-radius:32px;
+    box-shadow:14px 14px 0 0 var(--ink);
+    padding:48px; margin-bottom:64px;
+  }
+  .head-eyebrow{
+    display:inline-flex; gap:10px; align-items:center;
+    background:var(--ink); color:var(--yellow-hi);
+    padding:8px 20px; border-radius:999px;
+    font-family:var(--heading); font-weight:800; font-size:14px; letter-spacing:2px; text-transform:uppercase;
+    margin-bottom:20px;
+  }
+  .head-title{font-family:var(--display); font-weight:800; font-size:88px; line-height:0.95; margin:0 0 16px; -webkit-text-stroke:4px var(--ink); paint-order:stroke fill;}
+  .head-sub{font-family:var(--heading); font-weight:600; font-size:22px; max-width:920px; margin:0;}
+  .head-sub code{font-family:var(--mono); background:rgba(0,0,0,0.25); padding:2px 8px; border-radius:6px; font-size:18px;}
+  .head-stats{display:flex; gap:14px; margin-top:24px; flex-wrap:wrap;}
+  .head-stats .stat{background:var(--ink); color:var(--yellow-hi); border:3px solid var(--ink); border-radius:8px; padding:8px 16px; font-family:var(--mono); font-weight:600; font-size:13px; letter-spacing:1px;}
+  .head-stats .stat.long{background:var(--yellow-hi); color:var(--ink);}
+
+  /* Grid */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+    gap:48px;
+  }
+  .card{display:flex; flex-direction:column; gap:14px;}
+  .card-meta{
+    background:var(--white); border:4px solid var(--ink); border-radius:16px;
+    box-shadow:6px 6px 0 0 var(--ink);
+    padding:14px 18px;
+    display:flex; align-items:center; gap:12px;
+  }
+  .badge{
+    width:42px; height:42px; border-radius:50%;
+    background:var(--ink); color:var(--yellow-hi);
+    display:inline-flex; align-items:center; justify-content:center;
+    font-family:var(--display); font-weight:800; font-size:20px;
+  }
+  .card-meta .info{display:flex; flex-direction:column; gap:2px; flex:1; min-width:0;}
+  .card-meta .key{font-family:var(--mono); font-weight:600; font-size:11px; color:var(--body); letter-spacing:1px;}
+  .card-meta .name{font-family:var(--display); font-weight:800; font-size:17px; line-height:1.1;}
+  .card-meta .dur{font-family:var(--mono); font-weight:700; font-size:14px; color:var(--white); background:var(--pillarB-base); border:2px solid var(--ink); border-radius:6px; padding:2px 8px; white-space:nowrap;}
+
+  /* Phone frame 9:16 */
+  .frame{
+    width:100%; aspect-ratio:9/16;
+    background:var(--ink);
+    border:6px solid var(--ink); border-radius:32px;
+    box-shadow:14px 14px 0 0 var(--ink);
+    overflow:hidden; position:relative;
+  }
+  .scene{
+    position:absolute; inset:0;
+    width:1080px; height:1920px;
+    transform-origin:top left;
+  }
+
+  .abs{position:absolute; inset:0;}
+  .center{
+    display:flex; align-items:center; justify-content:center; flex-direction:column;
+    padding:200px 60px 480px;
+  }
+
+  /* Pillar B badge — RED bg, WHITE text */
+  .pillar-badge{
+    position:absolute; top:60px; left:60px; z-index:10;
+    display:flex; align-items:center; gap:14px;
+    background:var(--red); color:var(--white);
+    border:3px solid var(--ink); border-radius:999px;
+    padding:12px 22px 12px 14px;
+    box-shadow:6px 6px 0 0 var(--ink);
+    font-family:var(--heading); font-weight:800;
+    letter-spacing:1.5px; font-size:26px;
+  }
+  .pillar-badge .dot{
+    width:44px; height:44px; border-radius:50%;
+    background:var(--ink); color:var(--yellow-hi);
+    display:inline-flex; align-items:center; justify-content:center;
+    font-family:var(--display); font-weight:800; font-size:30px;
+  }
+  .channel-mark{
+    position:absolute; top:60px; right:60px; z-index:10;
+    background:var(--ink); color:var(--yellow-hi);
+    border:3px solid var(--ink); border-radius:999px;
+    padding:10px 22px;
+    box-shadow:4px 4px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800;
+    font-size:24px; letter-spacing:2px; text-transform:uppercase;
+  }
+
+  /* Karaoke subtitle */
+  .sub{
+    position:absolute; bottom:160px; left:60px; right:60px; z-index:9;
+    display:flex; flex-wrap:wrap; justify-content:center; gap:8px 6px;
+    max-height:340px; overflow:hidden;
+  }
+  .sub span{
+    font-family:var(--body-f); font-weight:700; font-size:40px;
+    color:var(--white); -webkit-text-stroke:4px var(--ink); paint-order:stroke fill;
+    line-height:1.3; padding:4px 10px; border-radius:8px;
+    border:3px solid transparent;
+  }
+  .sub span.hl{
+    color:var(--ink); background:var(--yellow-hi);
+    border:3px solid var(--ink);
+    box-shadow:4px 4px 0 0 var(--ink);
+    -webkit-text-stroke:0;
+  }
+  .sub span.em{ color:var(--yellow-hi); }
+
+  /* karaoke variants */
+  .scene[data-kara="coral"] .sub span.hl{ background:var(--coral); color:var(--white); -webkit-text-stroke:2px var(--ink); }
+  .scene[data-kara="coral"] .sub span.em{ color:var(--coral); }
+  .scene[data-kara="red"] .sub span.hl{ background:var(--red); color:var(--white); -webkit-text-stroke:2px var(--ink); }
+  .scene[data-kara="red"] .sub span.em{ color:var(--red); }
+  .scene[data-kara="ink"] .sub span.hl{ background:var(--ink); color:var(--yellow-hi); -webkit-text-stroke:0; }
+  .scene[data-kara="ink"] .sub span{ color:var(--ink); -webkit-text-stroke:3px var(--white); }
+  .scene[data-kara="ink"] .sub span.em{ color:var(--red); }
+
+  /* photo backdrop fallback */
+  .photo{
+    position:absolute; inset:0;
+    background:
+      radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.55) 100%),
+      var(--placeholder, var(--pillarB-dark));
+    opacity:0.65;
+  }
+  .photo.with-tint::after{
+    content:''; position:absolute; inset:0;
+    background:var(--tint, transparent); mix-blend-mode:multiply;
+  }
+  /* monospace placeholder caption — what shot should fill this slot */
+  .photo .ph-cap{
+    position:absolute; inset:0;
+    display:flex; align-items:flex-end; justify-content:flex-start;
+    padding:30px;
+    font-family:var(--mono); font-weight:600; font-size:18px;
+    color:rgba(255,255,255,0.55);
+    letter-spacing:1px; pointer-events:none;
+  }
+
+  /* Sticker chips generic */
+  .chip{
+    background:var(--cream); color:var(--ink);
+    border:4px solid var(--ink); border-radius:999px;
+    padding:14px 32px;
+    box-shadow:8px 8px 0 0 var(--ink);
+    font-family:var(--heading); font-weight:800;
+    font-size:36px; white-space:nowrap;
+  }
+  .chip.yellow{background:var(--yellow-hi);}
+  .chip.coral{background:var(--coral); color:var(--white);}
+  .chip.red{background:var(--red); color:var(--white);}
+  .chip.ink{background:var(--ink); color:var(--yellow-hi);}
+
+  /* ─── Scene-specific styles (10 cảnh long-form) ─────────────── */
+
+  /* S01 — HOOK: MÓN BÚN ĐỘC NHẤT VN + BÚN ỐC NGUỘI + "Phải ăn lạnh" */
+  #s01{background:var(--ink);}
+  #s01 .photo{--placeholder:linear-gradient(135deg,#7A1614 0%,#1A0a0a 100%); --tint:rgba(122,22,20,0.40); opacity:0.55;}
+  #s01 .hook-headline{
+    font-family:var(--display); font-weight:800; font-size:96px; line-height:0.95;
+    color:var(--white); -webkit-text-stroke:6px var(--ink); paint-order:stroke fill;
+    text-shadow:0 10px 0 var(--ink); text-align:center; letter-spacing:-2px;
+  }
+  #s01 .hook-headline b{color:var(--yellow-hi);}
+  #s01 .hook-name{
+    background:var(--yellow-hi); color:var(--ink);
+    border:6px solid var(--ink); border-radius:16px;
+    padding:24px 64px; box-shadow:14px 14px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800; font-size:120px;
+    letter-spacing:-2px; transform:rotate(-2deg); margin-top:36px;
+    text-align:center; line-height:1.0;
+  }
+  #s01 .hook-caption{
+    margin-top:30px;
+    font-family:var(--heading); font-style:italic; font-weight:700;
+    font-size:48px; color:var(--yellow-hi);
+    -webkit-text-stroke:3px var(--ink); paint-order:stroke fill;
+  }
+
+  /* S02 — REVEAL: NGUỘI bản gốc + 3 điều + 3 quán */
+  #s02{background:var(--off);}
+  #s02 .label-pill{
+    background:var(--ink); color:var(--pillarB-light);
+    border:6px solid var(--ink); border-radius:999px;
+    padding:14px 38px; box-shadow:12px 12px 0 0 var(--ink);
+    font-family:var(--heading); font-weight:800; font-size:34px; letter-spacing:4px;
+  }
+  #s02 .nguoi-card{
+    margin-top:24px;
+    background:var(--white); border:8px solid var(--red); border-radius:32px;
+    box-shadow:20px 20px 0 0 var(--ink);
+    padding:30px 70px; text-align:center;
+  }
+  #s02 .nguoi-card .lead{
+    font-family:var(--display); font-weight:800; font-size:200px;
+    color:var(--red); -webkit-text-stroke:6px var(--ink); paint-order:stroke fill;
+    text-shadow:0 10px 0 var(--ink); line-height:0.9; letter-spacing:-6px;
+  }
+  #s02 .nguoi-card .sub-line{
+    margin-top:14px;
+    font-family:var(--heading); font-weight:800; font-size:30px;
+    color:var(--ink); letter-spacing:3px;
+  }
+  #s02 .plan{
+    margin-top:32px; display:flex; gap:22px; align-items:center;
+  }
+  #s02 .plan .plan-box{
+    background:var(--yellow-hi); color:var(--ink);
+    border:6px solid var(--ink); border-radius:20px;
+    padding:18px 32px; box-shadow:12px 12px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800;
+    transform:rotate(-2deg);
+    text-align:center; line-height:1;
+  }
+  #s02 .plan .plan-box.r{transform:rotate(2deg); background:var(--coral); color:var(--white);}
+  #s02 .plan .plan-box .n{font-size:96px; letter-spacing:-2px; display:block;}
+  #s02 .plan .plan-box .l{font-size:30px; letter-spacing:3px; margin-top:4px;}
+  #s02 .plan .plus{
+    font-family:var(--display); font-weight:800; font-size:80px;
+    color:var(--red); -webkit-text-stroke:4px var(--ink); paint-order:stroke fill;
+    text-shadow:0 6px 0 var(--ink);
+  }
+  /* off-white BG karaoke → coral */
+  #s02 .sub span.hl{background:var(--coral); color:var(--white); -webkit-text-stroke:2px var(--ink);}
+  #s02 .sub span{color:var(--ink); -webkit-text-stroke:3px var(--white);}
+  #s02 .sub span.em{color:var(--coral);}
+
+  /* S03 — DẤM BỖNG #1: linh hồn bát bún · men gạo nếp · vàng óng */
+  #s03{background:var(--pillarB-dark);}
+  #s03 .photo{--placeholder:linear-gradient(135deg,#7A1614 0%,#F39820 100%); --tint:rgba(243,152,32,0.25); opacity:0.5;}
+  #s03 .num-circle{
+    width:160px; height:160px; border-radius:50%;
+    background:var(--red); color:var(--yellow-hi);
+    border:8px solid var(--ink); box-shadow:12px 12px 0 0 var(--ink);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--display); font-weight:800; font-size:140px; line-height:1;
+  }
+  #s03 .ingredient-name{
+    margin-top:24px;
+    font-family:var(--display); font-weight:800; font-size:170px;
+    color:var(--yellow-hi); -webkit-text-stroke:6px var(--ink); paint-order:stroke fill;
+    text-shadow:0 10px 0 var(--ink); line-height:0.9; letter-spacing:-4px;
+    text-align:center;
+  }
+  #s03 .role-pill{
+    margin-top:18px;
+    background:var(--yellow-hi); color:var(--ink);
+    border:6px solid var(--ink); border-radius:14px;
+    padding:14px 36px; box-shadow:12px 12px 0 0 var(--ink);
+    font-family:var(--heading); font-weight:800; font-size:34px;
+    letter-spacing:3px; transform:rotate(-1deg);
+  }
+  #s03 .stat-line{
+    margin-top:28px; display:flex; gap:14px; flex-wrap:wrap; justify-content:center;
+  }
+  #s03 .stat-line .chip2{
+    background:var(--white); color:var(--ink);
+    border:5px solid var(--ink); border-radius:999px;
+    padding:12px 26px; box-shadow:8px 8px 0 0 var(--coral);
+    font-family:var(--heading); font-weight:800; font-size:32px;
+  }
+  #s03 .stat-line .chip2.c{background:var(--coral); color:var(--white);}
+  #s03 .vang-ong{
+    margin-top:24px;
+    background:var(--orange); color:var(--ink);
+    border:6px solid var(--ink); border-radius:16px;
+    padding:14px 40px; box-shadow:12px 12px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800; font-size:50px;
+    letter-spacing:4px; transform:rotate(1deg);
+  }
+
+  /* S04 — ỐC NHỒI #2: to bằng ngón tay cái · so sánh ốc đá ✗ */
+  #s04{background:var(--yellow);}
+  #s04 .num-circle{
+    width:160px; height:160px; border-radius:50%;
+    background:var(--red); color:var(--white);
+    border:8px solid var(--ink); box-shadow:12px 12px 0 0 var(--ink);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--display); font-weight:800; font-size:140px; line-height:1;
+  }
+  #s04 .ingredient-name{
+    margin-top:24px;
+    font-family:var(--display); font-weight:800; font-size:200px;
+    color:var(--red); -webkit-text-stroke:6px var(--ink); paint-order:stroke fill;
+    text-shadow:0 10px 0 var(--ink); line-height:0.9; letter-spacing:-6px;
+    text-align:center;
+  }
+  #s04 .size-pill{
+    margin-top:18px;
+    background:var(--ink); color:var(--yellow-hi);
+    border:6px solid var(--ink); border-radius:14px;
+    padding:12px 30px; box-shadow:12px 12px 0 0 var(--red);
+    font-family:var(--heading); font-weight:800; font-size:32px;
+    letter-spacing:3px; transform:rotate(-2deg);
+  }
+  #s04 .compare-row{
+    margin-top:30px; display:flex; gap:22px; align-items:center;
+  }
+  #s04 .compare-row .col-cmp{
+    width:300px; padding:24px 18px;
+    background:var(--white); border:6px solid var(--ink); border-radius:20px;
+    box-shadow:12px 12px 0 0 var(--ink);
+    text-align:center;
+  }
+  #s04 .compare-row .col-cmp.good{box-shadow:12px 12px 0 0 var(--red); transform:rotate(-2deg);}
+  #s04 .compare-row .col-cmp.bad{background:var(--cream); transform:rotate(2deg); opacity:0.95;}
+  #s04 .compare-row .col-cmp .nm{font-family:var(--display); font-weight:800; font-size:50px; line-height:1; letter-spacing:-1px;}
+  #s04 .compare-row .col-cmp .mk{font-family:var(--display); font-weight:800; font-size:80px; line-height:1; margin-top:8px;}
+  #s04 .compare-row .col-cmp.good .mk{color:#1f8a3d;}
+  #s04 .compare-row .col-cmp.bad .mk{color:var(--red);}
+  #s04 .compare-row .vs{
+    font-family:var(--display); font-weight:800; font-size:60px;
+    color:var(--ink); letter-spacing:2px;
+  }
+  /* yellow BG karaoke → ink */
+  #s04 .sub span.hl{background:var(--ink); color:var(--yellow-hi); -webkit-text-stroke:0; border:3px solid var(--ink); box-shadow:4px 4px 0 0 var(--red);}
+  #s04 .sub span{color:var(--ink); -webkit-text-stroke:3px var(--white);}
+  #s04 .sub span.em{color:var(--red);}
+
+  /* S05 — RAU #3: không nguyên cây · tía tô + kinh giới THÁI NHỎ */
+  #s05{background:var(--off);}
+  #s05 .num-circle{
+    width:160px; height:160px; border-radius:50%;
+    background:var(--red); color:var(--white);
+    border:8px solid var(--ink); box-shadow:12px 12px 0 0 var(--ink);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--display); font-weight:800; font-size:140px; line-height:1;
+  }
+  #s05 .rule{
+    margin-top:24px;
+    font-family:var(--display); font-weight:800; font-size:120px;
+    color:var(--ink); line-height:0.95; letter-spacing:-3px;
+    text-align:center;
+  }
+  #s05 .rule .no{background:var(--red); color:var(--white); padding:4px 24px; border:6px solid var(--ink); border-radius:14px; display:inline-block; box-shadow:8px 8px 0 0 var(--ink); margin-right:14px;}
+  #s05 .panels{
+    margin-top:32px; display:grid; grid-template-columns:1fr 1fr; gap:24px;
+    width:900px;
+  }
+  #s05 .panel{
+    background:var(--white); border:6px solid var(--ink); border-radius:20px;
+    box-shadow:14px 14px 0 0 var(--ink);
+    padding:22px 18px;
+    text-align:center; display:flex; flex-direction:column; gap:6px; justify-content:center;
+    min-height:200px;
+  }
+  #s05 .panel .mk{font-family:var(--display); font-weight:800; font-size:64px; line-height:1;}
+  #s05 .panel .name{font-family:var(--heading); font-weight:800; font-size:32px; line-height:1.1; letter-spacing:1px;}
+  #s05 .panel .small{font-family:var(--mono); font-weight:700; font-size:22px; color:var(--body); letter-spacing:2px; margin-top:4px;}
+  #s05 .panel.bad{background:var(--cream); opacity:0.85; transform:rotate(-2deg);}
+  #s05 .panel.bad .mk{color:var(--red);}
+  #s05 .panel.good{background:var(--yellow-hi); transform:rotate(2deg); box-shadow:14px 14px 0 0 var(--red);}
+  #s05 .panel.good .mk{color:#1f8a3d;}
+  #s05 .caption{
+    margin-top:26px;
+    font-family:var(--heading); font-style:italic; font-weight:700;
+    font-size:32px; color:var(--ink); letter-spacing:1px;
+    background:var(--white); border:4px dashed var(--ink); border-radius:14px;
+    padding:10px 30px;
+  }
+  /* off-white BG karaoke → coral */
+  #s05 .sub span.hl{background:var(--coral); color:var(--white); -webkit-text-stroke:2px var(--ink);}
+  #s05 .sub span{color:var(--ink); -webkit-text-stroke:3px var(--white);}
+  #s05 .sub span.em{color:var(--coral);}
+
+  /* S06 — VÌ SAO NGUỘI: 70 năm trước · gánh hàng rong · 3 bullet */
+  #s06{background:var(--ink);}
+  #s06 .photo{--placeholder:linear-gradient(135deg,#3a2e1f 0%,#7A1614 100%); --tint:rgba(90,58,31,0.50); opacity:0.55;}
+  #s06 .why{
+    font-family:var(--display); font-weight:800; font-size:170px;
+    color:var(--yellow-hi); line-height:0.95; letter-spacing:-2px;
+    -webkit-text-stroke:6px var(--ink); paint-order:stroke fill;
+    text-shadow:0 10px 0 var(--ink); text-align:center;
+  }
+  #s06 .era{
+    margin-top:22px;
+    background:var(--yellow-hi); color:var(--ink);
+    border:6px solid var(--ink); border-radius:14px;
+    padding:14px 38px; box-shadow:12px 12px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800; font-size:54px;
+    letter-spacing:4px; transform:rotate(-3deg);
+  }
+  #s06 .bullets{
+    margin-top:36px; display:flex; gap:18px; flex-wrap:wrap; justify-content:center;
+  }
+  #s06 .bullet{
+    width:280px; padding:24px 16px;
+    background:var(--white); color:var(--ink);
+    border:6px solid var(--ink); border-radius:20px;
+    box-shadow:14px 14px 0 0 var(--coral);
+    text-align:center;
+  }
+  #s06 .bullet:nth-child(2){box-shadow:14px 14px 0 0 var(--yellow-hi); transform:rotate(2deg);}
+  #s06 .bullet:nth-child(1){transform:rotate(-2deg);}
+  #s06 .bullet:nth-child(3){transform:rotate(-1deg);}
+  #s06 .bullet .ic{font-size:80px; line-height:1;}
+  #s06 .bullet .lb{font-family:var(--display); font-weight:800; font-size:36px; letter-spacing:1px; margin-top:6px; line-height:1.05;}
+
+  /* S07/S08/S09 — Shop cards (same template, 3 màu khác) */
+  .shop-card{
+    width:880px; padding:60px 50px 50px;
+    background:var(--cream); color:var(--ink);
+    border:8px solid var(--ink); border-radius:32px;
+    box-shadow:20px 20px 0 0 var(--ink);
+    text-align:center; position:relative;
+  }
+  .shop-card .quan-tag{
+    position:absolute; top:-28px; left:50%; transform:translateX(-50%);
+    background:var(--ink); color:var(--yellow-hi);
+    border:5px solid var(--ink); border-radius:999px;
+    padding:8px 28px;
+    font-family:var(--display); font-weight:800; font-size:32px; letter-spacing:3px;
+    white-space:nowrap;
+  }
+  .shop-card .name{
+    font-family:var(--display); font-weight:800; font-size:170px; line-height:0.95;
+    letter-spacing:-3px; -webkit-text-stroke:5px var(--ink); paint-order:stroke fill;
+    text-shadow:0 8px 0 var(--ink);
+  }
+  .shop-card .row{
+    margin-top:22px; display:flex; flex-wrap:wrap; gap:14px; justify-content:center;
+  }
+  .shop-card .row .pill{
+    background:var(--yellow-hi); color:var(--ink);
+    border:4px solid var(--ink); border-radius:999px;
+    padding:12px 26px; box-shadow:6px 6px 0 0 var(--ink);
+    font-family:var(--heading); font-weight:800; font-size:32px;
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .shop-card .row .pill.teal{background:var(--teal);}
+  .shop-card .row .pill.coral{background:var(--coral); color:var(--white);}
+  .shop-card .row .pill.ink{background:var(--ink); color:var(--yellow-hi);}
+  .shop-card .tag{
+    margin-top:18px;
+    background:var(--red); color:var(--white);
+    border:5px solid var(--ink); border-radius:14px;
+    padding:10px 28px; box-shadow:8px 8px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800; font-size:34px; letter-spacing:2px;
+    transform:rotate(-1deg); display:inline-block;
+  }
+  .shop-card .stamp{
+    position:absolute; top:-26px; right:-30px;
+    background:var(--coral); color:var(--white);
+    border:6px solid var(--ink); border-radius:999px;
+    padding:10px 22px; box-shadow:8px 8px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800; font-size:32px; letter-spacing:2px;
+    transform:rotate(12deg);
+  }
+  #s07{background:var(--off);}
+  #s07 .shop-card .name{color:var(--red);}
+  #s08{background:var(--off);}
+  #s08 .shop-card{background:var(--white);}
+  #s08 .shop-card .name{color:var(--coral);}
+  #s09{background:var(--pillarB-dark);}
+  #s09 .photo{--placeholder:linear-gradient(135deg,#5A3A1F 0%,#7A1614 100%); --tint:rgba(248,177,71,0.15); opacity:0.55;}
+  #s09 .shop-card .name{color:var(--teal); -webkit-text-stroke:5px var(--ink);}
+  /* off-white BG override karaoke for s07/s08 */
+  #s07 .sub span.hl, #s08 .sub span.hl{background:var(--red); color:var(--white); -webkit-text-stroke:2px var(--ink);}
+  #s07 .sub span, #s08 .sub span{color:var(--ink); -webkit-text-stroke:3px var(--white);}
+  #s07 .sub span.em, #s08 .sub span.em{color:var(--red);}
+
+  /* S10 — CTA BOOKMARK + Follow */
+  #s10{background:var(--pillarB-dark);}
+  #s10 .photo{--placeholder:linear-gradient(135deg,#7A1614 0%,#2a0a0a 100%); --tint:rgba(200,48,45,0.20); opacity:0.55;}
+  #s10 .stripes{position:absolute; inset:0; background:repeating-linear-gradient(45deg, transparent 0 60px, rgba(255,210,74,0.10) 60px 120px);}
+  #s10 .bookmark-sticker{
+    background:var(--red); color:var(--white);
+    border:8px solid var(--ink); border-radius:24px;
+    padding:24px 56px; box-shadow:18px 18px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800; font-size:80px;
+    letter-spacing:1px; transform:rotate(-3deg);
+    text-align:center; line-height:1;
+  }
+  #s10 .quan-list{
+    margin-top:36px;
+    background:var(--white); color:var(--ink);
+    border:6px solid var(--ink); border-radius:20px;
+    box-shadow:14px 14px 0 0 var(--yellow-hi);
+    padding:22px 36px;
+    font-family:var(--display); font-weight:800; font-size:40px;
+    letter-spacing:1px; line-height:1.4;
+    text-align:center;
+  }
+  #s10 .quan-list b{color:var(--red);}
+  #s10 .quan-list span{margin:0 14px; color:var(--coral);}
+  #s10 .handle{
+    margin-top:30px;
+    font-family:var(--display); font-weight:800; font-size:64px;
+    color:var(--yellow-hi); -webkit-text-stroke:4px var(--ink); paint-order:stroke fill;
+    text-shadow:0 6px 0 var(--ink); text-align:center;
+  }
+  #s10 .handle-sub{
+    margin-top:6px;
+    font-family:var(--heading); font-weight:700; font-size:30px;
+    color:var(--cream); letter-spacing:2px;
+  }
+  #s10 .cta-pill{
+    margin-top:14px;
+    background:var(--coral); color:var(--white);
+    border:6px solid var(--ink); border-radius:999px;
+    padding:14px 42px; box-shadow:12px 12px 0 0 var(--ink);
+    font-family:var(--display); font-weight:800; font-size:40px; letter-spacing:3px;
+    text-transform:uppercase; transform:rotate(-1deg);
+  }
+
+  /* foot */
+  .foot{margin-top:80px; padding-top:24px; border-top:2px dashed var(--ink); font-family:var(--mono); font-size:13px; color:var(--body); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;}
+
+  /* diff sidebar */
+  .diff-card{
+    margin-top:24px; background:var(--white); color:var(--ink);
+    border:6px solid var(--ink); border-radius:24px;
+    box-shadow:14px 14px 0 0 var(--ink);
+    padding:32px 36px;
+  }
+  .diff-card h2{font-family:var(--display); font-weight:800; font-size:32px; margin:0 0 16px; letter-spacing:-1px;}
+  .diff-card h2 .pill{display:inline-block; background:var(--yellow-hi); color:var(--ink); border:3px solid var(--ink); padding:2px 12px; border-radius:8px; font-size:22px; vertical-align:middle; margin-left:8px;}
+  .diff-list{margin:0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:14px;}
+  .diff-list li{background:var(--off); border:3px solid var(--ink); border-radius:12px; padding:14px 18px; font-family:var(--heading); font-size:15px; line-height:1.4;}
+  .diff-list li b{font-family:var(--display); font-weight:800; font-size:18px; display:block; color:var(--red); margin-bottom:4px; letter-spacing:1px;}
+  .diff-list li code{font-family:var(--mono); background:var(--cream); padding:1px 6px; border-radius:4px; font-size:13px; border:1px solid rgba(0,0,0,0.1);}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="head-card">
+    <span class="head-eyebrow">● Bún Ốc Nguội Hà Nội · Pillar B · long-form 90s</span>
+    <h1 class="head-title">Bún Ốc Nguội Hà Nội<br/>10 cảnh · 3 điều + 3 quán</h1>
+    <p class="head-sub">Render từ <code>public/bunocnguoi/scenes.json</code> (86s, 1080×1920, 30fps, voiceover + bgm-pillarB). Khác với short-form Pillar B của Chuột Đồng v2 (75s, 7 funfact-scene): bản này dài hơn — <b>Hook → Reveal → 3 Điều Đặc Biệt → Why → 3 Quán → CTA Bookmark</b>. Vẫn Pillar B đỏ dominant, karaoke active đổi theo BG.</p>
+    <div class="head-stats">
+      <span class="stat">10 SCENES</span>
+      <span class="stat">86s · 2580 FRAMES</span>
+      <span class="stat">1080×1920 · 9:16</span>
+      <span class="stat">PILLAR B · #C8302D</span>
+      <span class="stat long">LONG-FORM · 3+3 format</span>
+    </div>
+  </header>
+
+  <div class="grid" id="grid"></div>
+
+  <section class="diff-card">
+    <h2>Format mới · so với <code>chuot-dong-preview-v2.html</code> <span class="pill">cùng Pillar B</span></h2>
+    <ul class="diff-list">
+      <li><b>STRUCTURE</b>Long-form <code>10 scene · 86s</code> thay vì short <code>7 scene · 75s</code>. Mục tiêu giữ chân đến hết list 3 quán.</li>
+      <li><b>HOOK</b>Không dùng "5 FUNFACT" giant. Headline thẳng <code>MÓN BÚN ĐỘC NHẤT VN</code> + sticker tên <code>BÚN ỐC NGUỘI</code> + caption italic <code>"Phải ăn lạnh nhé 🍜"</code>.</li>
+      <li><b>REVEAL S02</b>Card đỏ giant <code>NGUỘI</code> + plan box <code>3 ĐIỀU + 3 QUÁN</code> — đặt expectation rõ cho viewer biết video sẽ dài.</li>
+      <li><b>3 ĐIỀU</b>Mỗi điều 1 scene, đánh số tròn đỏ trên cùng. <code>S03 Dấm bỗng · S04 Ốc nhồi · S05 Rau thái nhỏ</code>. Đổi BG mỗi scene (đỏ dark / vàng / off-white) tránh đơn điệu.</li>
+      <li><b>SO SÁNH</b>S04 dùng compare 2-cell <code>Ốc nhồi ✓ vs Ốc đá ✗</code>. S05 dùng 2-panel <code>nguyên cây ✗ vs thái nhỏ ✓</code> — thông tin nhanh hơn list bullet.</li>
+      <li><b>WHY NGUỘI</b>S06 BG đen + "70 NĂM TRƯỚC" + 3 bullet card <code>không bếp · để nguội · mang đi</code>. Giải lý do "tại sao nguội" — phần unique vs Chuột Đồng.</li>
+      <li><b>3 QUÁN</b>S07/S08/S09 dùng cùng template <code>.shop-card</code> nhưng đổi color accent (đỏ / coral / teal). Mỗi quán có địa chỉ + giờ mở + tag đặc trưng.</li>
+      <li><b>CTA</b>S10 thay "FOLLOW NGAY" thành <code>LƯU LẠI BOOKMARK 🔖</code> — call-to-save thay call-to-follow vì viewer cần lưu địa chỉ.</li>
+      <li><b>BADGE</b>Pillar B đỏ — chữ <code>MÓN LẠ QUỐC GIA</code> giống Chuột Đồng, không đổi.</li>
+      <li><b>KARAOKE</b>Mix 4 variant: <code>yellow</code> (BG dark/off), <code>coral</code> (BG cream), <code>ink</code> (BG yellow), <code>red</code> (BG light). Default trên S01 = yellow.</li>
+    </ul>
+  </section>
+
+  <div class="foot">
+    <span>Trạm Dừng Mlem · Bunocnguoi v1 · long-form 3+3 · scenes.json driven</span>
+    <span>1080×1920 · scaled 1:N to fit cards</span>
+  </div>
+</div>
+
+<script>
+  // 10 scenes — match public/bunocnguoi/scenes.json
+  const scenes = [
+    { id:'s01', key:'S01_HOOK',                 name:'Hook · Bún độc nhất VN',           dur:'6s',  kara:'yellow',
+      sub:'Có một món bún độc nhất Việt Nam mà người Hà Nội xưa rất yêu bún ốc nguội Phải ăn lạnh nhé không nóng đâu',
+      hl:[1,2,3,4,5,6,7,8,9,12,13,14,15,16,17,18,19] },
+
+    { id:'s02', key:'S02_REVEAL',               name:'Reveal · Nguội bản gốc · 3+3',     dur:'10s', kara:'coral',
+      sub:'Đúng rồi bún ốc nguội mới là bản gốc Hà Nội xưa Thanh mát chua dịu đậm đà rất riêng Hôm nay mình giới thiệu ba điều và ba quán ngon nhất',
+      hl:[0,1,4,5,6,7,8,9,10,11,12,21,22,24,25] },
+
+    { id:'s03', key:'S03_DAM_BONG',             name:'① Dấm bỗng · linh hồn',            dur:'13s', kara:'yellow',
+      sub:'Thứ nhất linh hồn của bát bún không phải mắm tôm hay chanh mà là dấm bỗng Dấm bỗng làm từ men gạo nếp lên men tự nhiên vị chua thanh vàng óng',
+      hl:[0,1,2,3,4,5,14,15,16,17,21,22,23,24,25,26,27,28] },
+
+    { id:'s04', key:'S04_OC_NHOI',              name:'② Ốc nhồi · ngón tay cái',          dur:'13s', kara:'ink',
+      sub:'Thứ hai ốc phải là ốc nhồi to bằng đầu ngón tay cái Không dùng ốc đá nhỏ luộc cùng lá chanh khêu sẵn ăn giòn dai đúng vị Hà Nội xưa',
+      hl:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,18,19,21,22,23,24] },
+
+    { id:'s05', key:'S05_HERBS',                name:'③ Rau thái nhỏ · không nguyên cây', dur:'9s',  kara:'coral',
+      sub:'Thứ ba không có rau sống nguyên cây như các loại bún khác Tía tô kinh giới thái nhỏ trộn thẳng vào bát giữ được vị tinh tế',
+      hl:[0,1,2,3,4,5,6,12,13,14,15,16,17,21,22] },
+
+    { id:'s06', key:'S06_WHY_NGUOI',            name:'Why nguội · 70 năm trước',          dur:'8s',  kara:'yellow',
+      sub:'Vì sao nguội Bảy mươi năm trước bún ốc là món gánh hàng rong xế chiều Không bếp làm sẵn để nguội rồi mang đi',
+      hl:[0,1,2,3,4,5,6,11,12,13,14,15,17,18,19,20,21] },
+
+    { id:'s07', key:'S07_QUAN_BA_LUONG',        name:'Quán #1 · Bà Lương',                dur:'7s',  kara:'red',
+      sub:'Quán đầu tiên Bà Lương ở Khương Thượng gia truyền bốn mươi năm nước dùng vàng óng chua thanh đậm đà',
+      hl:[0,1,2,3,4,6,7,8,9,10,11,15,16,17] },
+
+    { id:'s08', key:'S08_QUAN_CO_HUE',          name:'Quán #2 · Cô Huệ',                  dur:'7s',  kara:'red',
+      sub:'Quán thứ hai Cô Huệ bốn mươi ba Nguyễn Siêu ngay phố cổ sáu đến hai giờ chiều ba lăm đến bốn lăm nghìn một bát',
+      hl:[0,1,2,3,4,7,8,9,10,11,15,16,17,18,19] },
+
+    { id:'s09', key:'S09_QUAN_CO_XUAN',         name:'Quán #3 · Cô Xuân',                 dur:'7s',  kara:'ink',
+      sub:'Quán thứ ba Cô Xuân vỉa hè một Hàng Chiếu ngay cổng Ô Quan Chưởng tám đến một giờ chiều vị truyền thống phố cổ',
+      hl:[0,1,2,3,4,7,8,9,11,12,13,14,15,18,19,20,21] },
+
+    { id:'s10', key:'S10_CTA_BOOKMARK',         name:'CTA · Lưu bookmark + Follow',       dur:'7s',  kara:'coral',
+      sub:'Bạn còn biết quán nào ngon nữa Comment chia sẻ Nếu yêu thích hãy follow Trạm Dừng Mlem mỗi ngày một món lạ thế giới',
+      hl:[8,9,10,14,15,16,17,18,19,20,21,22,23] },
+  ];
+
+  // optional emphasis indices (.em class) per scene
+  const emphasis = {
+    s01:[2,3,4,5,17,18,19],
+    s02:[2,3,8,9,10,11,12,22,23,25,26],
+    s03:[2,3,4,5,15,16,17,22,23,27,28],
+    s04:[3,4,7,8,11,12,13,18,19],
+    s05:[3,4,12,13,14,15,16,21,22],
+    s06:[0,1,2,12,13,14,15,17,18,19,20,21],
+    s07:[7,8,9,10,11,15,16,17],
+    s08:[2,3,4,7,8,9,10,15,16,17,18,19],
+    s09:[3,4,7,8,12,13,14,15,18,19,20,21],
+    s10:[8,15,16,17,18,19,20,21,22,23],
+  };
+
+  function content(id){
+    if(id==='s01') return `
+      <div class="abs photo with-tint"><div class="ph-cap">S01A_HOOK_BOWL.mp4 · bowl hero · cool-tone</div></div>
+      <div class="abs center" style="gap:6px">
+        <div class="hook-headline">MÓN BÚN<br/><b>ĐỘC NHẤT</b><br/>VIỆT NAM</div>
+        <div class="hook-name">BÚN ỐC<br/>NGUỘI</div>
+        <div class="hook-caption">Phải ăn lạnh nhé 🍜</div>
+      </div>`;
+
+    if(id==='s02') return `
+      <div class="abs center" style="gap:10px; padding-top:200px">
+        <div class="label-pill">REVEAL · BẢN GỐC HÀ NỘI</div>
+        <div class="nguoi-card">
+          <div class="lead">NGUỘI</div>
+          <div class="sub-line">BẢN GỐC · HÀ NỘI XƯA</div>
+        </div>
+        <div class="plan">
+          <div class="plan-box"><span class="n">3</span><span class="l">ĐIỀU</span></div>
+          <div class="plus">+</div>
+          <div class="plan-box r"><span class="n">3</span><span class="l">QUÁN</span></div>
+        </div>
+      </div>`;
+
+    if(id==='s03') return `
+      <div class="abs photo with-tint"><div class="ph-cap">S03B_RICE_FERMENT · men nếp · vàng óng</div></div>
+      <div class="abs center" style="gap:6px; padding-top:180px">
+        <div class="num-circle">1</div>
+        <div class="ingredient-name">DẤM BỖNG</div>
+        <div class="role-pill">LINH HỒN · KHÔNG PHẢI MẮM TÔM</div>
+        <div class="stat-line">
+          <div class="chip2">men gạo nếp</div>
+          <div class="chip2 c">lên men tự nhiên</div>
+          <div class="chip2">chua thanh</div>
+        </div>
+        <div class="vang-ong">★ VÀNG ÓNG ★</div>
+      </div>`;
+
+    if(id==='s04') return `
+      <div class="abs center" style="gap:6px; padding-top:180px">
+        <div class="num-circle">2</div>
+        <div class="ingredient-name">ỐC NHỒI</div>
+        <div class="size-pill">TO BẰNG ĐẦU NGÓN TAY CÁI</div>
+        <div class="compare-row">
+          <div class="col-cmp good">
+            <div class="nm">Ốc nhồi</div>
+            <div class="mk">✓</div>
+          </div>
+          <div class="vs">≠</div>
+          <div class="col-cmp bad">
+            <div class="nm">Ốc đá</div>
+            <div class="mk">✗</div>
+          </div>
+        </div>
+      </div>`;
+
+    if(id==='s05') return `
+      <div class="abs center" style="gap:4px; padding-top:170px">
+        <div class="num-circle">3</div>
+        <div class="rule"><span class="no">KHÔNG</span>RAU NGUYÊN CÂY</div>
+        <div class="panels">
+          <div class="panel bad">
+            <div class="mk">✗</div>
+            <div class="name">RAU SỐNG NGUYÊN CÂY</div>
+            <div class="small">như bún khác</div>
+          </div>
+          <div class="panel good">
+            <div class="mk">✓</div>
+            <div class="name">TÍA TÔ + KINH GIỚI</div>
+            <div class="small">THÁI NHỎ</div>
+          </div>
+        </div>
+        <div class="caption">— giữ vị tinh tế của nước canh —</div>
+      </div>`;
+
+    if(id==='s06') return `
+      <div class="abs photo with-tint"><div class="ph-cap">S06A_HANOI_VENDOR · gánh hàng rong · xế chiều</div></div>
+      <div class="abs center" style="gap:6px; padding-top:180px">
+        <div class="why">VÌ SAO<br/>NGUỘI?</div>
+        <div class="era">★ 70 NĂM TRƯỚC ★</div>
+        <div class="bullets">
+          <div class="bullet"><div class="ic">🚫</div><div class="lb">KHÔNG BẾP</div></div>
+          <div class="bullet"><div class="ic">❄</div><div class="lb">ĐỂ NGUỘI</div></div>
+          <div class="bullet"><div class="ic">🚶</div><div class="lb">MANG ĐI</div></div>
+        </div>
+      </div>`;
+
+    if(id==='s07') return `
+      <div class="abs center" style="padding-top:220px">
+        <div class="shop-card">
+          <div class="quan-tag">QUÁN #1</div>
+          <div class="name">BÀ<br/>LƯƠNG</div>
+          <div class="row">
+            <div class="pill">📍 Ngõ 191 Khương Thượng</div>
+          </div>
+          <div class="row">
+            <div class="pill teal">⏰ 8h30 — 22h30</div>
+          </div>
+          <div class="tag">🏛 GIA TRUYỀN 40 NĂM</div>
+          <div class="stamp">MLEM!</div>
+        </div>
+      </div>`;
+
+    if(id==='s08') return `
+      <div class="abs center" style="padding-top:220px">
+        <div class="shop-card">
+          <div class="quan-tag">QUÁN #2</div>
+          <div class="name">CÔ<br/>HUỆ</div>
+          <div class="row">
+            <div class="pill">📍 43 Nguyễn Siêu (phố cổ)</div>
+          </div>
+          <div class="row">
+            <div class="pill teal">⏰ 6h — 14h</div>
+            <div class="pill ink">💵 35–45K / bát</div>
+          </div>
+          <div class="tag" style="background:var(--coral)">★ SÁNG SỚM PHỐ CỔ</div>
+          <div class="stamp">MLEM!</div>
+        </div>
+      </div>`;
+
+    if(id==='s09') return `
+      <div class="abs photo with-tint"><div class="ph-cap">S09_O_QUAN_CHUONG_LANDMARK · cổng phố cổ</div></div>
+      <div class="abs center" style="padding-top:220px">
+        <div class="shop-card">
+          <div class="quan-tag">QUÁN #3</div>
+          <div class="name">CÔ<br/>XUÂN</div>
+          <div class="row">
+            <div class="pill">📍 Vỉa hè 1 Hàng Chiếu</div>
+          </div>
+          <div class="row">
+            <div class="pill coral">đối diện Ô Quan Chưởng</div>
+          </div>
+          <div class="row">
+            <div class="pill teal">⏰ 8h — 13h</div>
+          </div>
+          <div class="tag" style="background:var(--ink); color:var(--yellow-hi)">🏛 VỊ TRUYỀN THỐNG PHỐ CỔ</div>
+          <div class="stamp">MLEM!</div>
+        </div>
+      </div>`;
+
+    if(id==='s10') return `
+      <div class="abs photo with-tint"><div class="ph-cap">S07_HERO_BOWL · golden bowl · hero shot</div></div>
+      <div class="abs stripes"></div>
+      <div class="abs center" style="gap:8px; padding-top:160px; padding-bottom:340px">
+        <div class="bookmark-sticker">LƯU LẠI<br/>BOOKMARK 🔖</div>
+        <div class="quan-list">
+          <b>1.BÀ LƯƠNG</b><span>·</span><b>2.CÔ HUỆ</b><span>·</span><b>3.CÔ XUÂN</b>
+        </div>
+        <div class="handle">@tramdungmlem</div>
+        <div class="handle-sub">🍜 mỗi ngày 1 món lạ thế giới</div>
+        <div class="cta-pill">↑ FOLLOW NGAY</div>
+      </div>`;
+
+    return '';
+  }
+
+  function buildSub(id, text, hlIdx){
+    const words = text.split(/\s+/);
+    const em = emphasis[id] || [];
+    return `<div class="sub">${words.map((w,i)=>{
+      const cls = hlIdx.includes(i) ? 'hl' : (em.includes(i) ? 'em' : '');
+      return `<span class="${cls}">${w}</span>`;
+    }).join('')}</div>`;
+  }
+
+  // S01 + S10 ko show pillar badge (hook + CTA clean)
+  function showBadge(id){ return !['s01','s10'].includes(id); }
+  // S01 ko show channel mark (hook scene clean)
+  function showMark(id){ return id !== 's01'; }
+
+  const grid = document.getElementById('grid');
+  scenes.forEach((s, idx) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="card-meta">
+        <span class="badge">${idx+1}</span>
+        <div class="info">
+          <span class="key">${s.key}</span>
+          <span class="name">${s.name}</span>
+        </div>
+        <span class="dur">${s.dur}</span>
+      </div>
+      <div class="frame">
+        <div class="scene" id="${s.id}" data-kara="${s.kara}">
+          ${content(s.id)}
+          ${showBadge(s.id) ? '<div class="pillar-badge"><span class="dot">B</span><span>MÓN LẠ QUỐC GIA</span></div>' : ''}
+          ${showMark(s.id) ? '<div class="channel-mark">Trạm Dừng Mlem</div>' : ''}
+          ${buildSub(s.id, s.sub, s.hl)}
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  function rescale(){
+    document.querySelectorAll('.frame').forEach(frame => {
+      const scene = frame.querySelector('.scene');
+      if (!scene) return;
+      const w = frame.clientWidth;
+      const scale = w / 1080;
+      scene.style.transform = `scale(${scale})`;
+    });
+  }
+  window.addEventListener('resize', rescale);
+  requestAnimationFrame(rescale);
+  setTimeout(rescale, 50);
+</script>
+</body>
+</html>

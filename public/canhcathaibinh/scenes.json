@@ -1,0 +1,711 @@
+{
+  "version": 2,
+  "slug": "canhcathaibinh",
+  "title": "Canh Cá Quỳnh Côi — 400 năm hồn quê Thái Bình",
+  "pillar": "B",
+  "format": "documentary-storytelling",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 2700,
+  "duration": 90,
+  "longForm": true,
+  "tikTokOnly": true,
+  "voiceFile": "canhca-voiceover.mp3",
+  "bgmFile": "audio/bgm-folk-cozy-loop.mp3",
+  "theme": {
+    "primary": "#D97742",
+    "primaryDark": "#A85529",
+    "cream": "#FFF4E0",
+    "textDark": "#2B2118",
+    "karaokeYellow": "#FFD23F",
+    "karaokeAmberContrast": "#FFEAA0",
+    "ink": "#1A1A1A"
+  },
+  "scenes": [
+    {
+      "id": "S01_HOOK",
+      "label": "Hook — Câu hỏi gợi mở 400 năm",
+      "durFrames": 120,
+      "durSec": 4,
+      "bg": {
+        "type": "photo",
+        "asset": "s01-hook.png",
+        "tint": "rgba(217,119,66,0.25)",
+        "blend": "multiply",
+        "kenBurns": {
+          "from": 1.0,
+          "to": 1.05
+        }
+      },
+      "voiceText": "Một món ăn bốn trăm năm tuổi, chỉ ngon ở một vùng. Bạn đoán là món gì?",
+      "elements": [
+        {
+          "type": "heroText",
+          "text": "400 NĂM",
+          "from": 0,
+          "to": 120,
+          "style": "outline-white-6px-baloo-extrabold-200"
+        },
+        {
+          "type": "subText",
+          "text": "Một món ăn 400 năm tuổi · chỉ ngon ở một vùng",
+          "from": 30,
+          "to": 120
+        },
+        {
+          "type": "popChip",
+          "text": "Bạn đoán là gì?",
+          "color": "#D97742",
+          "rotate": -3,
+          "from": 90,
+          "to": 120
+        }
+      ],
+      "sfx": [
+        {
+          "at": 0,
+          "file": "whoosh-in.mp3"
+        },
+        {
+          "at": 90,
+          "file": "pop-sticker.mp3"
+        }
+      ],
+      "emphasis": [
+        "bốn trăm năm",
+        "một vùng"
+      ],
+      "start": 0,
+      "end": 120
+    },
+    {
+      "id": "S02_LICH_SU",
+      "label": "Lịch sử & vùng đất — Phố Dâu Gia thế kỷ 17",
+      "durFrames": 330,
+      "durSec": 11,
+      "bg": {
+        "type": "photo",
+        "asset": "s02-lichsu-phoduagia.png",
+        "tint": "rgba(255,244,224,0.30)",
+        "blend": "multiply",
+        "pan": "left-to-right"
+      },
+      "voiceText": "Canh cá Quỳnh Côi. Một món có từ thế kỷ mười bảy, ở thị trấn nhỏ giữa quê lúa Thái Bình. Người dân gọi nơi đây là Phố Dâu Gia, vì hai bên đường cây dâu gia rợp bóng quanh năm.",
+      "elements": [
+        {
+          "type": "heroTitle",
+          "text": "CANH CÁ QUỲNH CÔI",
+          "from": 15,
+          "to": 90,
+          "style": "outline-amber-6px-baloo-extrabold-120"
+        },
+        {
+          "type": "dataCard",
+          "title": "TK XVII",
+          "sub": "~400 năm tuổi",
+          "from": 60,
+          "to": 180,
+          "color": "#D97742"
+        },
+        {
+          "type": "miniMap",
+          "region": "Thái Bình → thị trấn Quỳnh Côi",
+          "pinColor": "#D97742",
+          "from": 90,
+          "to": 240
+        },
+        {
+          "type": "captionChip",
+          "text": "Cách Hà Nội ~100 km · Cách TP Thái Bình 20 km",
+          "from": 150,
+          "to": 270
+        },
+        {
+          "type": "heroSub",
+          "text": "PHỐ DÂU GIA",
+          "subItalic": "phố mang tên loài cây",
+          "from": 270,
+          "to": 330,
+          "color": "#D97742"
+        }
+      ],
+      "sfx": [
+        {
+          "at": 15,
+          "file": "swoosh-soft.mp3"
+        },
+        {
+          "at": 150,
+          "file": "map-pin-soft.mp3"
+        },
+        {
+          "at": 270,
+          "file": "chime-mild.mp3"
+        }
+      ],
+      "emphasis": [
+        "Quỳnh Côi",
+        "thế kỷ mười bảy",
+        "Thái Bình",
+        "Phố Dâu Gia",
+        "dâu gia"
+      ],
+      "start": 120,
+      "end": 450
+    },
+    {
+      "id": "S03_DAC_SAC_BANH_DA",
+      "label": "Đặc sắc 1 — Sợi bánh đa làng Đợi",
+      "durFrames": 360,
+      "durSec": 12,
+      "bg": {
+        "type": "photo",
+        "asset": "s03-bandaiang.png",
+        "tint": "rgba(255,244,224,0.30)",
+        "blend": "multiply"
+      },
+      "voiceText": "Linh hồn của tô canh cá nằm ở sợi bánh đa làng Đợi, xã Đông Hải, huyện Quỳnh Phụ. Sợi mảnh ba li, trắng trong, dày và giòn. Nấu lên trắng muốt, dai mềm, thơm mùi gạo. Không vùng nào miền Bắc làm được.",
+      "elements": [
+        {
+          "type": "heroText",
+          "text": "LINH HỒN: SỢI BÁNH ĐA LÀNG ĐỢI",
+          "from": 0,
+          "to": 120,
+          "style": "outline-amber-4px-baloo-80"
+        },
+        {
+          "type": "dataCard",
+          "title": "Bề ngang",
+          "value": "0,3 cm",
+          "sub": "Trắng trong · Dày giòn",
+          "from": 120,
+          "to": 240,
+          "color": "#D97742"
+        },
+        {
+          "type": "compareSideBySide",
+          "left": "Sống: trắng trong",
+          "right": "Nấu chín: trắng muốt",
+          "from": 240,
+          "to": 360
+        },
+        {
+          "type": "bottomBadge",
+          "text": "Tên chữ: Dụ Hải · xã Đông Hải · huyện Quỳnh Phụ",
+          "from": 60,
+          "to": 360
+        }
+      ],
+      "sfx": [
+        {
+          "at": 9,
+          "file": "swoosh-soft.mp3"
+        },
+        {
+          "at": 120,
+          "file": "pop-data-mild.mp3"
+        },
+        {
+          "at": 240,
+          "file": "flick-compare.mp3"
+        }
+      ],
+      "emphasis": [
+        "linh hồn",
+        "làng Đợi",
+        "Đông Hải",
+        "Quỳnh Phụ",
+        "ba li",
+        "trắng muốt",
+        "thơm mùi gạo"
+      ],
+      "start": 450,
+      "end": 810
+    },
+    {
+      "id": "S04_DAC_SAC_CA_RO_DONG",
+      "label": "Đặc sắc 2 — Cá rô đồng tự nhiên + xương ninh 16h",
+      "durFrames": 360,
+      "durSec": 12,
+      "bg": {
+        "type": "photo",
+        "asset": "s04-carodong.png",
+        "tint": "rgba(217,119,66,0.18)",
+        "blend": "multiply"
+      },
+      "voiceText": "Cá phải là cá rô đồng tự nhiên — con bằng hai ngón tay, sống ruộng nước Thái Bình. Thịt ít nhưng thơm, ngọt, không tanh như cá nuôi. Đúng vụ là tháng mười âm lịch — mùa cá béo nhất, thịt chắc nhất.",
+      "elements": [
+        {
+          "type": "heroText",
+          "text": "LINH HỒN: CÁ RÔ ĐỒNG TỰ NHIÊN",
+          "from": 0,
+          "to": 90,
+          "style": "outline-amber-4px-baloo-80",
+          "color": "#D97742"
+        },
+        {
+          "type": "dataCard",
+          "title": "Bằng 2 ngón tay",
+          "sub": "Thân đen xám · Sống ruộng nước",
+          "subSmall": "KHÔNG dùng cá rô nuôi (to gấp 2-3 lần, nhạt vị)",
+          "from": 90,
+          "to": 180,
+          "color": "#D97742"
+        },
+        {
+          "type": "compareSideBySide",
+          "leftTitle": "CÁ RÔ ĐỒNG",
+          "leftItems": [
+            "thơm",
+            "ngọt",
+            "ít tanh"
+          ],
+          "rightTitle": "CÁ RÔ NUÔI",
+          "rightItems": [
+            "to",
+            "nhạt",
+            "không thơm"
+          ],
+          "from": 180,
+          "to": 270
+        },
+        {
+          "type": "chipSeasonLarge",
+          "text": "ĐÚNG VỤ: tháng 10 âm lịch 🌾",
+          "sub": "mùa cá béo nhất · thịt chắc nhất",
+          "from": 270,
+          "to": 360,
+          "color": "#A85529"
+        }
+      ],
+      "sfx": [
+        {
+          "at": 9,
+          "file": "swoosh-soft.mp3"
+        },
+        {
+          "at": 90,
+          "file": "pop-data-mild.mp3"
+        },
+        {
+          "at": 180,
+          "file": "flick-compare.mp3"
+        },
+        {
+          "at": 285,
+          "file": "chime-warm.mp3"
+        }
+      ],
+      "emphasis": [
+        "cá rô đồng",
+        "tự nhiên",
+        "hai ngón tay",
+        "không tanh",
+        "tháng mười âm lịch",
+        "béo nhất",
+        "thịt chắc nhất"
+      ],
+      "start": 810,
+      "end": 1170
+    },
+    {
+      "id": "S05_CHE_BIEN",
+      "label": "Cách chế biến — 3 bước truyền thống",
+      "durFrames": 720,
+      "durSec": 24,
+      "bg": {
+        "type": "photo",
+        "asset": "s05-chebien.png",
+        "tint": "rgba(217,119,66,0.18)",
+        "blend": "multiply"
+      },
+      "voiceText": "Cách chế biến ba bước. Bước một: cá rô đồng hấp lửa vừa bảy phút, gỡ tách thịt và xương riêng. Thịt ướp mắm cốt, nghệ tươi, tiêu ba mươi phút, rồi nướng than hồng năm phút cho thơm. Bước hai: vì cá rô đồng nhỏ, xương cá phải hầm cùng xương heo — ninh liu riu mười sáu tiếng — cho ra nước dùng ngọt tự nhiên, không cần mì chính. Bước ba: gần lúc ăn, xào thịt cá với hành phi ba phút. Chan bát bánh đa, rắc thì là, hành lá.",
+      "elements": [
+        {
+          "type": "heroText",
+          "text": "CÁCH CHẾ BIẾN",
+          "subtext": "3 bước truyền thống",
+          "from": 0,
+          "to": 60,
+          "color": "#D97742"
+        },
+        {
+          "type": "stepCardLarge",
+          "step": 1,
+          "label": "BƯỚC 1: HẤP — GỠ — ƯỚP NƯỚNG",
+          "subSteps": [
+            {
+              "icon": "🍃",
+              "label": "HẤP 7 PHÚT lửa vừa",
+              "detail": "cá vừa chín tới"
+            },
+            {
+              "icon": "✋",
+              "label": "GỠ TÁCH THỊT & XƯƠNG",
+              "detail": "đôi tay khéo léo"
+            },
+            {
+              "icon": "🔥",
+              "label": "ƯỚP 30 PHÚT + NƯỚNG THAN 5 PHÚT",
+              "detail": "mắm cốt · nghệ tươi · tiêu"
+            }
+          ],
+          "from": 60,
+          "to": 390,
+          "color": "#D97742"
+        },
+        {
+          "type": "stepCardLarge",
+          "step": 2,
+          "label": "BƯỚC 2: HẦM XƯƠNG HEO + XƯƠNG CÁ RÔ",
+          "heroStat": {
+            "value": "16 GIỜ",
+            "label": "ninh liu riu"
+          },
+          "recipe": "🐷 Xương heo (ống/sườn) + 🐟 Xương cá rô đồng",
+          "subNote": "Cá rô nhỏ → cần thêm xương heo cho beo",
+          "tags": [
+            "liu riu",
+            "không mì chính",
+            "ngọt tự nhiên"
+          ],
+          "from": 390,
+          "to": 570,
+          "color": "#A85529"
+        },
+        {
+          "type": "stepCardLarge",
+          "step": 3,
+          "label": "BƯỚC 3: GẦN LÚC ĂN MỚI XÀO",
+          "heroStat": {
+            "value": "3 PHÚT",
+            "label": "lửa to thơm dậy"
+          },
+          "ingredients": [
+            {
+              "icon": "🧅",
+              "name": "Hành phi"
+            },
+            {
+              "icon": "🧂",
+              "name": "Mắm cốt"
+            },
+            {
+              "icon": "💛",
+              "name": "Nghệ tươi"
+            },
+            {
+              "icon": "🌶️",
+              "name": "Tiêu"
+            }
+          ],
+          "from": 570,
+          "to": 690,
+          "color": "#2B6E79"
+        },
+        {
+          "type": "finalChip",
+          "text": "CHAN BÁT BÁNH ĐA + rắc thì là · hành lá",
+          "from": 690,
+          "to": 720
+        }
+      ],
+      "sfx": [
+        {
+          "at": 9,
+          "file": "whoosh-mild.mp3"
+        },
+        {
+          "at": 60,
+          "file": "card-slide-step.mp3"
+        },
+        {
+          "at": 120,
+          "file": "steam-soft.mp3"
+        },
+        {
+          "at": 225,
+          "file": "pluck-soft.mp3"
+        },
+        {
+          "at": 315,
+          "file": "sizzle-grill.mp3"
+        },
+        {
+          "at": 390,
+          "file": "card-slide-step.mp3"
+        },
+        {
+          "at": 450,
+          "file": "clock-tick-slow.mp3"
+        },
+        {
+          "at": 510,
+          "file": "pop-data-mild.mp3"
+        },
+        {
+          "at": 570,
+          "file": "card-slide-step.mp3"
+        },
+        {
+          "at": 630,
+          "file": "sizzle-stir-mild.mp3"
+        },
+        {
+          "at": 700,
+          "file": "chime-final-mild.mp3"
+        }
+      ],
+      "emphasis": [
+        "ba bước",
+        "hấp lửa vừa bảy phút",
+        "gỡ tách",
+        "ướp ba mươi phút",
+        "nghệ tươi",
+        "nướng than hồng năm phút",
+        "cá rô đồng nhỏ",
+        "xương heo",
+        "hầm mười sáu tiếng",
+        "ninh liu riu",
+        "ngọt tự nhiên",
+        "không cần mì chính",
+        "gần lúc ăn",
+        "xào",
+        "ba phút",
+        "hành phi",
+        "thì là",
+        "hành lá"
+      ],
+      "start": 1170,
+      "end": 1890
+    },
+    {
+      "id": "S06_DIA_CHI",
+      "label": "Địa chỉ thưởng thức — Thái Bình (gốc) + Hà Nội",
+      "durFrames": 420,
+      "durSec": 14,
+      "bg": {
+        "type": "flat-cream"
+      },
+      "voiceText": "Muốn ăn đúng vị, phải về thị trấn Quỳnh Côi. Quán Bẩy — số sáu mươi ba Đào Đình Luyện — là cái tên nức tiếng nhất. Bên cạnh có Vũ Gia phố Trần Hưng Đạo, hoặc Bốn Mùa xã Quỳnh Hải. Riêng phố Trần Hưng Đạo còn san sát Quang, Ba Huê, Miêu — quán nào cũng ngon.",
+      "elements": [
+        {
+          "type": "heroText",
+          "text": "MUỐN ĂN ĐÚNG VỊ?",
+          "subtext": "PHẢI VỀ THỊ TRẤN QUỲNH CÔI",
+          "from": 0,
+          "to": 60,
+          "color": "#D97742"
+        },
+        {
+          "type": "locationCard",
+          "rank": 1,
+          "starred": true,
+          "name": "QUÁN BẨY",
+          "address": "63 Đào Đình Luyện, thị trấn Quỳnh Côi, huyện Quỳnh Phụ",
+          "note": "Nức tiếng nhất Quỳnh Côi · Cá rô đồng tự nhiên · Xào săn truyền thống",
+          "asset": "s06-quanbay.png",
+          "from": 60,
+          "to": 180,
+          "color": "#D97742"
+        },
+        {
+          "type": "locationCard",
+          "rank": 2,
+          "name": "CANH CÁ VŨ GIA",
+          "address": "Phố Trần Hưng Đạo, thị trấn Quỳnh Côi",
+          "phone": "098 982 03 22",
+          "from": 180,
+          "to": 270,
+          "color": "#A85529"
+        },
+        {
+          "type": "locationCard",
+          "rank": 3,
+          "name": "QUÁN BỐN MÙA",
+          "address": "Đoàn Xá, xã Quỳnh Hải (cạnh thị trấn Quỳnh Côi)",
+          "from": 270,
+          "to": 360,
+          "color": "#8B5A3C"
+        },
+        {
+          "type": "locationRowSanSat",
+          "title": "PHỐ TRẦN HƯNG ĐẠO — DÃY QUÁN SAN SÁT",
+          "chips": [
+            {
+              "icon": "🍲",
+              "name": "QUANG"
+            },
+            {
+              "icon": "🍲",
+              "name": "BA HUÊ"
+            },
+            {
+              "icon": "🍲",
+              "name": "MIÊU"
+            }
+          ],
+          "caption": "Quán nào cũng ngon · Cứ ghé thử",
+          "from": 360,
+          "to": 420,
+          "color": "#2B6E79"
+        }
+      ],
+      "sfx": [
+        {
+          "at": 9,
+          "file": "swoosh-soft.mp3"
+        },
+        {
+          "at": 60,
+          "file": "card-slide-1.mp3"
+        },
+        {
+          "at": 180,
+          "file": "card-slide-2.mp3"
+        },
+        {
+          "at": 270,
+          "file": "card-slide-3.mp3"
+        },
+        {
+          "at": 360,
+          "file": "card-slide-4.mp3"
+        }
+      ],
+      "emphasis": [
+        "thị trấn Quỳnh Côi",
+        "Quán Bẩy",
+        "sáu mươi ba",
+        "Đào Đình Luyện",
+        "Vũ Gia",
+        "Trần Hưng Đạo",
+        "Bốn Mùa",
+        "Quỳnh Hải",
+        "Quang",
+        "Ba Huê",
+        "Miêu"
+      ],
+      "start": 1890,
+      "end": 2310
+    },
+    {
+      "id": "S07_KET_BAI",
+      "label": "Kết bài — 400 năm văn hóa đồng quê",
+      "durFrames": 390,
+      "durSec": 13,
+      "bg": {
+        "type": "photo",
+        "asset": "s07-ketbai.png",
+        "tint": "rgba(255,244,224,0.20)",
+        "blend": "multiply",
+        "kenBurns": {
+          "from": 1.08,
+          "to": 1.0
+        }
+      },
+      "voiceText": "Một bát canh cá Quỳnh Côi là bốn trăm năm văn hóa đồng quê Thái Bình — nơi cánh đồng lúa, dòng kênh nhỏ, và bàn tay người làm nghề bốn đời. Có dịp về Thái Bình, đừng quên ghé phố Trần Hưng Đạo. Mình là Trạm Dừng Mlem. Follow để không bỏ lỡ!",
+      "elements": [
+        {
+          "type": "heroText",
+          "text": "MỘT BÁT CANH CÁ",
+          "subtext": "= 400 NĂM VĂN HÓA ĐỒNG QUÊ",
+          "from": 0,
+          "to": 90,
+          "color": "#D97742"
+        },
+        {
+          "type": "chipFlick",
+          "icon": "🌾",
+          "text": "Cánh đồng lúa",
+          "from": 90,
+          "to": 180,
+          "color": "#D97742"
+        },
+        {
+          "type": "chipFlick",
+          "icon": "💧",
+          "text": "Dòng kênh nhỏ",
+          "from": 120,
+          "to": 180,
+          "color": "#A85529"
+        },
+        {
+          "type": "chipFlick",
+          "icon": "✋",
+          "text": "Bàn tay người làm nghề bốn đời",
+          "from": 150,
+          "to": 180,
+          "color": "#2B6E79"
+        },
+        {
+          "type": "tagline",
+          "text": "Có dịp về Thái Bình → ghé phố Trần Hưng Đạo 🍲",
+          "from": 180,
+          "to": 270
+        },
+        {
+          "type": "channelMark",
+          "from": 270,
+          "to": 390
+        },
+        {
+          "type": "tagline",
+          "text": "Trạm Dừng Mlem — mỗi ngày một món lạ",
+          "from": 270,
+          "to": 390
+        },
+        {
+          "type": "ctaChip",
+          "icon": "➕",
+          "text": "FOLLOW",
+          "color": "#D97742",
+          "from": 330,
+          "to": 390
+        },
+        {
+          "type": "arrowDown",
+          "from": 330,
+          "to": 390
+        }
+      ],
+      "sfx": [
+        {
+          "at": 9,
+          "file": "whoosh-soft-out.mp3"
+        },
+        {
+          "at": 90,
+          "file": "chip-flick-1.mp3"
+        },
+        {
+          "at": 120,
+          "file": "chip-flick-2.mp3"
+        },
+        {
+          "at": 150,
+          "file": "chip-flick-3.mp3"
+        },
+        {
+          "at": 270,
+          "file": "chime-warm-final.mp3"
+        }
+      ],
+      "emphasis": [
+        "canh cá Quỳnh Côi",
+        "bốn trăm năm",
+        "văn hóa đồng quê",
+        "Thái Bình",
+        "cánh đồng lúa",
+        "dòng kênh nhỏ",
+        "bốn đời",
+        "phố Trần Hưng Đạo",
+        "Trạm Dừng Mlem",
+        "Follow"
+      ],
+      "start": 2310,
+      "end": 2700
+    }
+  ]
+}
